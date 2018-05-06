@@ -1,10 +1,11 @@
 <?php
 
-namespace cms\modules\v1\controllers;
+namespace admin\modules\v1\controllers;
 
 use Yii;
 require_once __DIR__ . '/../../../../common/models/auth/Users.php';
-use cms\modules\v1\helpers\String;
+use admin\modules\v1\helpers\String;
+use yii\web\HttpException;
 
 class LoginController extends Controller
 {
@@ -24,10 +25,8 @@ class LoginController extends Controller
     public function actionAuth()
     {
         $params = Yii::$app->request->getBodyParams();
-        $params['username'] = "+" . String::clearPhoneNumber($params['username']);
         $model = new \common\models\auth\Users();
         $model->Auth($params);
-        $model->checkRoleAndProvider();
         $token = $model->generateToken();
         return !isset($token['token'])? $token :['token'=>$token['token'],'Status'=>'success'];
     }

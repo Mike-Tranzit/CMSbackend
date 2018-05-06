@@ -1,6 +1,6 @@
 <?php
 
-namespace cms\modules\v1\controllers;
+namespace admin\modules\v1\controllers;
 
 use Yii;
 use yii\data\ActiveDataProvider;
@@ -41,27 +41,6 @@ class Controller extends \yii\rest\ActiveController
 			'application/json' => Response::FORMAT_JSON,
 			'application/javascript' => Response::FORMAT_JSONP,
 		];
-
-		/*if ($this->rateLimiter)
-		{
-			$behaviors['rateLimiter'] = [
-				'class' => \ethercreative\ratelimiter\RateLimiter::className(),
-				'rateLimit' => Yii::$app->params['rateLimiter']['limit'],
-				'timePeriod' => Yii::$app->params['rateLimiter']['period'],
-				'separateRates' => Yii::$app->params['rateLimiter']['separate'],
-				'enableRateLimitHeaders' => YII_ENV_DEV,
-			];
-		}*/
-
-       /* if (!empty($this->collectionOptions)){
-            $behaviors['corsFilter'] = [
-                'class' => \yii\filters\Cors::className(),
-                'cors' => [
-                    'Access-Control-Request-Method' => $this->collectionOptions,
-                    'Access-Control-Request-Headers' => ['*']
-                ],
-            ];
-        }*/
 		return $behaviors;
 	}
 

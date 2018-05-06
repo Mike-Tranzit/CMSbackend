@@ -27,25 +27,35 @@ return [
             'class' => $urlRule,
             'pluralize' => false,
             'controller' => [
-                'v1/zernovozam',
+                'v1/autos',
             ],
             'only' => [
-                'searchbylogin',
-                'saveprofile',
-                'invoicesconfirm',
+                'index',
                 'options',
-                'userdocslist'
             ],
             'patterns' => [
-                'GET searchbylogin' => 'searchbylogin',
-                'OPTIONS searchbylogin' => 'options',
-                'PUT saveprofile' => 'saveprofile',
-                'OPTIONS saveprofile' => 'options',
-                'PUT invoicesconfirm' => 'invoicesconfirm',
-                'OPTIONS invoicesconfirm' => 'options',
-                'GET userdocslist' => 'userdocslist',
-                'OPTIONS userdocslist' => 'options'
+                'GET index' => 'index',
+                'OPTIONS index' => 'options'
+            ]
+        ],
+        [
+            'class' => $urlRule,
+            'pluralize' => false,
+            'controller' => [
+                'v1/blacklist',
+            ],
+            'only' => [
+                'save',
+                'edit',
+                'options',
+            ],
+            'patterns' => [
+                'PUT edit/<id:\d+>' => 'edit',
+                'OPTIONS edit/<id:\d+>' => 'options',
+                'POST save' => 'save',
+                'OPTIONS save' => 'options'
             ]
         ]
+
     ],
 ];
