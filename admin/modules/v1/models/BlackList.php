@@ -21,7 +21,13 @@ class BlackList
     {
         $this->plate = \common\helpers\Plates::toBase($plate);
         if($id > 0) $this->model = $this->findByPk($id);
-        else $this->model = \common\models\nztmodule3\base\WhiteAndBlackList::find()->where('`num_auto`=:num_auto and wh=2 and `time_out`>=date(now())', [":num_auto"=>$this->plate])->orderBy('id')->one();
+        else $this->model = \common\models\nztmodule3\base\WhiteAndBlackList::find()->where('`num_auto`=:num_auto and wh=2 and `power`=0 and `time_out`>=date(now())', [":num_auto"=>$this->plate])->orderBy('id')->one();
+    }
+
+    public function getCount(){
+        $c = \common\models\nztmodule3\base\WhiteAndBlackList::find()->where('`num_auto`=:num_auto and wh=2', [":num_auto"=>$this->plate]);
+       // if($this->model) $c->andWhere('`id`!=:id',[":id"=>$this->model->id]);
+        return (int)$c->count();
     }
 
     public function findByPk($id){
@@ -29,7 +35,7 @@ class BlackList
     }
 
     public function recordExist(){
-        return !$this->model ? [] : ['id'=> $this->model->id, 'textp' => $this->model->textp, 'texts' => $this->model->texts, 'plate'=> $this->model->num_auto, 'status'=>$this->formationStatusText(), 'time_out'=> $this->formationDateOut()];
+        return !$this->model ? ['count_exist' => $this->getCount()] : ['id'=> $this->model->id, 'textp' => $this->model->textp, 'texts' => $this->model->texts, 'plate'=> $this->model->num_auto, 'status'=>$this->formationStatusText(), 'time_out'=> $this->formationDateOut(),'count_exist' => $this->getCount()];
     }
 
     public function formationDateOut(){
@@ -70,6 +76,13 @@ class BlackList
             }
         }
     }
+
+    /*
+     * Yii::$app->formatter->asTimestamp(date('Y-d-m h:i:s')); //1410488596
+Yii::$app->formatter->asDatetime(date('Y-d-m h:i:s')); //Sep 12, 2014, 2:21:56 AM
+     *
+     * */
+
     /*                  */
     /*      Save        */
     public function saveOne($data){
@@ -82,6 +95,7 @@ class BlackList
         $this->model->time_add = new \yii\db\Expression('NOW()');
         $this->model->time_out = ((int)$data['time_out'] > 0)? new \yii\db\Expression("ADDDATE(NOW(),interval '" . (int)$data['time_out'] . "' DAY)"): '2283-03-02';
         if(!$this->model->save()) throw new HttpException(500,'error edit');
+        $this->model = \common\models\nztmodule3\base\WhiteAndBlackList::findOne($this->model->id);
         return $this->recordExist();
     }
     /*                  */

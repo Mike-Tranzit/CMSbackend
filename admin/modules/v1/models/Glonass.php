@@ -15,6 +15,7 @@ class Glonass
 {
     private $plate;
     private $provider = [1=>'Южные технологии', 2 => 'Порт-Транзит'];
+    private $provider_phone = [1=>'88002344044', 2 => '+79187626948'];
     private $model = NULL;
 
     public function __construct($plate)
@@ -25,7 +26,8 @@ class Glonass
 
     public function searchExist()
     {
-        return !$this->model ? [] : ['id' => $this->model->id,'provider'=> $this->provider[$this->model->provider],'balance'=>(int)$this->model->balance,'plate'=> $this->model->num_auto,'is_block'=>$this->initBlockModel(),'lat'=>$this->model->lat,'lon'=>$this->model->lon,'date_last_coordinate'=>$this->model->date_last_coordinate];
+
+        return !$this->model ? [] : ['provider_phone'=>$this->provider_phone[$this->model->provider],'provider'=> $this->provider[$this->model->provider],'balance'=>(int)$this->model->balance,'plate'=> \common\helpers\Plates::fromBase($this->model->num_auto),'is_flag'=>$this->model->flag == 1? 'Аккредитован':'Не аккредитован','tel'=>strlen($this->model->tel)>0? $this->model->tel: false,'fio'=>strlen($this->model->fio)>0? $this->model->fio: false,'date_cre' =>$this->model->dates, 'is_block'=>$this->initBlockModel(),'lat'=>$this->model->lat,'lon'=>$this->model->lon,'date_last_coordinate'=>$this->model->date_last_coordinate];
     }
 
     public function initBlockModel(){

@@ -12,50 +12,26 @@ return [
             'class' => $urlRule,
             'pluralize' => false,
             'controller' => [
-                'v1/login',
+                'v1/b'=>'v1/blacklist',
+                'v1/d'=>'v1/debtor',
+                'v1/a'=>'v1/autos',
+                'v1/l'=>'v1/login',
             ],
-            'only' => [
-                'auth',
-                'options'
+            'tokens' => [
+                '{id}' => '<id:\d+>'
             ],
-            'patterns' => [
-                'POST auth' => 'auth',
-                'OPTIONS auth' => 'options'
-            ]
-        ],
-        [
-            'class' => $urlRule,
-            'pluralize' => false,
-            'controller' => [
-                'v1/autos',
-            ],
-            'only' => [
-                'index',
-                'options',
-            ],
-            'patterns' => [
+            'extraPatterns' => [
                 'GET index' => 'index',
-                'OPTIONS index' => 'options'
-            ]
-        ],
-        [
-            'class' => $urlRule,
-            'pluralize' => false,
-            'controller' => [
-                'v1/blacklist',
-            ],
-            'only' => [
-                'save',
-                'edit',
-                'options',
-            ],
-            'patterns' => [
-                'PUT edit/<id:\d+>' => 'edit',
-                'OPTIONS edit/<id:\d+>' => 'options',
+                'GET terminal' => 'terminal',
+                'GET list' => 'list',
+                'POST change' => 'change',
+                'POST transfer' => 'transfer',
+                'POST auth' => 'auth',
+                'PUT edit/{id}' => 'edit',
+                'OPTIONS edit/{id}' => 'options',
                 'POST save' => 'save',
-                'OPTIONS save' => 'options'
+                'OPTIONS <action:\w+>' => 'options'
             ]
         ]
-
     ],
 ];

@@ -69,7 +69,7 @@ class Objects
 
            $m['glonass'] = $this->model->glonass;
            $m['priority_allow'] = 0;
-           if($this->model->status_m == 1 or 1==1){ // убрать
+           if($this->model->status_m == 1){ // убрать
                if((int)$this->model->status_person < 2){
                    $m['priority_allow'] = 1;
                }else {

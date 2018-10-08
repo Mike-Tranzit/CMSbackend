@@ -48,6 +48,7 @@ class Controller extends \yii\rest\ActiveController
     {
         $actions = parent::actions();
         $actions['verbs'] = $this->verbs();
+
         return $actions;
     }
 

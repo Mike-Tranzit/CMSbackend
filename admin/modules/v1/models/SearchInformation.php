@@ -11,6 +11,7 @@ use admin\modules\v1\models\BlackList;
 use admin\modules\v1\models\Autos;
 use admin\modules\v1\models\Glonass;
 use admin\modules\v1\models\Objects;
+use admin\modules\v1\models\Debtor;
 
 class SearchInformation
 {
@@ -24,11 +25,17 @@ class SearchInformation
     public function checkInBlackList(){
         $black = new BlackList($this->param);
         $this->result['black'] = $black->recordExist();
+        $this->result['load'] = true;
+    }
+
+    public function checkInDebtor(){
+        $black = new Debtor($this->param);
+        $this->result['debtor'] = $black->recordExist();
     }
 
     public function checkInAutosArchive(){
         $black = new Autos($this->param);
-        $this->result['autos'] = $black->searchExist();
+        $this->result['windows'] = $black->searchExist();
     }
 
     public function checkInGlonass(){
@@ -39,6 +46,12 @@ class SearchInformation
     public function checkInObjects(){
         $objects = new Objects($this->param);
         $this->result['objects'] = $objects->searchExist();
+    }
+
+    public function checkInObjectsTerminal(){
+        $objects = new Terminal($this->param);
+        $this->result['terminal'] = $objects->searchExist();
+        $this->result['window'] = $objects->searchExistWindow();
     }
 
     public function returnResult(){

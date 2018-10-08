@@ -72,6 +72,6 @@ class Information implements ITInformation
         $invoices = Invoices::find()->where(['userIdCreate' => $this->information['user']['id']])->andWhere(['<', 'datecreate', 'now() - interval 10 day'])->orderBy(['id' => SORT_DESC])->limit(10)->all();
         if ($invoices) {
             $this->information['invoices'] = ArrayHelper::toArray($invoices);
-        }
+        }else $this->information['invoices'] = [];
     }
 }

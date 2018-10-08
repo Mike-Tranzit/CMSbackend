@@ -72,7 +72,9 @@ class Users extends \yii\db\ActiveRecord implements IdentityInterface
     {
         $params = Params::getParamsForModelCode($model_key);
         if (!$params) return false;
-        return $params['table_name']::find()->where([$params['login_field'] => $username])->one();
+        $sql = $params['table_name']::find()->where([$params['login_field'] => $username]);
+        if(isset($params['extra_sql'])) $sql->andWhere($params['extra_sql']);
+        return $sql->one();
     }
 
     public function getId()

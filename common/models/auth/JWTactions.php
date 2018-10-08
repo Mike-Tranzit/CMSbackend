@@ -38,6 +38,7 @@ class JWTactions
                 'refresh_token' => $refresh_token
             ]
         ];
+        if($user->role && isset($user->role)) $data['data']['role'] = $user->role;
         $token = JWT::encode($data, $key, 'HS256');
         $active = Token::addRecord($user, $refresh_token, $expire, $model_name, $salt);
         if (!$active) {

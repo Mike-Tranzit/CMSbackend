@@ -71,6 +71,8 @@ use Yii;
  * @property int $allow_stevedore_change
  * @property int $organization
  * @property int $operator
+ * @property int $carrier
+ * @property string $license_number
  *
  * @property Mototelecommain[] $mototelecommains
  * @property NkhpExt[] $nkhpExts
@@ -92,13 +94,14 @@ class Objects extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['pid', 'status_m', 'status_person', 'status_auto', 'firm', 'culture', 'station', 'contract', 'contract_status', 'otkat', 'black_list', 'notice', 'pinokb', 'pinokp', 'pinok', 'remontstatus', 'remonttime', 'del', 'nat', 'glonass', 'nocash', 'is_nkhp', 'galina', 'isReturn', 'provider', 'allow_stevedore_change', 'organization', 'operator'], 'integer'],
+            [['pid', 'status_m', 'status_person', 'status_auto', 'firm', 'culture', 'station', 'contract', 'contract_status', 'otkat', 'black_list', 'notice', 'pinokb', 'pinokp', 'pinok', 'remontstatus', 'remonttime', 'del', 'nat', 'glonass', 'nocash', 'is_nkhp', 'galina', 'isReturn', 'provider', 'allow_stevedore_change', 'organization', 'operator', 'carrier'], 'integer'],
             [['date_from', 'time_from', 'date_to', 'time_to', 'date_to_podskok', 'time_to_podskok', 'date_from_podskok', 'time_from_podskok', 'date_to_nzt', 'time_to_nzt', 'date_from_nzt', 'time_from_nzt', 'date_cre', 'timepinokb', 'timepinokp', 'datepinokb', 'datepinokp', 'time_appro_to', 'date_appro_to', 'date_from_punkt', 'time_from_punkt', 'remont', 'del_time', 'del_date', 'dateReturn', 'date_from_nat', 'orderFromStividor', 'date_weighing_start', 'date_weighing_end'], 'safe'],
             [['num_doc', 'fio'], 'required'],
             [['num_doc', 'primech'], 'string'],
             [['mas'], 'number'],
             [['num_auto'], 'string', 'max' => 15],
             [['fio', 'tel'], 'string', 'max' => 255],
+            [['license_number'], 'string', 'max' => 20],
         ];
     }
 
@@ -172,6 +175,8 @@ class Objects extends \yii\db\ActiveRecord
             'allow_stevedore_change' => 'Allow Stevedore Change',
             'organization' => 'Organization',
             'operator' => 'Operator',
+            'carrier' => 'Carrier',
+            'license_number' => 'License Number',
         ];
     }
 

@@ -19,7 +19,8 @@ class Params
             'L4g4SER63' => [
                 'login_field' => 'login',
                 'table_name' => '\admin\modules\v1\models\base\Usersmodule',
-                'table_path' => 'nztmodule3.usersmodule'
+                'table_path' => 'nztmodule3.usersmodule',
+                'extra_sql' => '`role` in (7)'
             ]
         ];
 

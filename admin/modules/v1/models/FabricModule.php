@@ -17,8 +17,11 @@ class FabricModule
     {
         $this->params = $params;
         switch ($param) {
-            case 'search': $this->setModule('admin\modules\v1\models\SearchInformation'); break;
-            case 'blacklist': $this->setModule('admin\modules\v1\models\BlackListActions'); break;
+            case 'search': $this->setModule('\admin\modules\v1\models\SearchInformation'); break;
+            case 'blacklist': $this->setModule('\admin\modules\v1\models\BlackListActions'); break;
+            case 'debtor': $this->setModule('\admin\modules\v1\models\DebtorActions'); break;
+            case 'priority': $this->setModule('\admin\modules\v1\models\ObjectsActions'); break;
+            case 'transfer': $this->setModule('\admin\modules\v1\models\AutosActions'); break;
         }
     }
 
