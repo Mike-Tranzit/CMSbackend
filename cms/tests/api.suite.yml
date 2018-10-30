@@ -1,0 +1,4 @@
+actor: ApiTester
+modules:
+    enabled:
+        - \potok\tests\Helper\Api

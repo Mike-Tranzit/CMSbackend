@@ -26,7 +26,6 @@ class BlackList
 
     public function getCount(){
         $c = \common\models\nztmodule3\base\WhiteAndBlackList::find()->where('`num_auto`=:num_auto and wh=2', [":num_auto"=>$this->plate]);
-       // if($this->model) $c->andWhere('`id`!=:id',[":id"=>$this->model->id]);
         return (int)$c->count();
     }
 

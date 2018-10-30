@@ -73,7 +73,8 @@ class AutosActions
         return true;
     }
 
-    public function updateAndDeleteWindow(){
+    public function updateAndDeleteWindow()
+    {
         $autosArchive = \common\models\cms\base\AutosArchive::findOne($this->params['id']);
         $autosArchive->deleted = 2;
         $autosArchive->delete_date = new \yii\db\Expression('NOW()');
