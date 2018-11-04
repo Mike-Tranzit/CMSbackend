@@ -1,16 +1,16 @@
 <?php
 return [
     'components' => [
-       /*'db' => [
+        'db_glonass' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=potok-online.ru;dbname=zaytsevipo',
-            'username' => 'zaytsevipo',
-            'password' => '8TImsvtMR',
+            'dsn' => 'mysql:host=localhost;dbname=glonass',
+            'username' => 'root',
+            'password' => '',
             'charset' => 'utf8',
-        ],*/
+        ],
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii2advanced_test',
+            'dsn' => 'mysql:host=localhost;dbname=glonass',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',

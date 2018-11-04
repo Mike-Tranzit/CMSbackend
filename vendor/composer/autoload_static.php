@@ -30,6 +30,10 @@ class ComposerStaticInit3a21c804e9935fb6edea70e92969b55b
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'e' => 
+        array (
+            'etsoft\\yii2migrations\\' => 22,
+        ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
@@ -110,6 +114,10 @@ class ComposerStaticInit3a21c804e9935fb6edea70e92969b55b
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+        ),
+        'etsoft\\yii2migrations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/et-soft/yii2-migrations-create',
         ),
         'cebe\\markdown\\' => 
         array (
