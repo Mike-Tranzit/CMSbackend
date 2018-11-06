@@ -13,12 +13,12 @@ nbproject
 .buildpath
 .project
 .settings
-
+vendor
 # windows thumbnail cache
 Thumbs.db
 
 # composer vendor dir
-#/vendor
+/vendor
 
 # composer itself is not needed
 composer.phar

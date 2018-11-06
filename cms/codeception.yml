@@ -1,4 +1,4 @@
-namespace: potok\tests
+namespace: cms\tests
 actor: Tester
 paths:
     tests: tests
@@ -12,4 +12,6 @@ settings:
 modules:
     config:
         Yii2:
-            configFile: 'config/test-local.php'
+            configFile: 'config/test/test.php'
+            entryScript: index-test.php
+            cleanup: false

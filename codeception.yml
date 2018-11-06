@@ -3,7 +3,8 @@ include:
     - common
     - frontend
     - backend
-    - potok
+    - cms
+    - admin
 paths:
     log: console/runtime/logs
 settings:

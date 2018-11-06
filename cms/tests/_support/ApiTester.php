@@ -1,5 +1,5 @@
 <?php
-namespace potok\tests;
+namespace cms\tests;
 
 /**
  * Inherited Methods
