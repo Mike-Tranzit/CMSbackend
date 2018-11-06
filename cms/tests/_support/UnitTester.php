@@ -1,6 +1,6 @@
 <?php
-namespace backend\tests;
 
+namespace cms\tests;
 /**
  * Inherited Methods
  * @method void wantToTest($text)
@@ -18,7 +18,7 @@ namespace backend\tests;
  */
 class UnitTester extends \Codeception\Actor
 {
-    use _generated\UnitTesterActions;
+    use \cms\tests\_generated\UnitTesterActions;
    /**
     * Define custom actions here
     */
