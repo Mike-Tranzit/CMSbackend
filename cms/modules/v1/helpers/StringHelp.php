@@ -2,7 +2,7 @@
 
 namespace cms\modules\v1\helpers;
 
-class String
+class StringHelp
 {
 
     public static function fioToBase($value){

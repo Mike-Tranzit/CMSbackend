@@ -4,7 +4,7 @@ namespace admin\modules\v1\controllers;
 
 use Yii;
 require_once __DIR__ . '/../../../../common/models/auth/Users.php';
-use admin\modules\v1\helpers\String;
+use admin\modules\v1\helpers\StringHelp;
 use yii\web\HttpException;
 
 class LoginController extends Controller

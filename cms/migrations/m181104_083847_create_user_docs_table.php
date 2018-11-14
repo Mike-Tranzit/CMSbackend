@@ -12,14 +12,20 @@ class m181104_083847_create_user_docs_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('{{%user_docs}}', [
-            'user_id' => $this->primaryKey()->notNull(),
-            'company_name' => $this->string(255)->notNull(),
-            'inn' => $this->string(255)->notNull(),
-            'place' => $this->string(255),
-            'kpp' => $this->string(255),
-            'ogrn' => $this->string(255),
-        ]);
+        $tableName = $this->db->tablePrefix . 'glonass.user_docs';
+
+        $tableSchema = $this->db->getTableSchema($tableName, true);
+
+        if ($tableSchema === null) {
+            $this->createTable('{{%glonass.user_docs}}', [
+                'user_id' => $this->primaryKey()->notNull(),
+                'company_name' => $this->string(255)->notNull(),
+                'inn' => $this->string(255)->notNull(),
+                'place' => $this->string(255),
+                'kpp' => $this->string(255),
+                'ogrn' => $this->string(255),
+            ]);
+        }
     }
 
     /**

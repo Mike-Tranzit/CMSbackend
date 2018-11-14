@@ -1,4 +1,14 @@
 actor: ApiTester
 modules:
     enabled:
-        - \potok\tests\Helper\Api
+        - Asserts
+        - \cms\tests\Helper\Api
+        - REST:
+            depends: PhpBrowser
+            url: http://cms.info
+        - Yii2:
+            part: [orm, fixtures]
+            entryScript: index-test.php
+            cleanup: true
+    config:
+        - PhpBrowser

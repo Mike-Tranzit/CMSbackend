@@ -6,7 +6,7 @@ use Yii\helpers\ArrayHelper;
 use cms\modules\v1\models\base\Invoices;
 use cms\modules\v1\models\base\MobileRegistration;
 use cms\modules\v1\models\base\SubscriptionsActive;
-use cms\modules\v1\helpers\String;
+use cms\modules\v1\helpers\StringHelp;
 use Yii;
 use yii\web\HttpException;
 
@@ -30,7 +30,7 @@ class Information implements ITInformation
 
     public function __construct($login)
     {
-        $this->login = "+" . String::clearPhoneNumber($login);
+        $this->login = "+" . StringHelp::clearPhoneNumber($login);
     }
 
     public function concatDataAndReturn()
