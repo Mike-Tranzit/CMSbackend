@@ -12,15 +12,21 @@ class m181104_084025_create_subscriptions_active_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('{{%subscriptions_active}}', [
-            'id' => $this->primaryKey()->notNull(),
-            'user_id' => $this->integer(11)->notNull(),
-            'requests_left' => $this->integer(11)->notNull(),
-            'permanent' => $this->integer(11)->notNull(),
-            'plan_id' => $this->integer(11)->notNull(),
-            'add_date' => $this->dateTime(),
-            'burnout_date' => $this->dateTime(),
-        ]);
+        $tableName = $this->db->tablePrefix . 'glonass.subscriptions_active';
+
+        $tableSchema = $this->db->getTableSchema($tableName, true);
+
+        if ($tableSchema === null) {
+            $this->createTable('{{%glonass.subscriptions_active}}', [
+                'id' => $this->primaryKey()->notNull(),
+                'user_id' => $this->integer(11)->notNull(),
+                'requests_left' => $this->integer(11)->notNull(),
+                'permanent' => $this->integer(11)->notNull(),
+                'plan_id' => $this->integer(11)->notNull(),
+                'add_date' => $this->dateTime(),
+                'burnout_date' => $this->dateTime(),
+            ]);
+        }
     }
 
     /**

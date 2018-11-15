@@ -12,7 +12,12 @@ class m181104_083854_create_users_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('{{%users}}', [
+        $tableName = $this->db->tablePrefix . 'glonass.users';
+
+        $tableSchema = $this->db->getTableSchema($tableName, true);
+
+        if ($tableSchema === null) {
+        $this->createTable('{{%glonass.users}}', [
             'id' => $this->primaryKey()->notNull(),
             'login' => $this->string(50),
             'password' => $this->string(255),
@@ -29,7 +34,7 @@ class m181104_083854_create_users_table extends Migration
             'skype' => $this->string(255),
             'occupation' => $this->integer(2)->notNull(),
             'status_id' => $this->integer(11)->notNull()->defaultValue('2')->comment('vip status = 2'),
-            'balance' => $this->notNull()->defaultValue('0'),
+            'balance' => $this->decimal(10)->notNull()->defaultValue('0'),
             'status_expiry' => $this->dateTime()->defaultValue('2016-08-01 00:00:00'),
             'show_nat_services' => $this->integer(1)->notNull()->defaultValue('1'),
             'working_with_nds' => $this->integer(1)->notNull(),
@@ -38,12 +43,13 @@ class m181104_083854_create_users_table extends Migration
             'place_code' => $this->string(13),
             'region' => $this->string(255),
             'region_code' => $this->string(13),
-            'rating' => $this->notNull(),
+            'rating' => $this->float()->notNull(),
             'has_docs' => $this->integer(1)->notNull(),
             'forum_blocked' => $this->integer(1)->notNull(),
             'forum_block_expiry' => $this->dateTime(),
             'token_http' => $this->string(256)->notNull(),
         ]);
+        }
     }
 
     /**

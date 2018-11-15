@@ -7,7 +7,7 @@ use cms\modules\v1\models\base\Invoices;
 use cms\modules\v1\models\base\MobileRegistration;
 use cms\modules\v1\models\base\SubscriptionsActive;
 use cms\modules\v1\models\base\Users;
-use cms\modules\v1\helpers\String;
+use cms\modules\v1\helpers\StringHelp;
 use Yii;
 use yii\web\HttpException;
 

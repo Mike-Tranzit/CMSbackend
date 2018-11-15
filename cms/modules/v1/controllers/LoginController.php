@@ -4,7 +4,7 @@ namespace cms\modules\v1\controllers;
 
 use Yii;
 require_once __DIR__ . '/../../../../common/models/auth/Users.php';
-use cms\modules\v1\helpers\String;
+use cms\modules\v1\helpers\StringHelp;
 
 class LoginController extends Controller
 {
@@ -24,9 +24,10 @@ class LoginController extends Controller
     public function actionAuth()
     {
         $params = Yii::$app->request->getBodyParams();
-        $params['username'] = "+" . String::clearPhoneNumber($params['username']);
+        $params['username'] = "+" . StringHelp::clearPhoneNumber($params['username']);
         $model = new \common\models\auth\Users();
         $model->Auth($params);
+        if(!empty($model->auth_error)) return $model->auth_error;
         $model->checkRoleAndProvider();
         $token = $model->generateToken();
         return !isset($token['token'])? $token :['token'=>$token['token'],'Status'=>'success'];

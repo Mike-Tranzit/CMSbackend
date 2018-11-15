@@ -1,13 +1,14 @@
-POST http://backqueue.info/v1/login/auth
+POST http://cms.info/v1/login/auth
 content-type: application/json
 
 {
-	"username": "+78888888887",
-	"password": 1111
+	"username": "+79181111111",
+	"password": 1111,
+	"m_n": "K7sQjA8PE"
 }
 
 
 ###
 GET http://backqueue.info/v1/cultures/bystevedoreid/5
 content-type: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxdW90YXMiLCJpYXQiOjE1NDA5MDMyNzIsImp0aSI6IjE2VWNhS2JuZ3dTdSIsIm5iZiI6MTU0MDkwMzI3NywiZXhwIjoxNTQwOTc1Mjc3LCJkYXRhIjp7ImlkIjoyNjU2NywibmFtZSI6Ilx1MDQyMlx1MDQzNVx1MDQ0MVx1MDQ0MiIsInJvbGUiOjIsInNhbHQiOiI2Z3FvNTZhbmJpIiwibW9ubyI6MCwiZXhwb3J0ZXJfaWQiOjAsIm11bHRpX2V4cG9ydGVyIjowLCJzdGV2ZWRvcmVfYWRtaW4iOjAsInJlZnJlc2hfdG9rZW4iOiJwOXRtcTB0VVlqM2F0LWhwZVBZUnZIWFcifX0.A_PzrnadFDiOrtHrjwsS-w3W3d0ZQwqtf0PLX_iicj0
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjbXMiLCJpYXQiOjE1NDIyMjU2NzcsImp0aSI6IlpQZTlDTVU4OE9hWCIsIm5iZiI6MTU0MjIyNTY4MiwiZXhwIjoxNTQyMjk3NjgyLCJkYXRhIjp7ImlkIjozMCwibV9uIjoiSzdzUWpBOFBFIiwic2FsdCI6IkV5Zlc0RUZTZE8iLCJyZWZyZXNoX3Rva2VuIjoiWHJZV2Z0V2plQ3dycnFFRkY0REFnbk1uIiwicm9sZSI6Mn19.y8oMk8hA-iM-Lui0_YvKTeAi4NlOq7IqZC9-h80jq5M

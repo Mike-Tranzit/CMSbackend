@@ -14,4 +14,4 @@ modules:
         Yii2:
             configFile: 'config/test/test.php'
             entryScript: index-test.php
-            cleanup: false
+            cleanup: true

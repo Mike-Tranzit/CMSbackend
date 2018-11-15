@@ -1,10 +1,14 @@
 actor: ApiTester
 modules:
     enabled:
+        - Asserts
         - \cms\tests\Helper\Api
         - REST:
-            url: http://virtual-terminal-backend.info/
-            depends: Yii2
-            part: Json
+            depends: PhpBrowser
+            url: http://cms.info
+        - Yii2:
+            part: [orm, fixtures]
+            entryScript: index-test.php
+            cleanup: true
     config:
-        - Yii2
+        - PhpBrowser
