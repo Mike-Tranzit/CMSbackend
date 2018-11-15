@@ -220,8 +220,13 @@ class ComposerStaticInit22b6daa4f46428eb1c732ef5466ab84b
         ),
         'Codeception\\' => 
         array (
+<<<<<<< HEAD
             0 => __DIR__ . '/..' . '/codeception/codeception/src/Codeception',
             1 => __DIR__ . '/..' . '/codeception/stub/src',
+=======
+            0 => __DIR__ . '/..' . '/codeception/stub/src',
+            1 => __DIR__ . '/..' . '/codeception/codeception/src/Codeception',
+>>>>>>> tests
         ),
     );
 
@@ -808,10 +813,17 @@ class ComposerStaticInit22b6daa4f46428eb1c732ef5466ab84b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+<<<<<<< HEAD
             $loader->prefixLengthsPsr4 = ComposerStaticInit22b6daa4f46428eb1c732ef5466ab84b::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit22b6daa4f46428eb1c732ef5466ab84b::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit22b6daa4f46428eb1c732ef5466ab84b::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit22b6daa4f46428eb1c732ef5466ab84b::$classMap;
+=======
+            $loader->prefixLengthsPsr4 = ComposerStaticInit994b2d67d37fe41fb8fc7de6699789eb::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit994b2d67d37fe41fb8fc7de6699789eb::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit994b2d67d37fe41fb8fc7de6699789eb::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit994b2d67d37fe41fb8fc7de6699789eb::$classMap;
+>>>>>>> tests
 
         }, null, ClassLoader::class);
     }

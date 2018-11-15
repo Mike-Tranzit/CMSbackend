@@ -12,6 +12,15 @@ return array (
       '@yii/swiftmailer' => $vendorDir . '/yiisoft/yii2-swiftmailer',
     ),
   ),
+  'et-soft/yii2-migrations-create' => 
+  array (
+    'name' => 'et-soft/yii2-migrations-create',
+    'version' => '0.1.2.0',
+    'alias' => 
+    array (
+      '@etsoft/yii2migrations' => $vendorDir . '/et-soft/yii2-migrations-create',
+    ),
+  ),
   'yiisoft/yii2-bootstrap' => 
   array (
     'name' => 'yiisoft/yii2-bootstrap',
@@ -46,15 +55,6 @@ return array (
     'alias' => 
     array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
-    ),
-  ),
-  'et-soft/yii2-migrations-create' => 
-  array (
-    'name' => 'et-soft/yii2-migrations-create',
-    'version' => '0.1.2.0',
-    'alias' => 
-    array (
-      '@etsoft/yii2migrations' => $vendorDir . '/et-soft/yii2-migrations-create',
     ),
   ),
 );
