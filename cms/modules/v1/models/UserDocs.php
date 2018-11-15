@@ -14,7 +14,8 @@ class UserDocs extends \cms\modules\v1\models\base\UserDocs
             return ['user_id'=>$element->user_id,'company_name'=>$element->company_name,'login'=>$this->pipePhone($element->users->login)];
         });
     }
-    public function pipePhone($value){
+    
+    public function pipePhone($value) {
         return substr($value,0,2)." (".substr($value,2,3).") ".substr($value,5,2)."-".substr($value,7,2)."-".substr($value,9,3);
     }
 
@@ -22,10 +23,7 @@ class UserDocs extends \cms\modules\v1\models\base\UserDocs
         return $this->list;
     }
 
-    public function getUsers()
-    {
+    public function getUsers() {
         return $this->hasOne(\cms\modules\v1\models\base\Users::className(), ['id' => 'user_id']);
     }
-
-
 }

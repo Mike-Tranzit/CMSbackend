@@ -1,4 +1,10 @@
 actor: ApiTester
 modules:
     enabled:
-        - \potok\tests\Helper\Api
+        - \cms\tests\Helper\Api
+        - REST:
+            url: http://virtual-terminal-backend.info/
+            depends: Yii2
+            part: Json
+    config:
+        - Yii2
