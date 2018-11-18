@@ -15,3 +15,9 @@ modules:
             configFile: 'config/test/test.php'
             entryScript: index-test.php
             cleanup: true
+coverage:
+    enabled: true
+    whitelist:
+        include:
+            - modules/v1/models/*
+            - modules/v1/controllers/*

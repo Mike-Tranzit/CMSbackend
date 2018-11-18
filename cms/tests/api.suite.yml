@@ -5,10 +5,10 @@ modules:
         - \cms\tests\Helper\Api
         - REST:
             depends: PhpBrowser
-            url: http://cms.info
+            url: http://cms.info/v1/
         - Yii2:
             part: [orm, fixtures]
-            entryScript: index-test.php
+            entryScript: index.php
             cleanup: true
     config:
         - PhpBrowser

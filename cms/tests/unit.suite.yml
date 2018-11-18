@@ -4,3 +4,4 @@ modules:
       - Asserts
       - Yii2:
             part: [orm, email, fixtures]
+            url: http://cms.info/v1/

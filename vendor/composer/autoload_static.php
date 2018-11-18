@@ -240,6 +240,17 @@ class ComposerStaticInit22b6daa4f46428eb1c732ef5466ab84b
                 0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',
             ),
         ),
+        'F' => 
+        array (
+            'Flow\\JSONPath\\Test' => 
+            array (
+                0 => __DIR__ . '/..' . '/flow/jsonpath/tests',
+            ),
+            'Flow\\JSONPath' => 
+            array (
+                0 => __DIR__ . '/..' . '/flow/jsonpath/src',
+            ),
+        ),
         'D' => 
         array (
             'Diff' => 
