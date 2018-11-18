@@ -16,8 +16,10 @@ modules:
             entryScript: index-test.php
             cleanup: true
 coverage:
+    c3_url: 'http://localhost/CMSbackend/c3.php'
     enabled: true
-    whitelist:
-        include:
+    include:
             - modules/v1/models/*
             - modules/v1/controllers/*
+    exclude:
+            - modules/v1/models/base/*
