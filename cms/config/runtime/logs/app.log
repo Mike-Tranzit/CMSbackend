@@ -1,0 +1,506 @@
+2018-11-18 19:45:30 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] ReflectionException: Class \app\components\UrlRule does not exist in C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php:431
+Stack trace:
+#0 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(431): ReflectionClass->__construct('\\app\\components...')
+#1 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('\\app\\components...')
+#2 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('\\app\\components...', Array, Array)
+#3 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('\\app\\components...', Array, Array)
+#4 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(250): yii\BaseYii::createObject(Array)
+#5 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(191): yii\web\UrlManager->buildRules(Array)
+#6 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\UrlManager->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#9 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#10 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#11 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#12 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('urlManager', true)
+#13 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#14 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Request.php(272): yii\base\Application->getUrlManager()
+#15 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#16 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\Server\data\htdocs\CMSbackend\cms\web\index-test.php(17): yii\base\Application->run()
+#18 {main}
+
+Next yii\base\InvalidConfigException: Failed to instantiate component or class "\app\components\UrlRule". in C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php:433
+Stack trace:
+#0 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('\\app\\components...')
+#1 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('\\app\\components...', Array, Array)
+#2 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('\\app\\components...', Array, Array)
+#3 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(250): yii\BaseYii::createObject(Array)
+#4 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(191): yii\web\UrlManager->buildRules(Array)
+#5 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\UrlManager->init()
+#6 [internal function]: yii\base\BaseObject->__construct(Array)
+#7 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#8 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#9 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#10 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#11 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('urlManager', true)
+#12 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#13 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Request.php(272): yii\base\Application->getUrlManager()
+#14 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#15 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\Server\data\htdocs\CMSbackend\cms\web\index-test.php(17): yii\base\Application->run()
+#17 {main}
+2018-11-18 19:45:30 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'cms.info'
+    'HTTP_USER_AGENT' => 'Symfony BrowserKit'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Custom programs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Server\\data\\htdocs\\cept;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.5'
+    'SERVER_NAME' => 'cms.info'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Server/data/htdocs/CMSbackend/cms/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Server/data/htdocs/CMSbackend/cms/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Server/data/htdocs/CMSbackend/cms/web/index-test.php'
+    'REMOTE_PORT' => '51408'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index-test.php/login/auth'
+    'SCRIPT_NAME' => '/index-test.php'
+    'PATH_INFO' => '/login/auth'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\auth'
+    'PHP_SELF' => '/index-test.php/login/auth'
+    'REQUEST_TIME_FLOAT' => 1542570329.96
+    'REQUEST_TIME' => 1542570329
+]
+2018-11-18 19:45:32 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] ReflectionException: Class \app\components\UrlRule does not exist in C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php:431
+Stack trace:
+#0 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(431): ReflectionClass->__construct('\\app\\components...')
+#1 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('\\app\\components...')
+#2 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('\\app\\components...', Array, Array)
+#3 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('\\app\\components...', Array, Array)
+#4 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(250): yii\BaseYii::createObject(Array)
+#5 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(191): yii\web\UrlManager->buildRules(Array)
+#6 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\UrlManager->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#9 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#10 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#11 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#12 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('urlManager', true)
+#13 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#14 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Request.php(272): yii\base\Application->getUrlManager()
+#15 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#16 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\Server\data\htdocs\CMSbackend\cms\web\index-test.php(17): yii\base\Application->run()
+#18 {main}
+
+Next yii\base\InvalidConfigException: Failed to instantiate component or class "\app\components\UrlRule". in C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php:433
+Stack trace:
+#0 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('\\app\\components...')
+#1 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('\\app\\components...', Array, Array)
+#2 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('\\app\\components...', Array, Array)
+#3 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(250): yii\BaseYii::createObject(Array)
+#4 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(191): yii\web\UrlManager->buildRules(Array)
+#5 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\UrlManager->init()
+#6 [internal function]: yii\base\BaseObject->__construct(Array)
+#7 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#8 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#9 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#10 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#11 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('urlManager', true)
+#12 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#13 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Request.php(272): yii\base\Application->getUrlManager()
+#14 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#15 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\Server\data\htdocs\CMSbackend\cms\web\index-test.php(17): yii\base\Application->run()
+#17 {main}
+2018-11-18 19:45:31 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'cms.info'
+    'HTTP_USER_AGENT' => 'Symfony BrowserKit'
+    'CONTENT_TYPE' => 'application/json'
+    'CONTENT_LENGTH' => '61'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Custom programs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Server\\data\\htdocs\\cept;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.5'
+    'SERVER_NAME' => 'cms.info'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Server/data/htdocs/CMSbackend/cms/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Server/data/htdocs/CMSbackend/cms/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Server/data/htdocs/CMSbackend/cms/web/index-test.php'
+    'REMOTE_PORT' => '51421'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index-test.php/login/auth'
+    'SCRIPT_NAME' => '/index-test.php'
+    'PATH_INFO' => '/login/auth'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\auth'
+    'PHP_SELF' => '/index-test.php/login/auth'
+    'REQUEST_TIME_FLOAT' => 1542570331.742
+    'REQUEST_TIME' => 1542570331
+]
+2018-11-18 19:45:33 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] ReflectionException: Class \app\components\UrlRule does not exist in C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php:431
+Stack trace:
+#0 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(431): ReflectionClass->__construct('\\app\\components...')
+#1 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('\\app\\components...')
+#2 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('\\app\\components...', Array, Array)
+#3 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('\\app\\components...', Array, Array)
+#4 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(250): yii\BaseYii::createObject(Array)
+#5 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(191): yii\web\UrlManager->buildRules(Array)
+#6 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\UrlManager->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#9 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#10 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#11 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#12 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('urlManager', true)
+#13 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#14 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Request.php(272): yii\base\Application->getUrlManager()
+#15 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#16 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\Server\data\htdocs\CMSbackend\cms\web\index-test.php(17): yii\base\Application->run()
+#18 {main}
+
+Next yii\base\InvalidConfigException: Failed to instantiate component or class "\app\components\UrlRule". in C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php:433
+Stack trace:
+#0 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('\\app\\components...')
+#1 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('\\app\\components...', Array, Array)
+#2 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('\\app\\components...', Array, Array)
+#3 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(250): yii\BaseYii::createObject(Array)
+#4 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(191): yii\web\UrlManager->buildRules(Array)
+#5 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\UrlManager->init()
+#6 [internal function]: yii\base\BaseObject->__construct(Array)
+#7 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#8 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#9 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#10 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#11 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('urlManager', true)
+#12 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#13 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Request.php(272): yii\base\Application->getUrlManager()
+#14 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#15 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\Server\data\htdocs\CMSbackend\cms\web\index-test.php(17): yii\base\Application->run()
+#17 {main}
+2018-11-18 19:45:33 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'cms.info'
+    'HTTP_USER_AGENT' => 'Symfony BrowserKit'
+    'CONTENT_TYPE' => 'application/json'
+    'CONTENT_LENGTH' => '61'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Custom programs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Server\\data\\htdocs\\cept;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.5'
+    'SERVER_NAME' => 'cms.info'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Server/data/htdocs/CMSbackend/cms/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Server/data/htdocs/CMSbackend/cms/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Server/data/htdocs/CMSbackend/cms/web/index-test.php'
+    'REMOTE_PORT' => '51429'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index-test.php/login/auth'
+    'SCRIPT_NAME' => '/index-test.php'
+    'PATH_INFO' => '/login/auth'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\auth'
+    'PHP_SELF' => '/index-test.php/login/auth'
+    'REQUEST_TIME_FLOAT' => 1542570333.001
+    'REQUEST_TIME' => 1542570333
+]
+2018-11-18 19:48:59 [::1][-][-][error][yii\base\InvalidConfigException] ReflectionException: Class \app\components\UrlRule does not exist in C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php:431
+Stack trace:
+#0 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(431): ReflectionClass->__construct('\\app\\components...')
+#1 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('\\app\\components...')
+#2 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('\\app\\components...', Array, Array)
+#3 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('\\app\\components...', Array, Array)
+#4 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(250): yii\BaseYii::createObject(Array)
+#5 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(191): yii\web\UrlManager->buildRules(Array)
+#6 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\UrlManager->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#9 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#10 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#11 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#12 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('urlManager', true)
+#13 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#14 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Request.php(272): yii\base\Application->getUrlManager()
+#15 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#16 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\Server\data\htdocs\CMSbackend\cms\web\index-test.php(17): yii\base\Application->run()
+#18 {main}
+
+Next yii\base\InvalidConfigException: Failed to instantiate component or class "\app\components\UrlRule". in C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php:433
+Stack trace:
+#0 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('\\app\\components...')
+#1 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('\\app\\components...', Array, Array)
+#2 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('\\app\\components...', Array, Array)
+#3 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(250): yii\BaseYii::createObject(Array)
+#4 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(191): yii\web\UrlManager->buildRules(Array)
+#5 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\UrlManager->init()
+#6 [internal function]: yii\base\BaseObject->__construct(Array)
+#7 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#8 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#9 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#10 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#11 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('urlManager', true)
+#12 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#13 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Request.php(272): yii\base\Application->getUrlManager()
+#14 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#15 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\Server\data\htdocs\CMSbackend\cms\web\index-test.php(17): yii\base\Application->run()
+#17 {main}
+2018-11-18 19:48:59 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Symfony BrowserKit'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Custom programs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Server\\data\\htdocs\\cept;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.5'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Server/data/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Server/data/htdocs'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/Server/data/htdocs/CMSbackend/cms/web/index-test.php'
+    'REMOTE_PORT' => '51771'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/CMSbackend/cms/web/index-test.php/login/auth'
+    'SCRIPT_NAME' => '/CMSbackend/cms/web/index-test.php'
+    'PATH_INFO' => '/login/auth'
+    'PATH_TRANSLATED' => 'C:\\Server\\data\\htdocs\\login\\auth'
+    'PHP_SELF' => '/CMSbackend/cms/web/index-test.php/login/auth'
+    'REQUEST_TIME_FLOAT' => 1542570539.115
+    'REQUEST_TIME' => 1542570539
+]
+2018-11-18 19:49:00 [::1][-][-][error][yii\base\InvalidConfigException] ReflectionException: Class \app\components\UrlRule does not exist in C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php:431
+Stack trace:
+#0 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(431): ReflectionClass->__construct('\\app\\components...')
+#1 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('\\app\\components...')
+#2 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('\\app\\components...', Array, Array)
+#3 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('\\app\\components...', Array, Array)
+#4 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(250): yii\BaseYii::createObject(Array)
+#5 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(191): yii\web\UrlManager->buildRules(Array)
+#6 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\UrlManager->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#9 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#10 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#11 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#12 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('urlManager', true)
+#13 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#14 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Request.php(272): yii\base\Application->getUrlManager()
+#15 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#16 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\Server\data\htdocs\CMSbackend\cms\web\index-test.php(17): yii\base\Application->run()
+#18 {main}
+
+Next yii\base\InvalidConfigException: Failed to instantiate component or class "\app\components\UrlRule". in C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php:433
+Stack trace:
+#0 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('\\app\\components...')
+#1 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('\\app\\components...', Array, Array)
+#2 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('\\app\\components...', Array, Array)
+#3 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(250): yii\BaseYii::createObject(Array)
+#4 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(191): yii\web\UrlManager->buildRules(Array)
+#5 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\UrlManager->init()
+#6 [internal function]: yii\base\BaseObject->__construct(Array)
+#7 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#8 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#9 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#10 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#11 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('urlManager', true)
+#12 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#13 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Request.php(272): yii\base\Application->getUrlManager()
+#14 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#15 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\Server\data\htdocs\CMSbackend\cms\web\index-test.php(17): yii\base\Application->run()
+#17 {main}
+2018-11-18 19:49:00 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Symfony BrowserKit'
+    'CONTENT_TYPE' => 'application/json'
+    'CONTENT_LENGTH' => '61'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Custom programs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Server\\data\\htdocs\\cept;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.5'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Server/data/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Server/data/htdocs'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/Server/data/htdocs/CMSbackend/cms/web/index-test.php'
+    'REMOTE_PORT' => '51782'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/CMSbackend/cms/web/index-test.php/login/auth'
+    'SCRIPT_NAME' => '/CMSbackend/cms/web/index-test.php'
+    'PATH_INFO' => '/login/auth'
+    'PATH_TRANSLATED' => 'C:\\Server\\data\\htdocs\\login\\auth'
+    'PHP_SELF' => '/CMSbackend/cms/web/index-test.php/login/auth'
+    'REQUEST_TIME_FLOAT' => 1542570540.393
+    'REQUEST_TIME' => 1542570540
+]
+2018-11-18 19:49:02 [::1][-][-][error][yii\base\InvalidConfigException] ReflectionException: Class \app\components\UrlRule does not exist in C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php:431
+Stack trace:
+#0 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(431): ReflectionClass->__construct('\\app\\components...')
+#1 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('\\app\\components...')
+#2 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('\\app\\components...', Array, Array)
+#3 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('\\app\\components...', Array, Array)
+#4 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(250): yii\BaseYii::createObject(Array)
+#5 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(191): yii\web\UrlManager->buildRules(Array)
+#6 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\UrlManager->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#9 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#10 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#11 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#12 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('urlManager', true)
+#13 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#14 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Request.php(272): yii\base\Application->getUrlManager()
+#15 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#16 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\Server\data\htdocs\CMSbackend\cms\web\index-test.php(17): yii\base\Application->run()
+#18 {main}
+
+Next yii\base\InvalidConfigException: Failed to instantiate component or class "\app\components\UrlRule". in C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php:433
+Stack trace:
+#0 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('\\app\\components...')
+#1 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('\\app\\components...', Array, Array)
+#2 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('\\app\\components...', Array, Array)
+#3 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(250): yii\BaseYii::createObject(Array)
+#4 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\UrlManager.php(191): yii\web\UrlManager->buildRules(Array)
+#5 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\UrlManager->init()
+#6 [internal function]: yii\base\BaseObject->__construct(Array)
+#7 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#8 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#9 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#10 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#11 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('urlManager', true)
+#12 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#13 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Request.php(272): yii\base\Application->getUrlManager()
+#14 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#15 C:\Server\data\htdocs\CMSbackend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\Server\data\htdocs\CMSbackend\cms\web\index-test.php(17): yii\base\Application->run()
+#17 {main}
+2018-11-18 19:49:01 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Symfony BrowserKit'
+    'CONTENT_TYPE' => 'application/json'
+    'CONTENT_LENGTH' => '61'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Custom programs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Server\\data\\htdocs\\cept;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.5'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Server/data/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Server/data/htdocs'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/Server/data/htdocs/CMSbackend/cms/web/index-test.php'
+    'REMOTE_PORT' => '51793'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/CMSbackend/cms/web/index-test.php/login/auth'
+    'SCRIPT_NAME' => '/CMSbackend/cms/web/index-test.php'
+    'PATH_INFO' => '/login/auth'
+    'PATH_TRANSLATED' => 'C:\\Server\\data\\htdocs\\login\\auth'
+    'PHP_SELF' => '/CMSbackend/cms/web/index-test.php/login/auth'
+    'REQUEST_TIME_FLOAT' => 1542570541.64
+    'REQUEST_TIME' => 1542570541
+]
