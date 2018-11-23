@@ -14,9 +14,9 @@ modules:
         Yii2:
             configFile: 'config/test/test.php'
             entryScript: index-test.php
-            cleanup: true
+            cleanup: false
 coverage:
-    c3_url: 'http://localhost/CMSbackend/c3.php'
+    c3_url: http://localhost/materialCMSapi/cms/web/index-test.php
     enabled: true
     include:
             - modules/v1/models/*

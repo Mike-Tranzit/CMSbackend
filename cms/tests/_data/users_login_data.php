@@ -1,6 +1,7 @@
 <?php
 return [
     [
+        'id' => 10129,
         'login' => '+79184868905',
         'password' => 'b59c67bf196a4758191e42f76670ceba',
         'occupation' => 4,
@@ -16,6 +17,7 @@ return [
         'forum_blocked' => 0
     ],
     [
+        'id' => 10130,
         'login' => '+79184868906',
         'password' => 'b59c67bf196a4758191e42f76670ceba',
         'occupation' => 4,
