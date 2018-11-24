@@ -3,36 +3,6 @@ $coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
 $coverage->setData(array (
   'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\Information.php' => 
   array (
-    32 => 
-    array (
-    ),
-    33 => 
-    array (
-    ),
-    34 => 
-    array (
-    ),
-    37 => 
-    array (
-    ),
-    38 => 
-    array (
-    ),
-    39 => 
-    array (
-    ),
-    42 => 
-    array (
-    ),
-    43 => 
-    array (
-    ),
-    44 => 
-    array (
-    ),
-    45 => 
-    array (
-    ),
     46 => 
     array (
     ),
@@ -42,16 +12,16 @@ $coverage->setData(array (
     48 => 
     array (
     ),
-    49 => 
-    array (
-    ),
-    50 => 
-    array (
-    ),
     51 => 
     array (
     ),
     52 => 
+    array (
+    ),
+    53 => 
+    array (
+    ),
+    54 => 
     array (
     ),
     55 => 
@@ -72,7 +42,7 @@ $coverage->setData(array (
     60 => 
     array (
     ),
-    63 => 
+    61 => 
     array (
     ),
     64 => 
@@ -90,7 +60,7 @@ $coverage->setData(array (
     68 => 
     array (
     ),
-    71 => 
+    69 => 
     array (
     ),
     72 => 
@@ -106,6 +76,27 @@ $coverage->setData(array (
     array (
     ),
     76 => 
+    array (
+    ),
+    77 => 
+    array (
+    ),
+    80 => 
+    array (
+    ),
+    81 => 
+    array (
+    ),
+    82 => 
+    array (
+    ),
+    83 => 
+    array (
+    ),
+    84 => 
+    array (
+    ),
+    85 => 
     array (
     ),
   ),
@@ -144,52 +135,7 @@ $coverage->setData(array (
     29 => 
     array (
     ),
-    32 => 
-    array (
-    ),
-    33 => 
-    array (
-    ),
-    34 => 
-    array (
-    ),
-    35 => 
-    array (
-    ),
-    36 => 
-    array (
-    ),
-    37 => 
-    array (
-    ),
-    38 => 
-    array (
-    ),
-    39 => 
-    array (
-    ),
-    40 => 
-    array (
-    ),
-    43 => 
-    array (
-    ),
-    44 => 
-    array (
-    ),
-    45 => 
-    array (
-    ),
-    46 => 
-    array (
-    ),
-    47 => 
-    array (
-    ),
-    48 => 
-    array (
-    ),
-    49 => 
+    51 => 
     array (
     ),
     52 => 
@@ -204,10 +150,10 @@ $coverage->setData(array (
     55 => 
     array (
     ),
-    58 => 
+    56 => 
     array (
     ),
-    59 => 
+    57 => 
     array (
     ),
     60 => 
@@ -222,12 +168,6 @@ $coverage->setData(array (
     63 => 
     array (
     ),
-    64 => 
-    array (
-    ),
-    65 => 
-    array (
-    ),
     66 => 
     array (
     ),
@@ -235,6 +175,12 @@ $coverage->setData(array (
     array (
     ),
     68 => 
+    array (
+    ),
+    69 => 
+    array (
+    ),
+    70 => 
     array (
     ),
     71 => 
@@ -249,10 +195,13 @@ $coverage->setData(array (
     74 => 
     array (
     ),
-    77 => 
+    75 => 
     array (
     ),
-    78 => 
+    76 => 
+    array (
+    ),
+    79 => 
     array (
     ),
     80 => 
@@ -264,13 +213,13 @@ $coverage->setData(array (
     82 => 
     array (
     ),
-    84 => 
-    array (
-    ),
     85 => 
     array (
     ),
     86 => 
+    array (
+    ),
+    88 => 
     array (
     ),
     89 => 
@@ -279,34 +228,34 @@ $coverage->setData(array (
     90 => 
     array (
     ),
-    91 => 
-    array (
-    ),
     92 => 
     array (
     ),
-    95 => 
+    93 => 
     array (
     ),
-    96 => 
+    94 => 
     array (
     ),
     97 => 
     array (
     ),
+    98 => 
+    array (
+    ),
+    99 => 
+    array (
+    ),
     100 => 
     array (
     ),
-    101 => 
+    103 => 
     array (
     ),
-    102 => 
+    104 => 
     array (
     ),
     105 => 
-    array (
-    ),
-    106 => 
     array (
     ),
     108 => 
@@ -315,10 +264,7 @@ $coverage->setData(array (
     109 => 
     array (
     ),
-    111 => 
-    array (
-    ),
-    112 => 
+    110 => 
     array (
     ),
     113 => 
@@ -327,16 +273,10 @@ $coverage->setData(array (
     114 => 
     array (
     ),
-    115 => 
-    array (
-    ),
     116 => 
     array (
     ),
     117 => 
-    array (
-    ),
-    118 => 
     array (
     ),
     119 => 
@@ -346,6 +286,9 @@ $coverage->setData(array (
     array (
     ),
     121 => 
+    array (
+    ),
+    122 => 
     array (
     ),
     123 => 
@@ -366,6 +309,9 @@ $coverage->setData(array (
     128 => 
     array (
     ),
+    129 => 
+    array (
+    ),
     131 => 
     array (
     ),
@@ -378,148 +324,40 @@ $coverage->setData(array (
     134 => 
     array (
     ),
-    137 => 
+    135 => 
     array (
     ),
-    138 => 
+    136 => 
     array (
     ),
     139 => 
     array (
     ),
+    140 => 
+    array (
+    ),
+    141 => 
+    array (
+    ),
+    142 => 
+    array (
+    ),
+    145 => 
+    array (
+    ),
+    146 => 
+    array (
+    ),
+    147 => 
+    array (
+    ),
   ),
   'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\Profile.php' => 
   array (
-    20 => 
-    array (
-    ),
-    21 => 
-    array (
-    ),
-    22 => 
-    array (
-    ),
-    23 => 
-    array (
-    ),
-    24 => 
-    array (
-    ),
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-    31 => 
-    array (
-    ),
-    32 => 
-    array (
-    ),
-    33 => 
-    array (
-    ),
-    34 => 
-    array (
-    ),
-    35 => 
-    array (
-    ),
     36 => 
     array (
     ),
     37 => 
-    array (
-    ),
-    40 => 
-    array (
-    ),
-    41 => 
-    array (
-    ),
-  ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\UserDocs.php' => 
-  array (
-    11 => 
-    array (
-    ),
-    12 => 
-    array (
-    ),
-    14 => 
-    array (
-    ),
-    15 => 
-    array (
-    ),
-    16 => 
-    array (
-    ),
-    18 => 
-    array (
-    ),
-    19 => 
-    array (
-    ),
-    22 => 
-    array (
-    ),
-    23 => 
-    array (
-    ),
-    26 => 
-    array (
-    ),
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-  ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\Controller.php' => 
-  array (
-    25 => 
-    array (
-    ),
-    26 => 
-    array (
-    ),
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-    29 => 
-    array (
-    ),
-    30 => 
-    array (
-    ),
-    31 => 
-    array (
-    ),
-    32 => 
-    array (
-    ),
-    33 => 
-    array (
-    ),
-    34 => 
-    array (
-    ),
-    35 => 
-    array (
-    ),
-    36 => 
-    array (
-    ),
-    37 => 
-    array (
-    ),
-    38 => 
     array (
     ),
     40 => 
@@ -534,40 +372,76 @@ $coverage->setData(array (
     43 => 
     array (
     ),
-    65 => 
+    44 => 
     array (
     ),
-    66 => 
+    45 => 
     array (
     ),
-    69 => 
+    46 => 
     array (
     ),
-    70 => 
+    49 => 
     array (
     ),
-    71 => 
+    50 => 
     array (
     ),
-    72 => 
+  ),
+  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\UserDocs.php' => 
+  array (
+    12 => 
     array (
     ),
-    73 => 
+    13 => 
     array (
     ),
+    15 => 
+    array (
+    ),
+    16 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+  ),
+  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\Controller.php' => 
+  array (
     76 => 
     array (
     ),
     77 => 
     array (
     ),
+    78 => 
+    array (
+    ),
     79 => 
     array (
     ),
-    81 => 
-    array (
-    ),
-    82 => 
+    80 => 
     array (
     ),
     83 => 
@@ -576,10 +450,7 @@ $coverage->setData(array (
     84 => 
     array (
     ),
-    85 => 
-    array (
-    ),
-    87 => 
+    86 => 
     array (
     ),
     88 => 
@@ -591,10 +462,16 @@ $coverage->setData(array (
     90 => 
     array (
     ),
-    93 => 
+    91 => 
+    array (
+    ),
+    92 => 
     array (
     ),
     94 => 
+    array (
+    ),
+    95 => 
     array (
     ),
     96 => 
@@ -603,16 +480,10 @@ $coverage->setData(array (
     97 => 
     array (
     ),
-    98 => 
-    array (
-    ),
-    99 => 
+    100 => 
     array (
     ),
     101 => 
-    array (
-    ),
-    102 => 
     array (
     ),
     103 => 
@@ -621,7 +492,13 @@ $coverage->setData(array (
     104 => 
     array (
     ),
-    107 => 
+    105 => 
+    array (
+    ),
+    106 => 
+    array (
+    ),
+    108 => 
     array (
     ),
     109 => 
@@ -633,13 +510,10 @@ $coverage->setData(array (
     111 => 
     array (
     ),
-    113 => 
-    array (
-    ),
     114 => 
     array (
     ),
-    115 => 
+    116 => 
     array (
     ),
     117 => 
@@ -648,19 +522,34 @@ $coverage->setData(array (
     118 => 
     array (
     ),
-    119 => 
+    120 => 
     array (
     ),
-    145 => 
+    121 => 
     array (
     ),
-    149 => 
+    122 => 
     array (
     ),
-    151 => 
+    124 => 
+    array (
+    ),
+    125 => 
+    array (
+    ),
+    126 => 
     array (
     ),
     152 => 
+    array (
+    ),
+    156 => 
+    array (
+    ),
+    158 => 
+    array (
+    ),
+    159 => 
     array (
     ),
   ),

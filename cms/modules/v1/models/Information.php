@@ -28,6 +28,15 @@ class Information implements ITInformation
     private $information = [];
     private $confirm = ['не подтвержден','подтвержден'];
 
+    
+    /**
+     * __construct
+     *
+     * @param  mixed $login
+     * @codeCoverageIgnore
+	 * @ignore Codeception specific
+     * @return void
+     */
     public function __construct($login)
     {
         $this->login = "+" . StringHelp::clearPhoneNumber($login);

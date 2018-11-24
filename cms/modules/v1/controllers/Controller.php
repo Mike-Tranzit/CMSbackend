@@ -21,6 +21,13 @@ class Controller extends \yii\rest\ActiveController
 
 	public $forbiddenMessage = 'You do not have the privileges to perform that action.';
 
+	
+	/**
+	 * behaviors
+	 * @codeCoverageIgnore
+	 * @ignore Codeception specific
+	 * @return void
+	 */
 	public function behaviors()
 	{
 		$behaviors = parent::behaviors();

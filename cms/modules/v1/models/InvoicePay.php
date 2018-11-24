@@ -28,6 +28,14 @@ class InvoicePay extends \cms\modules\v1\models\base\Invoices
     private $subscriptionsActive = null;
     private $dateExpire;
 
+    /**
+     * __construct
+     *
+     * @param  mixed $id
+     * @codeCoverageIgnore
+	 * @ignore Codeception specific
+     * @return void
+     */
     public function __construct($id)
     {
         $this->invoice = \cms\modules\v1\models\base\Invoices::find()->where(['id' => $id])->andWhere(['status' => 0])->one();

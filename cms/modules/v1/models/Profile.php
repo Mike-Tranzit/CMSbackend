@@ -16,6 +16,15 @@ class Profile
 {
     private $user = null;
     public $information = [];
+    /**
+     * __construct
+     *
+     * @param  mixed $id
+     * @param  mixed $data
+     * @codeCoverageIgnore
+	 * @ignore Codeception specific
+     * @return void
+     */
     public function __construct($id,$data)
     {
         $this->user = Users::findOne($id);

@@ -21,7 +21,8 @@
         "firebase/php-jwt": "^5.0",
         "et-soft/yii2-migrations-create": "*",
         "codeception/codeception": "^2.5",
-        "flow/jsonpath": "^0.4.0"
+        "flow/jsonpath": "^0.4.0",
+        "codeception/c3": "^2.4"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
