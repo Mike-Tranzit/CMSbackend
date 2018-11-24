@@ -8,7 +8,8 @@ modules:
             url: http://cms.info/v1/
         - Yii2:
             part: [orm, fixtures]
-            entryScript: index.php
+            entryScript: index-test.php
             cleanup: true
+            populate: false
     config:
         - PhpBrowser
