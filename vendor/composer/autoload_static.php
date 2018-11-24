@@ -81,6 +81,7 @@ class ComposerStaticInit51a1b06c4b8af759555b9ac933723e84
         ),
         'C' => 
         array (
+            'Codeception\\c3\\' => 15,
             'Codeception\\PHPUnit\\' => 20,
             'Codeception\\Extension\\' => 22,
             'Codeception\\' => 12,
@@ -210,6 +211,10 @@ class ComposerStaticInit51a1b06c4b8af759555b9ac933723e84
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'Codeception\\c3\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/codeception/c3',
+        ),
         'Codeception\\PHPUnit\\' => 
         array (
             0 => __DIR__ . '/..' . '/codeception/phpunit-wrapper/src',
@@ -238,6 +243,17 @@ class ComposerStaticInit51a1b06c4b8af759555b9ac933723e84
             'HTMLPurifier' => 
             array (
                 0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',
+            ),
+        ),
+        'F' => 
+        array (
+            'Flow\\JSONPath\\Test' => 
+            array (
+                0 => __DIR__ . '/..' . '/flow/jsonpath/tests',
+            ),
+            'Flow\\JSONPath' => 
+            array (
+                0 => __DIR__ . '/..' . '/flow/jsonpath/src',
             ),
         ),
         'D' => 

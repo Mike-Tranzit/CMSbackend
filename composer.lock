@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0b3a85f80fc4392e5c8e95803ff093b",
+    "content-hash": "7d4152422b5886d610a11f2fa23f96bd",
     "packages": [
         {
             "name": "behat/gherkin",
@@ -114,11 +114,7 @@
             "version": "3.2.1",
             "source": {
                 "type": "git",
-<<<<<<< HEAD
                 "url": "https://github.com/jquery/jquery-dist.git",
-=======
-                "url": "git@github.com:jquery/jquery-dist.git",
->>>>>>> b900dcc3ad0d6340b493fa5a5aa2ba841b0054ee
                 "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e"
             },
             "dist": {
@@ -172,7 +168,6 @@
         },
         {
             "name": "cebe/markdown",
-<<<<<<< HEAD
             "version": "1.2.1",
             "source": {
                 "type": "git",
@@ -183,18 +178,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/cebe/markdown/zipball/9bac5e971dd391e2802dca5400bbeacbaea9eb86",
                 "reference": "9bac5e971dd391e2802dca5400bbeacbaea9eb86",
-=======
-            "version": "1.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cebe/markdown.git",
-                "reference": "25b28bae8a6f185b5030673af77b32e1163d5c6e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cebe/markdown/zipball/25b28bae8a6f185b5030673af77b32e1163d5c6e",
-                "reference": "25b28bae8a6f185b5030673af77b32e1163d5c6e",
->>>>>>> b900dcc3ad0d6340b493fa5a5aa2ba841b0054ee
                 "shasum": ""
             },
             "require": {
@@ -212,11 +195,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "1.2.x-dev"
-=======
-                    "dev-master": "1.1.x-dev"
->>>>>>> b900dcc3ad0d6340b493fa5a5aa2ba841b0054ee
                 }
             },
             "autoload": {
@@ -245,11 +224,57 @@
                 "markdown",
                 "markdown-extra"
             ],
-<<<<<<< HEAD
             "time": "2018-03-26T11:24:36+00:00"
-=======
-            "time": "2017-07-16T21:13:23+00:00"
->>>>>>> b900dcc3ad0d6340b493fa5a5aa2ba841b0054ee
+        },
+        {
+            "name": "codeception/c3",
+            "version": "2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Codeception/c3.git",
+                "reference": "d841be32a6785e2f565b9f88f5ff36c905931a9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Codeception/c3/zipball/d841be32a6785e2f565b9f88f5ff36c905931a9a",
+                "reference": "d841be32a6785e2f565b9f88f5ff36c905931a9a",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": ">=5.4.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Codeception\\c3\\Installer"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Codeception\\c3\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tiger Seo",
+                    "email": "tiger.seo@gmail.com"
+                },
+                {
+                    "name": "Michael Bodnarchuk",
+                    "email": "davert.php@codegyre.com",
+                    "homepage": "http://codegyre.com"
+                }
+            ],
+            "description": "CodeCoverage collector for Codeception",
+            "homepage": "http://codeception.com/",
+            "keywords": [
+                "code coverage",
+                "codecoverage"
+            ],
+            "time": "2018-05-26T22:34:28+00:00"
         },
         {
             "name": "codeception/codeception",
@@ -660,8 +685,6 @@
             "time": "2017-06-27T22:17:23+00:00"
         },
         {
-<<<<<<< HEAD
-=======
             "name": "flow/jsonpath",
             "version": "0.4.0",
             "source": {
@@ -703,7 +726,6 @@
             "time": "2018-03-04T16:39:47+00:00"
         },
         {
->>>>>>> b900dcc3ad0d6340b493fa5a5aa2ba841b0054ee
             "name": "guzzlehttp/guzzle",
             "version": "6.3.3",
             "source": {
