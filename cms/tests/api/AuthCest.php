@@ -11,6 +11,8 @@ class AuthCest
     const PASSWORD = 1111;
     const AUTH_URL = 'login/auth';
     const GET_AFTER_AUTH_URL = 'zernovozam/userdocslist';
+    private $_token = 'false';
+
 
     public function _before(ApiTester $I)
     {
@@ -50,7 +52,7 @@ class AuthCest
         expect("request return Error status", $status['Status'])->equals("error");
     }
 
-    public function testSuccess(ApiTester $I)
+    public function success(ApiTester $I)
     {
         $I->wantTo('want to success autorizate');
 
@@ -67,15 +69,16 @@ class AuthCest
         expect("result has Token key", $status)->hasKey('token');
         expect("result it is a string", $status['token'])->internalType(IsType::TYPE_STRING);
 
-        return $status['token'];
+        $this->_token = $status['token'];
     }
 
     /**
-     * @depends testSuccess
+     * @param ApiTester $I
      */
-    public function trySeePageAfterSuccessLogin(ApiTester $I, $token)
+    public function trySeePageAfterSuccessLogin(ApiTester $I)
     {
-        $I->amBearerAuthenticated($token);
+        expect("Token is not empty", $this->_token)->notContains('false');
+        $I->amBearerAuthenticated($this->_token);
         $I->sendGET(self::GET_AFTER_AUTH_URL);
         $I->seeResponseCodeIsSuccessful();
     }
