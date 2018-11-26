@@ -1,7 +1,8 @@
 <?php 
 namespace cms\models\tests;
-use \cms\modules\v1\models\UserDocs;
 
+use \cms\modules\v1\models\UserDocs;
+use \common\fixtures\UserDocsFixture;
 class DocsTest extends \Codeception\Test\Unit
 {
     use \Codeception\Specify;
@@ -11,9 +12,20 @@ class DocsTest extends \Codeception\Test\Unit
     protected $tester;
     protected $model;
 
+    public function _fixtures()
+    {
+        return [
+            'profiles' => [
+                'class' => UserDocsFixture::className(),
+                'dataFile' => codecept_data_dir() . 'user_docs.php'
+            ],
+        ];
+    }
+
     protected function _before()
     {
         $this->model = new UserDocs();
+
     }
 
     protected function _after()
@@ -31,7 +43,7 @@ class DocsTest extends \Codeception\Test\Unit
     /**
      * @test
      */
-    public function nasAttributeAndEmptyInitListModel()
+    public function hasAttributeAndEmptyInitListModel()
     {
         expect('have attribute list', $this->model)->hasAttribute('list');
         expect('want see list is empty', $this->model->getList())->isEmpty();
@@ -40,5 +52,14 @@ class DocsTest extends \Codeception\Test\Unit
         //     $this->model->list[] = ['test'];
         //     expect('want see list is empty', $this->model->getList())->notEmpty();
         // });
+    }
+
+    /**
+     * @test
+     */
+    public function loadListWillReturnArray()
+    {
+        $this->model->loadList();
+        expect('check count after add temp record', $this->model->getList())->notEmpty();
     }
 }
