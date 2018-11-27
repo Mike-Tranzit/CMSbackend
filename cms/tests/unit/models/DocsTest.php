@@ -62,4 +62,10 @@ class DocsTest extends \Codeception\Test\Unit
         $this->model->loadList();
         expect('check count after add temp record', $this->model->getList())->notEmpty();
     }
+
+    public function testPipePhone()
+    {
+        $phone = $this->model->pipePhone('+79184868904');
+        expect($phone)->equals('+7 (918) 48-68-904');
+    }
 }
