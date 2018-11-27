@@ -31,7 +31,7 @@ class DocsTest extends \Codeception\Test\Unit
     /**
      * @test
      */
-    public function nasAttributeAndEmptyInitListModel()
+    public function hasAttributeAndEmptyInitListModel()
     {
         expect('have attribute list', $this->model)->hasAttribute('list');
         expect('want see list is empty', $this->model->getList())->isEmpty();
