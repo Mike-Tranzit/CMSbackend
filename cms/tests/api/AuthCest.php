@@ -1,10 +1,12 @@
 <?php 
 namespace cms\tests;
+
 use cms\tests\ApiTester;
 use common\fixtures\UsersFixture;
 
 use PHPUnit\Framework\Constraint\IsType;
 use Codeception\Util\HttpCode;
+
 class AuthCest
 {
     const TABLE_TOKEN = 'K7sQjA8PE';
@@ -12,18 +14,23 @@ class AuthCest
     const AUTH_URL = 'login/auth';
     const GET_AFTER_AUTH_URL = 'zernovozam/userdocslist';
     private $_token = 'false';
+    private $fixture;
 
 
     public function _before(ApiTester $I)
     {
-        $I->haveFixtures([
-            'users' => [
-                'class' => UsersFixture::className(),
-                'dataFile' => codecept_data_dir() . 'users_login_data.php'
-            ]
-        ]);
+        $this->fixture = new UsersFixture();
+        $this->fixture->load();
     }
 
+    public function _after(ApiTester $I)
+    {
+        $this->fixture->unload();
+    }
+
+    /**
+     * @group testOption
+     */
     public function badMethod(ApiTester $I)
     {
         $I->sendGET(self::AUTH_URL);
@@ -44,11 +51,11 @@ class AuthCest
     public function wrongCredentials(ApiTester $I)
     {
         $status = $I->loginAttempt([
-                "username" => '+79181111111',
-                "password" => self::PASSWORD,
-                "m_n" => self::TABLE_TOKEN
+            "username" => '+79181111111',
+            "password" => self::PASSWORD,
+            "m_n" => self::TABLE_TOKEN
         ]);
-        
+
         expect("request return Error status", $status['Status'])->equals("error");
     }
 
@@ -57,9 +64,9 @@ class AuthCest
         $I->wantTo('want to success autorizate');
 
         $status = $I->loginAttempt([
-                "username" => '+79184868905',
-                "password" => self::PASSWORD,
-                "m_n" => self::TABLE_TOKEN
+            "username" => '+79184868905',
+            "password" => self::PASSWORD,
+            "m_n" => self::TABLE_TOKEN
         ]);;
 
         expect("request return Success status", $status['Status'])->equals("success");
@@ -86,15 +93,15 @@ class AuthCest
     public function failAccess(ApiTester $I)
     {
         $status = $I->loginAttempt([
-                "username" => '+79184868906',
-                "password" => self::PASSWORD,
-                "m_n" => self::TABLE_TOKEN
-            
+            "username" => '+79184868906',
+            "password" => self::PASSWORD,
+            "m_n" => self::TABLE_TOKEN
+
         ]);
 
         expect("request fail Success status", $status['Status'])->equals("error");
         $I->seeResponseContainsJson([
-            'Status' => 'error', 
+            'Status' => 'error',
             'message' => 'В доступе отказано',
             'username' => false,
             'password' => true

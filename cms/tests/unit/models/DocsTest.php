@@ -11,25 +11,18 @@ class DocsTest extends \Codeception\Test\Unit
      */
     protected $tester;
     protected $model;
+    private $fixture;
 
-    public function _fixtures()
-    {
-        return [
-            'profiles' => [
-                'class' => UserDocsFixture::className(),
-                'dataFile' => codecept_data_dir() . 'user_docs.php'
-            ],
-        ];
-    }
-
-    protected function _before()
+    public function _before()
     {
         $this->model = new UserDocs();
-
+        $this->fixture = new UserDocsFixture();
+        $this->fixture->load();
     }
 
-    protected function _after()
+    public function _after()
     {
+        $this->fixture->unload();
     }
 
     /**
