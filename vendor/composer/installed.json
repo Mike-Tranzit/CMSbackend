@@ -56,114 +56,6 @@
         ]
     },
     {
-        "name": "bower-asset/jquery",
-        "version": "3.2.1",
-        "version_normalized": "3.2.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/jquery/jquery-dist.git",
-            "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/77d2a51d0520d2ee44173afdf4e40a9201f5964e",
-            "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e",
-            "shasum": null
-        },
-        "type": "bower-asset",
-        "installation-source": "dist",
-        "license": [
-            "MIT"
-        ]
-    },
-    {
-        "name": "bower-asset/bootstrap",
-        "version": "v3.3.7",
-        "version_normalized": "3.3.7.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/twbs/bootstrap.git",
-            "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/0b9c4a4007c44201dce9a6cc1a38407005c26c86",
-            "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86",
-            "shasum": null
-        },
-        "require": {
-            "bower-asset/jquery": ">=1.9.1,<4.0"
-        },
-        "type": "bower-asset",
-        "installation-source": "dist",
-<<<<<<< HEAD
-        "license": [
-            "MIT"
-        ]
-    },
-    {
-        "name": "cebe/markdown",
-        "version": "1.1.2",
-        "version_normalized": "1.1.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/cebe/markdown.git",
-            "reference": "25b28bae8a6f185b5030673af77b32e1163d5c6e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/cebe/markdown/zipball/25b28bae8a6f185b5030673af77b32e1163d5c6e",
-            "reference": "25b28bae8a6f185b5030673af77b32e1163d5c6e",
-            "shasum": ""
-        },
-        "require": {
-            "lib-pcre": "*",
-            "php": ">=5.4.0"
-        },
-        "require-dev": {
-            "cebe/indent": "*",
-            "facebook/xhprof": "*@dev",
-            "phpunit/phpunit": "4.1.*"
-        },
-        "time": "2017-07-16T21:13:23+00:00",
-        "bin": [
-            "bin/markdown"
-        ],
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.1.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "cebe\\markdown\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Carsten Brandt",
-                "email": "mail@cebe.cc",
-                "homepage": "http://cebe.cc/",
-                "role": "Creator"
-            }
-        ],
-        "description": "A super fast, highly extensible markdown parser for PHP",
-        "homepage": "https://github.com/cebe/markdown#readme",
-        "keywords": [
-            "extensible",
-            "fast",
-            "gfm",
-            "markdown",
-            "markdown-extra"
-        ]
-    },
-    {
         "name": "codeception/c3",
         "version": "2.4.1",
         "version_normalized": "2.4.1.0",
@@ -216,215 +108,46 @@
         ]
     },
     {
-        "name": "codeception/codeception",
-        "version": "2.5.1",
-        "version_normalized": "2.5.1.0",
+        "name": "bower-asset/jquery",
+        "version": "3.2.1",
+        "version_normalized": "3.2.1.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/Codeception/Codeception.git",
-            "reference": "e0a658c64e98811a6fd4f6aa7c3222e0609066a9"
+            "url": "https://github.com/jquery/jquery-dist.git",
+            "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Codeception/Codeception/zipball/e0a658c64e98811a6fd4f6aa7c3222e0609066a9",
-            "reference": "e0a658c64e98811a6fd4f6aa7c3222e0609066a9",
-            "shasum": ""
+            "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/77d2a51d0520d2ee44173afdf4e40a9201f5964e",
+            "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e",
+            "shasum": null
         },
-        "require": {
-            "behat/gherkin": "^4.4.0",
-            "codeception/phpunit-wrapper": "^6.0.9|^7.0.6",
-            "codeception/stub": "^2.0",
-            "ext-curl": "*",
-            "ext-json": "*",
-            "ext-mbstring": "*",
-            "facebook/webdriver": ">=1.1.3 <2.0",
-            "guzzlehttp/guzzle": ">=4.1.4 <7.0",
-            "guzzlehttp/psr7": "~1.0",
-            "php": ">=5.6.0 <8.0",
-            "symfony/browser-kit": ">=2.7 <5.0",
-            "symfony/console": ">=2.7 <5.0",
-            "symfony/css-selector": ">=2.7 <5.0",
-            "symfony/dom-crawler": ">=2.7 <5.0",
-            "symfony/event-dispatcher": ">=2.7 <5.0",
-            "symfony/finder": ">=2.7 <5.0",
-            "symfony/yaml": ">=2.7 <5.0"
-        },
-        "require-dev": {
-            "codeception/specify": "~0.3",
-            "facebook/graph-sdk": "~5.3",
-            "flow/jsonpath": "~0.2",
-            "monolog/monolog": "~1.8",
-            "pda/pheanstalk": "~3.0",
-            "php-amqplib/php-amqplib": "~2.4",
-            "predis/predis": "^1.0",
-            "squizlabs/php_codesniffer": "~2.0",
-            "symfony/process": ">=2.7 <5.0",
-            "vlucas/phpdotenv": "^2.4.0"
-        },
-        "suggest": {
-            "aws/aws-sdk-php": "For using AWS Auth in REST module and Queue module",
-            "codeception/phpbuiltinserver": "Start and stop PHP built-in web server for your tests",
-            "codeception/specify": "BDD-style code blocks",
-            "codeception/verify": "BDD-style assertions",
-            "flow/jsonpath": "For using JSONPath in REST module",
-            "league/factory-muffin": "For DataFactory module",
-            "league/factory-muffin-faker": "For Faker support in DataFactory module",
-            "phpseclib/phpseclib": "for SFTP option in FTP Module",
-            "stecman/symfony-console-completion": "For BASH autocompletion",
-            "symfony/phpunit-bridge": "For phpunit-bridge support"
-        },
-        "time": "2018-10-29T21:23:19+00:00",
-        "bin": [
-            "codecept"
-        ],
-        "type": "library",
-        "extra": {
-            "branch-alias": []
-        },
+        "type": "bower-asset",
         "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Codeception\\": "src/Codeception",
-                "Codeception\\Extension\\": "ext"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Michael Bodnarchuk",
-                "email": "davert@mail.ua",
-                "homepage": "http://codegyre.com"
-            }
-        ],
-        "description": "BDD-style testing framework",
-        "homepage": "http://codeception.com/",
-        "keywords": [
-            "BDD",
-            "TDD",
-            "acceptance testing",
-            "functional testing",
-            "unit testing"
         ]
     },
     {
-        "name": "codeception/phpunit-wrapper",
-        "version": "7.3.2",
-        "version_normalized": "7.3.2.0",
+        "name": "bower-asset/bootstrap",
+        "version": "v3.3.7",
+        "version_normalized": "3.3.7.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/Codeception/phpunit-wrapper.git",
-            "reference": "a5633c736e0e0022bc5065b27c63f2d1aa97b69f"
+            "url": "https://github.com/twbs/bootstrap.git",
+            "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Codeception/phpunit-wrapper/zipball/a5633c736e0e0022bc5065b27c63f2d1aa97b69f",
-            "reference": "a5633c736e0e0022bc5065b27c63f2d1aa97b69f",
-            "shasum": ""
+            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/0b9c4a4007c44201dce9a6cc1a38407005c26c86",
+            "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86",
+            "shasum": null
         },
         "require": {
-            "phpunit/php-code-coverage": "^6.0",
-            "phpunit/phpunit": "~7.1.0|~7.2.0|~7.3.0",
-            "sebastian/comparator": "^3.0",
-            "sebastian/diff": "^3.0"
+            "bower-asset/jquery": ">=1.9.1,<4.0"
         },
-        "require-dev": {
-            "codeception/specify": "*",
-            "vlucas/phpdotenv": "^2.4"
-        },
-        "time": "2018-10-07T21:30:01+00:00",
-        "type": "library",
+        "type": "bower-asset",
         "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Codeception\\PHPUnit\\": "src\\"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Davert",
-                "email": "davert.php@resend.cc"
-            }
-        ],
-        "description": "PHPUnit classes used by Codeception"
-    },
-    {
-        "name": "codeception/specify",
-        "version": "0.4.6",
-        "version_normalized": "0.4.6.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Codeception/Specify.git",
-            "reference": "21b586f503ca444aa519dd9cafb32f113a05f286"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Codeception/Specify/zipball/21b586f503ca444aa519dd9cafb32f113a05f286",
-            "reference": "21b586f503ca444aa519dd9cafb32f113a05f286",
-            "shasum": ""
-        },
-        "require": {
-            "myclabs/deep-copy": "~1.1",
-            "php": ">=5.4.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "~4.0"
-        },
-        "time": "2016-10-21T09:42:00+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Codeception\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Michael Bodnarchuk",
-                "email": "davert.php@mailican.com"
-            }
-        ],
-        "description": "BDD code blocks for PHPUnit and Codeception"
-    },
-    {
-        "name": "codeception/stub",
-        "version": "2.0.4",
-        "version_normalized": "2.0.4.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Codeception/Stub.git",
-            "reference": "f50bc271f392a2836ff80690ce0c058efe1ae03e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Codeception/Stub/zipball/f50bc271f392a2836ff80690ce0c058efe1ae03e",
-            "reference": "f50bc271f392a2836ff80690ce0c058efe1ae03e",
-            "shasum": ""
-        },
-        "require": {
-            "phpunit/phpunit": ">=4.8 <8.0"
-        },
-        "time": "2018-07-26T11:55:37+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Codeception\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-=======
->>>>>>> e1c894292a589b90bb743521665286d57d1231e3
         "license": [
             "MIT"
         ]
@@ -3103,6 +2826,49 @@
         "homepage": "https://github.com/firebase/php-jwt"
     },
     {
+        "name": "flow/jsonpath",
+        "version": "0.4.0",
+        "version_normalized": "0.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FlowCommunications/JSONPath.git",
+            "reference": "f0222818d5c938e4ab668ab2e2c079bd51a27112"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FlowCommunications/JSONPath/zipball/f0222818d5c938e4ab668ab2e2c079bd51a27112",
+            "reference": "f0222818d5c938e4ab668ab2e2c079bd51a27112",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "peekmo/jsonpath": "dev-master",
+            "phpunit/phpunit": "^4.0"
+        },
+        "time": "2018-03-04T16:39:47+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Flow\\JSONPath": "src/",
+                "Flow\\JSONPath\\Test": "tests/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Stephen Frank",
+                "email": "stephen@flowsa.com"
+            }
+        ],
+        "description": "JSONPath implementation for parsing, searching and flattening arrays"
+    },
+    {
         "name": "ezyang/htmlpurifier",
         "version": "v4.10.0",
         "version_normalized": "4.10.0.0",
@@ -3895,101 +3661,6 @@
             "code generator",
             "gii",
             "yii2"
-        ]
-    },
-    {
-        "name": "flow/jsonpath",
-        "version": "0.4.0",
-        "version_normalized": "0.4.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/FlowCommunications/JSONPath.git",
-            "reference": "f0222818d5c938e4ab668ab2e2c079bd51a27112"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/FlowCommunications/JSONPath/zipball/f0222818d5c938e4ab668ab2e2c079bd51a27112",
-            "reference": "f0222818d5c938e4ab668ab2e2c079bd51a27112",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4.0"
-        },
-        "require-dev": {
-            "peekmo/jsonpath": "dev-master",
-            "phpunit/phpunit": "^4.0"
-        },
-        "time": "2018-03-04T16:39:47+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Flow\\JSONPath": "src/",
-                "Flow\\JSONPath\\Test": "tests/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Stephen Frank",
-                "email": "stephen@flowsa.com"
-            }
-        ],
-        "description": "JSONPath implementation for parsing, searching and flattening arrays"
-    },
-    {
-        "name": "codeception/c3",
-        "version": "2.4.1",
-        "version_normalized": "2.4.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Codeception/c3.git",
-            "reference": "d841be32a6785e2f565b9f88f5ff36c905931a9a"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Codeception/c3/zipball/d841be32a6785e2f565b9f88f5ff36c905931a9a",
-            "reference": "d841be32a6785e2f565b9f88f5ff36c905931a9a",
-            "shasum": ""
-        },
-        "require": {
-            "composer-plugin-api": "^1.0",
-            "php": ">=5.4.0"
-        },
-        "time": "2018-05-26T22:34:28+00:00",
-        "type": "composer-plugin",
-        "extra": {
-            "class": "Codeception\\c3\\Installer"
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Codeception\\c3\\": "."
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Tiger Seo",
-                "email": "tiger.seo@gmail.com"
-            },
-            {
-                "name": "Michael Bodnarchuk",
-                "email": "davert.php@codegyre.com",
-                "homepage": "http://codegyre.com"
-            }
-        ],
-        "description": "CodeCoverage collector for Codeception",
-        "homepage": "http://codeception.com/",
-        "keywords": [
-            "code coverage",
-            "codecoverage"
         ]
     }
 ]

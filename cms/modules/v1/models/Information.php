@@ -50,7 +50,7 @@ class Information implements ITInformation
     function getActiveRequest()
     {
         $active = SubscriptionsActive::find()->where(['user_id' => $this->information['user']['id']])->one();
-        if(!$active){
+        if(!$active) {
             $new_subscription_active = new SubscriptionsActive(['user_id'=>$this->information['user']['id'], 'requests_left'=>0]);
             if($new_subscription_active->save()) $active = $new_subscription_active;
         }

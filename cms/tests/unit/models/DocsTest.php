@@ -40,11 +40,6 @@ class DocsTest extends \Codeception\Test\Unit
     {
         expect('have attribute list', $this->model)->hasAttribute('list');
         expect('want see list is empty', $this->model->getList())->isEmpty();
-
-        // $this->specify('add ti List', function() {
-        //     $this->model->list[] = ['test'];
-        //     expect('want see list is empty', $this->model->getList())->notEmpty();
-        // });
     }
 
     /**

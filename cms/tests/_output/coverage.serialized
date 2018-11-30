@@ -1,7 +1,81 @@
 <?php
 $coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
 $coverage->setData(array (
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\Information.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\UserDocs.php' => 
+  array (
+    14 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
+    16 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
+    17 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
+    18 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
+    22 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+      1 => 'cms\\models\\tests\\DocsTest::testPipePhone',
+    ),
+    23 => NULL,
+    27 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::hasAttributeAndEmptyInitListModel',
+      1 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
+    28 => NULL,
+    32 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
+    33 => NULL,
+  ),
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Profile.php' => 
+  array (
+    37 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+      1 => 'cms\\tests\\models\\ProfileTest::testCompareHash',
+    ),
+    38 => NULL,
+    42 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
+    43 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
+    44 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
+    45 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
+    47 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
+    48 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
+    52 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testErrorAction',
+    ),
+    53 => NULL,
+  ),
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Information.php' => 
   array (
     46 => 
     array (
@@ -100,7 +174,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\InvoicePay.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\InvoicePay.php' => 
   array (
     18 => 
     array (
@@ -352,82 +426,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\Profile.php' => 
-  array (
-    36 => 
-    array (
-    ),
-    37 => 
-    array (
-    ),
-    40 => 
-    array (
-    ),
-    41 => 
-    array (
-    ),
-    42 => 
-    array (
-    ),
-    43 => 
-    array (
-    ),
-    44 => 
-    array (
-    ),
-    45 => 
-    array (
-    ),
-    46 => 
-    array (
-    ),
-    49 => 
-    array (
-    ),
-    50 => 
-    array (
-    ),
-  ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\UserDocs.php' => 
-  array (
-    12 => 
-    array (
-    ),
-    13 => 
-    array (
-    ),
-    15 => 
-    array (
-    ),
-    16 => 
-    array (
-    ),
-    17 => 
-    array (
-    ),
-    19 => 
-    array (
-    ),
-    20 => 
-    array (
-    ),
-    23 => 
-    array (
-    ),
-    24 => 
-    array (
-    ),
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-    29 => 
-    array (
-    ),
-  ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\Controller.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\Controller.php' => 
   array (
     76 => 
     array (
@@ -553,7 +552,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\LoginController.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\LoginController.php' => 
   array (
     6 => 
     array (
@@ -604,7 +603,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\ZernovozamController.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\ZernovozamController.php' => 
   array (
     20 => 
     array (
@@ -696,6 +695,41 @@ $coverage->setData(array (
   ),
 ));
 $coverage->setTests(array (
+  'cms\\models\\tests\\DocsTest::checkModelInstanceOf' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\models\\tests\\DocsTest::hasAttributeAndEmptyInitListModel' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\models\\tests\\DocsTest::loadListWillReturnArray' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\models\\tests\\DocsTest::testPipePhone' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\ProfileTest::testErrorAction' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\ProfileTest::testSave' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\ProfileTest::testCompareHash' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
   'UNCOVERED_FILES_FROM_WHITELIST' => 
   array (
     'size' => 'unknown',
@@ -705,13 +739,13 @@ $coverage->setTests(array (
 
 $filter = $coverage->filter();
 $filter->setWhitelistedFiles(array (
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\Information.php' => true,
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\InvoicePay.php' => true,
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\Profile.php' => true,
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\UserDocs.php' => true,
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\Controller.php' => true,
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\LoginController.php' => true,
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\ZernovozamController.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Information.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\InvoicePay.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Profile.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\UserDocs.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\Controller.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\LoginController.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\ZernovozamController.php' => true,
 ));
 
 return $coverage;

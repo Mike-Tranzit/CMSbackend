@@ -25,27 +25,30 @@ class Profile
 	 * @ignore Codeception specific
      * @return void
      */
-    public function __construct($id,$data)
+    public function __construct($id, $data)
     {
         $this->user = Users::findOne($id);
         if(!$this->user) $this->errorSave();
         $this->information = $data;
     }
 
-    public function getCompareHash($v1,$v2){
+    public function getCompareHash($v1, $v2)
+    {
         return md5($v1) === $v2;
     }
 
-    public function save(){
+    public function save()
+    {
         $this->user->name = $this->information['user']['name'];
         $this->user->company = $this->information['user']['company'];
-        if(strlen($this->information['user']['password']) > 3 && !$this->getCompareHash($this->information['user']['password'],$this->user->password)){
+        if(strlen($this->information['user']['password']) > 3 && !$this->getCompareHash($this->information['user']['password'], $this->user->password)){
             $this->user->password = md5($this->information['user']['password']);
         }
         if(!$this->user->save()) $this->errorSave();
     }
 
-    private function errorSave(){
+    public function errorSave()
+    {
         throw new HttpException(500, 'Ошибка сохранения');
     }
 }
