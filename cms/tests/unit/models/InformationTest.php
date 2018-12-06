@@ -62,12 +62,13 @@ class InformationTest extends \Codeception\Test\Unit
      */
     public function testGetActiveRequestExist()
     {
-        $informationStub = Stub::make(Information::class, [
-            'information' => [],
-            'getActiveRequest' => function() use (information) {
-                $information['user']['subscriptions_active'] = ['requests_left' => 1, 'id' => 10290];
-            }
-        ]);
+        
+        // $informationStub = Stub::make(Information::class, [
+        //     'information' => [],
+        //     'getActiveRequest' => function() use (information) {
+        //         $information['user']['subscriptions_active'] = ['requests_left' => 1, 'id' => 10290];
+        //     }
+        // ]);
 
         expect('Information requests left is up', $informationStub->information['user']['subscriptions_active']['requests_left'])->equals(1);
         // $information = $this->tester->getPrivateProperty( Information::class, 'information' );
