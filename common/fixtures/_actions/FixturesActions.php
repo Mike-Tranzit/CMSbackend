@@ -32,6 +32,7 @@ trait FixturesActions
 
     public function unload()
     {
+
         if ($this->_keyExist) return;
         foreach ($this->data as $alias => $row) {
             $this->db->createCommand()->delete($this->table->fullName, $row)->execute();

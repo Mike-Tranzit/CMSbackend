@@ -9,11 +9,14 @@ use yii\web\HttpException;
 
 use common\fixtures\UsersFixture;
 use Codeception\Stub;
+use Codeception\Specify;
 class InformationTest extends \Codeception\Test\Unit
 {
     /**
      * @var \cms\tests\UnitTester
      */
+
+    use Specify;
     protected $tester;
     protected $model;
     private $_fixture;
@@ -62,20 +65,27 @@ class InformationTest extends \Codeception\Test\Unit
      */
     public function testGetActiveRequestExist()
     {
-        
-        // $informationStub = Stub::make(Information::class, [
-        //     'information' => [],
-        //     'getActiveRequest' => function() use (information) {
-        //         $information['user']['subscriptions_active'] = ['requests_left' => 1, 'id' => 10290];
-        //     }
-        // ]);
+        $this->specify('Check that record exist', function() {
 
-        expect('Information requests left is up', $informationStub->information['user']['subscriptions_active']['requests_left'])->equals(1);
-        // $information = $this->tester->getPrivateProperty( Information::class, 'information' );
-        // $property->setValue($this->model, [['user'=> ['id' => 10129]]]);
-        // $this->model->getActiveRequest();
+            $property = $this->tester->getPrivateProperty( 
+                Information::class, 
+                'information' 
+            );
 
+            $property->setValue($this->model, [
+                'user' => [
+                    'id' => 10129
+                ]
+            ]);
+
+            $this->model->getActiveRequest();
+
+            $information = $property->getValue( $this->model );
+
+            expect('Information array has key: subscriptions_active', $information['user'])->hasKey('subscriptions_active');
+        });
     }
+
 
     public function testLoginFilter()
     {

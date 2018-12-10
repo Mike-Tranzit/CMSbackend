@@ -54,7 +54,7 @@ class Information implements ITInformation
             $new_subscription_active = new SubscriptionsActive(['user_id'=>$this->information['user']['id'], 'requests_left'=>0]);
             if($new_subscription_active->save()) $active = $new_subscription_active;
         }
-        if($active){
+        if($active) {
             $active = ArrayHelper::toArray($active);
             $this->information['user']['subscriptions_active'] = ['requests_left' => $active['requests_left'], 'id' => $active['id']];
         }

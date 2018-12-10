@@ -43,7 +43,7 @@ class Profile
     {
         return md5($v1) === $v2;
     }
- //  and cm.phone_sim is not null and is_act = 1
+    
     public function save()
     {
         $this->user->name = $this->information['user']['name'];
