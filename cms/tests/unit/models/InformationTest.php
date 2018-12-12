@@ -174,7 +174,10 @@ class InformationTest extends \Codeception\Test\Unit
         expect('Invoices array is empty', $information['invoices'])->isEmpty();
     }
 
-
+    public function testInvoicesIsNotEmpty()
+    {
+        
+    }
     
     //
     // ────────────────────────────────────────────────────────────────────── I ──────────
