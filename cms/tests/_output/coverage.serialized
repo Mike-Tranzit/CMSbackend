@@ -47,10 +47,12 @@ $coverage->setData(array (
     52 => 
     array (
       0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     53 => 
     array (
       0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     54 => 
     array (
@@ -58,66 +60,116 @@ $coverage->setData(array (
     55 => 
     array (
     ),
-    57 => 
+    56 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
-    ),
-    58 => 
-    array (
-      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
     ),
     59 => 
     array (
       0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+    ),
+    60 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     61 => 
     array (
       0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
-    65 => 
+    63 => 
     array (
-    ),
-    66 => 
-    array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     67 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
+      1 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     68 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
+      1 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     69 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
+    ),
+    71 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     72 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     73 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     74 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     75 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    76 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     77 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    78 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    79 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     81 => 
     array (
-    ),
-    82 => 
-    array (
-    ),
-    83 => 
-    array (
-    ),
-    84 => 
-    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     85 => 
     array (
+    ),
+    86 => 
+    array (
+    ),
+    87 => 
+    array (
+    ),
+    88 => 
+    array (
+    ),
+    90 => 
+    array (
+    ),
+    94 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
+    ),
+    95 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
+    ),
+    96 => 
+    array (
+    ),
+    98 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
+    ),
+    100 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
     ),
   ),
   'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Profile.php' => 
@@ -719,7 +771,27 @@ $coverage->setTests(array (
     'size' => 'unknown',
     'status' => 0,
   ),
+  'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
   'cms\\tests\\models\\InformationTest::testLoginFilter' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testUserNotFound' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testUserExist' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty' => 
   array (
     'size' => 'unknown',
     'status' => 0,
