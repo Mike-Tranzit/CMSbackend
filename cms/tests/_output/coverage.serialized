@@ -56,12 +56,15 @@ $coverage->setData(array (
     ),
     54 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     55 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     56 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     59 => 
     array (
@@ -464,13 +467,55 @@ $coverage->setData(array (
   ),
   'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\Controller.php' => 
   array (
+    53 => 
+    array (
+    ),
+    54 => 
+    array (
+    ),
+    55 => 
+    array (
+    ),
+    57 => 
+    array (
+    ),
+    58 => 
+    array (
+    ),
+    62 => 
+    array (
+    ),
+    63 => 
+    array (
+    ),
+    65 => 
+    array (
+    ),
+    67 => 
+    array (
+    ),
+    68 => 
+    array (
+    ),
+    69 => 
+    array (
+    ),
+    70 => 
+    array (
+    ),
+    71 => 
+    array (
+    ),
+    73 => 
+    array (
+    ),
+    74 => 
+    array (
+    ),
+    75 => 
+    array (
+    ),
     76 => 
-    array (
-    ),
-    77 => 
-    array (
-    ),
-    78 => 
     array (
     ),
     79 => 
@@ -479,28 +524,28 @@ $coverage->setData(array (
     80 => 
     array (
     ),
+    82 => 
+    array (
+    ),
     83 => 
     array (
     ),
     84 => 
     array (
     ),
-    86 => 
+    85 => 
+    array (
+    ),
+    87 => 
     array (
     ),
     88 => 
-    array (
-    ),
-    89 => 
     array (
     ),
     90 => 
     array (
     ),
     91 => 
-    array (
-    ),
-    92 => 
     array (
     ),
     94 => 
@@ -515,10 +560,13 @@ $coverage->setData(array (
     97 => 
     array (
     ),
+    99 => 
+    array (
+    ),
     100 => 
     array (
     ),
-    101 => 
+    102 => 
     array (
     ),
     103 => 
@@ -530,61 +578,10 @@ $coverage->setData(array (
     105 => 
     array (
     ),
-    106 => 
+    107 => 
     array (
     ),
     108 => 
-    array (
-    ),
-    109 => 
-    array (
-    ),
-    110 => 
-    array (
-    ),
-    111 => 
-    array (
-    ),
-    114 => 
-    array (
-    ),
-    116 => 
-    array (
-    ),
-    117 => 
-    array (
-    ),
-    118 => 
-    array (
-    ),
-    120 => 
-    array (
-    ),
-    121 => 
-    array (
-    ),
-    122 => 
-    array (
-    ),
-    124 => 
-    array (
-    ),
-    125 => 
-    array (
-    ),
-    126 => 
-    array (
-    ),
-    152 => 
-    array (
-    ),
-    156 => 
-    array (
-    ),
-    158 => 
-    array (
-    ),
-    159 => 
     array (
     ),
   ),
@@ -792,6 +789,11 @@ $coverage->setTests(array (
     'status' => 0,
   ),
   'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testMockInformation' => 
   array (
     'size' => 'unknown',
     'status' => 0,

@@ -2,9 +2,7 @@
 namespace cms\tests\models;
 
 use Yii;
-use cms\modules\v1\models\base\Invoices;
-use cms\modules\v1\models\base\MobileRegistration;
-use cms\modules\v1\models\base\SubscriptionsActive;
+use cms\modules\v1\models\base\{Invoices, MobileRegistration, SubscriptionsActive};
 use cms\modules\v1\models\Information;
 
 use yii\web\HttpException;
@@ -15,6 +13,7 @@ use Codeception\Stub;
 use Codeception\Specify;
 use Codeception\Exception\Fail;
 use Codeception\Util\HttpCode;
+use yii\helpers\ArrayHelper;
 
 class InformationTest extends \Codeception\Test\Unit
 {
@@ -31,6 +30,7 @@ class InformationTest extends \Codeception\Test\Unit
     protected $model;
     private $_fixture;
     const FAKE_ID = 0;
+    const USER_ID_FROM_FIXTURE = 10129;
     const COUNT_USER_INFORMATION_ARRAY = 7;
 
     protected function _before()
@@ -78,7 +78,7 @@ class InformationTest extends \Codeception\Test\Unit
     public function testGetActiveRequestExist()
     {
         $this->specify('Check that record exist', function () {
-            $information = $this->loadInformationPropertyUserId(10129);
+            $information = $this->loadInformationPropertyUserId(self::USER_ID_FROM_FIXTURE);
 
             expect('Information array has key: subscriptions_active', $information['user'])->hasKey('subscriptions_active');
         });
@@ -165,8 +165,10 @@ class InformationTest extends \Codeception\Test\Unit
      */
     public function testInvoicesIsEmpty()
     {
-        $property = $this->getInformation(self::FAKE_ID);
+        $property = $this->getInformation();
         
+        $property = $this->setInformationValue(self::FAKE_ID, $property);
+
         $information = $this->getValuePrivateProperty($property);
 
         $this->model->getInvoices();
@@ -174,11 +176,68 @@ class InformationTest extends \Codeception\Test\Unit
         expect('Invoices array is empty', $information['invoices'])->isEmpty();
     }
 
+    /**
+     * Тестирование присутствия платежей пользователя
+     * 
+     * @return void
+     */
     public function testInvoicesIsNotEmpty()
     {
+        $this->markTestSkipped();
+        $property = $this->getInformation();
+
+        $informationMock = $this->make(Information::class, [
+            'getInvoices' => function() use ($property) {
+                $property = $this->setInformationValue(self::USER_ID_FROM_FIXTURE, $property, [
+                    'id' => 1
+                ]);
+            }
+        ]);
         
+        $informationMock->getInvoices();
+
+        $information = $this->getValuePrivateProperty($property);
+
+        expect('Invoices array is not empty', $information['invoices'])->notEmpty();
+
     }
     
+    public function testMockInformation()
+    {
+        $property = $this->getInformation();
+
+        $mode = $this->createMock(Information::class);
+        $mode->method('getInvoices')->willReturn(
+
+            $property->setValue($this->model, [
+                'invoices' => ArrayHelper::toArray(new Invoices(['userIdCreate' => 1]))
+            ])
+
+        );
+
+        $property = $this->setInformationValue(self::USER_ID_FROM_FIXTURE, $property);
+
+        $this->model->getInvoices();
+        $information = $this->model->concatDataAndReturn();
+        expect('Invoices array is not empty', $information['invoices'])->notEmpty();
+        // $invoiceMock = $this->make(Invoices::class, [
+        //     'find' => function() {
+        //         return ['userIdCreate' => 1024];
+        //     }
+        // ]);
+
+        // $informationMock = $this->make(Information::class, [
+        //     'information' => [],
+        //     'getInvoices' => function() use ($invoiceMock) {
+        //         $invoices = $invoiceMock::find();
+        //         if($invoices) $this->information = $invoices;
+        //     }
+        // ]);
+
+        // $informationMock->getInvoices();
+    }
+
+
     //
     // ────────────────────────────────────────────────────────────────────── I ──────────
     //   :::::: A D V A N C E   M E T H O D S : :  :   :    :     :        :          :
@@ -194,7 +253,9 @@ class InformationTest extends \Codeception\Test\Unit
      */
     public function loadInformationPropertyUserId(int $id)
     {
-        $property = $this->getInformation($id);
+        $property = $this->getInformation();
+
+        $property = $this->setInformationValue($id, $property);
 
         $this->model->getActiveRequest();
 
@@ -210,20 +271,33 @@ class InformationTest extends \Codeception\Test\Unit
      *
      * @return void
      */
-    public function getInformation(int $id)
+    public function getInformation()
     {
         $property = $this->tester->getPrivateProperty(
             Information::class,
             'information'
         );
 
+        return $property;
+    }
+
+    
+    /**
+     * setInformationValue
+     *
+     * @param  mixed $id
+     * @param  mixed $property
+     *
+     * @return void
+     */
+    public function setInformationValue(int $id, $property, $invoices = [])
+    {
         $property->setValue($this->model, [
             'user' => [
                 'id' => $id
             ],
-            'invoices' => []
+            'invoices' => $invoices
         ]);
-
         return $property;
     }
 
