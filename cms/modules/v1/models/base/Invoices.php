@@ -30,6 +30,11 @@ class Invoices extends \yii\db\ActiveRecord
         return 'zernovoz.invoices';
     }
 
+    public function test()
+    {
+        return 1;
+    }
+
     /**
      * @inheritdoc
      */

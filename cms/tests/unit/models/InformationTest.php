@@ -2,7 +2,9 @@
 namespace cms\tests\models;
 
 use Yii;
-use cms\modules\v1\models\base\{Invoices, MobileRegistration, SubscriptionsActive};
+use cms\modules\v1\models\base\Invoices;
+use cms\modules\v1\models\base\MobileRegistration;
+use cms\modules\v1\models\base\SubscriptionsActive;
 use cms\modules\v1\models\Information;
 
 use yii\web\HttpException;
@@ -14,6 +16,7 @@ use Codeception\Specify;
 use Codeception\Exception\Fail;
 use Codeception\Util\HttpCode;
 use yii\helpers\ArrayHelper;
+use AspectMock\Test as test;
 
 class InformationTest extends \Codeception\Test\Unit
 {
@@ -35,6 +38,7 @@ class InformationTest extends \Codeception\Test\Unit
 
     protected function _before()
     {
+        test::clean();
         $this->_fixture = new UsersFixture();
         $this->_fixture->load();
         $this->model = new Information('+7 (918) 48-68-904');
@@ -178,66 +182,32 @@ class InformationTest extends \Codeception\Test\Unit
 
     /**
      * Тестирование присутствия платежей пользователя
-     * 
+     *
+     * @group mock
      * @return void
      */
     public function testInvoicesIsNotEmpty()
     {
-        $this->markTestSkipped();
-        $property = $this->getInformation();
+        $this->assertEquals(1, (new Invoices)->test());
+        $userModel = test::double('\cms\modules\v1\models\base\Invoices', ['test' => 2]);
+        $this->assertEquals(2, (new Invoices)->test());
+        $userModel->verifyInvoked('test');
 
-        $informationMock = $this->make(Information::class, [
-            'getInvoices' => function() use ($property) {
-                $property = $this->setInformationValue(self::USER_ID_FROM_FIXTURE, $property, [
-                    'id' => 1
-                ]);
-            }
-        ]);
-        
-        $informationMock->getInvoices();
+        // $invoicesMock = test::double(Invoices::className(), ['all' => function() { new Invoices(['id' => 2, 'userIdCreate' => 3]); }]);
 
-        $information = $this->getValuePrivateProperty($property);
+        // $property = $this->getInformation();
 
-        expect('Invoices array is not empty', $information['invoices'])->notEmpty();
+        // $property = $this->setInformationValue(self::USER_ID_FROM_FIXTURE, $property);
 
+        // $this->model->getInvoices();
+
+        // $information = $this->getValuePrivateProperty($property);
+
+        // expect('Invoices array is not empty', $information['invoices'])->notEmpty();
+
+        // $invoicesMock->verifyInvoked('all');
     }
     
-    public function testMockInformation()
-    {
-        $property = $this->getInformation();
-
-        $mode = $this->createMock(Information::class);
-        $mode->method('getInvoices')->willReturn(
-
-            $property->setValue($this->model, [
-                'invoices' => ArrayHelper::toArray(new Invoices(['userIdCreate' => 1]))
-            ])
-
-        );
-
-        $property = $this->setInformationValue(self::USER_ID_FROM_FIXTURE, $property);
-
-        $this->model->getInvoices();
-        $information = $this->model->concatDataAndReturn();
-        expect('Invoices array is not empty', $information['invoices'])->notEmpty();
-        // $invoiceMock = $this->make(Invoices::class, [
-        //     'find' => function() {
-        //         return ['userIdCreate' => 1024];
-        //     }
-        // ]);
-
-        // $informationMock = $this->make(Information::class, [
-        //     'information' => [],
-        //     'getInvoices' => function() use ($invoiceMock) {
-        //         $invoices = $invoiceMock::find();
-        //         if($invoices) $this->information = $invoices;
-        //     }
-        // ]);
-
-        // $informationMock->getInvoices();
-    }
-
-
     //
     // ────────────────────────────────────────────────────────────────────── I ──────────
     //   :::::: A D V A N C E   M E T H O D S : :  :   :    :     :        :          :
