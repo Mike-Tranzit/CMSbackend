@@ -1,4 +1,44 @@
 <?php return array (
+  AOP_ROOT_DIR . '\\cms\\tests\\_data\\invoices_data.php' => 
+  array (
+    'filemtime' => 1545136650,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\base\\Orders.php' => 
+  array (
+    'filemtime' => 1545136519,
+    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\base\\Orders.php',
+  ),
+  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\base\\Users.php' => 
+  array (
+    'filemtime' => 1545136519,
+    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\base\\Users.php',
+  ),
+  AOP_ROOT_DIR . '\\common\\fixtures\\_actions\\FixturesActions.php' => 
+  array (
+    'filemtime' => 1545135922,
+    'cacheUri' => AOP_CACHE_DIR . '\\common\\fixtures\\_actions\\FixturesActions.php',
+  ),
+  AOP_ROOT_DIR . '\\common\\fixtures\\InvoicesFixture.php' => 
+  array (
+    'filemtime' => 1545135922,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\base\\Invoices.php' => 
+  array (
+    'filemtime' => 1545135922,
+    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\base\\Invoices.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ForeignKeyConstraint.php' => 
+  array (
+    'filemtime' => 1545135922,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\InvoicePay.php' => 
+  array (
+    'filemtime' => 1545135922,
+    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\InvoicePay.php',
+  ),
   AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\base\\MobileRegistration.php' => 
   array (
     'filemtime' => 1545120889,
@@ -33,11 +73,6 @@
   array (
     'filemtime' => 1545059652,
     'cacheUri' => NULL,
-  ),
-  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\base\\Users.php' => 
-  array (
-    'filemtime' => 1545059652,
-    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\base\\Users.php',
   ),
   AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\conditions\\InCondition.php' => 
   array (
@@ -233,16 +268,6 @@
   array (
     'filemtime' => 1545058392,
     'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\helpers\\StringHelp.php',
-  ),
-  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\base\\Invoices.php' => 
-  array (
-    'filemtime' => 1545058392,
-    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\base\\Invoices.php',
-  ),
-  AOP_ROOT_DIR . '\\common\\fixtures\\_actions\\FixturesActions.php' => 
-  array (
-    'filemtime' => 1545058330,
-    'cacheUri' => AOP_CACHE_DIR . '\\common\\fixtures\\_actions\\FixturesActions.php',
   ),
   AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\ArrayAccessTrait.php' => 
   array (

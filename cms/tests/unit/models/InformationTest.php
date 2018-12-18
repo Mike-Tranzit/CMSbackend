@@ -9,7 +9,6 @@ use cms\modules\v1\models\Information;
 
 use yii\web\HttpException;
 
-
 use common\fixtures\UsersFixture;
 use Codeception\Stub;
 use Codeception\Specify;
@@ -32,8 +31,8 @@ class InformationTest extends \Codeception\Test\Unit
     protected $tester;
     protected $model;
     private $_fixture;
-    const FAKE_ID = 0;
-    const USER_ID_FROM_FIXTURE = 10129;
+    const FAKE_ID                      = 0;
+    const USER_ID_FROM_FIXTURE         = 10129;
     const COUNT_USER_INFORMATION_ARRAY = 7;
 
     protected function _before()
