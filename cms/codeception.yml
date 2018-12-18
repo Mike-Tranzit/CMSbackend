@@ -16,7 +16,7 @@ modules:
             entryScript: index-test.php
             cleanup: false
 coverage:
-    c3_url: http://localhost/materialCMSapi/cms/web/index-test.php
+    c3_url: http://localhost/TerminalInformationSystemBackend/cms/web/index-test.php
     enabled: true
     include:
             - modules/v1/models/*

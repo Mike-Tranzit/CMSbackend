@@ -10,7 +10,7 @@ namespace admin\modules\v1\models;
 
 require_once __DIR__ . '/../../../../common/models/nztmodule3/base/WhiteAndBlackList.php';
 require_once __DIR__ . '/../../../../common/helpers/Plates.php';
-require_once __DIR__ . '/../../../../common/helpers/String.php';
+require_once __DIR__ . '/../../../../common/helpers/StringHelp.php';
 use yii\web\HttpException;
 use Yii;
 class BlackList
@@ -56,8 +56,8 @@ class BlackList
     }
 
     public function loadParams($data){
-        $this->model->texts = \common\helpers\String::filterJSON($data['texts']);
-        $this->model->textp = \common\helpers\String::filterJSON($data['textp']);
+        $this->model->texts = \common\helpers\StringHelp::filterJSON($data['texts']);
+        $this->model->textp = \common\helpers\StringHelp::filterJSON($data['textp']);
         switch ($data['status']) {
             case 1: {
                 $this->model->power = 1;

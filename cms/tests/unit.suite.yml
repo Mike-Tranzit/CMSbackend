@@ -3,5 +3,6 @@ modules:
     enabled:
       - Asserts
       - Yii2:
-            part: [orm, email, fixtures]
-            url: http://cms.info/v1/
+            part: [orm]
+            cleanup: true
+      - \cms\tests\Helper\Unit

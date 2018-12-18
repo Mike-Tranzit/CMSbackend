@@ -107,6 +107,6 @@ class Users extends \yii\db\ActiveRecord
      */
     public function getTokens()
     {
-        return $this->hasMany(Token::className(), ['user_id' => 'id']);
+        return $this->hasMany(\common\models\auth\Token::className(), ['user_id' => 'id']);
     }
 }

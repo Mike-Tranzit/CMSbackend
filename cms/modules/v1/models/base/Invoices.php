@@ -22,6 +22,7 @@ use Yii;
  */
 class Invoices extends \yii\db\ActiveRecord
 {
+    public $tableName = 1;
     /**
      * @inheritdoc
      */
