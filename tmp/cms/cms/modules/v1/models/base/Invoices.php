@@ -27,7 +27,7 @@ class Invoices extends \yii\db\ActiveRecord
      * @inheritdoc
      */
     public static function tableName()
-    {
+    { if (($__am_res = __amock_before(get_called_class(), __CLASS__, __FUNCTION__, array(), true)) !== __AM_CONTINUE__) return $__am_res; 
         return 'zernovoz.invoices';
     }
 
@@ -35,7 +35,7 @@ class Invoices extends \yii\db\ActiveRecord
      * @inheritdoc
      */
     public function rules()
-    {
+    { if (($__am_res = __amock_before($this, __CLASS__, __FUNCTION__, array(), false)) !== __AM_CONTINUE__) return $__am_res; 
         return [
             [['datecreate', 'amount', 'userIdCreate', 'orderId'], 'required'],
             [['datecreate', 'dateresult'], 'safe'],
@@ -50,7 +50,7 @@ class Invoices extends \yii\db\ActiveRecord
      * @inheritdoc
      */
     public function attributeLabels()
-    {
+    { if (($__am_res = __amock_before($this, __CLASS__, __FUNCTION__, array(), false)) !== __AM_CONTINUE__) return $__am_res; 
         return [
             'id' => 'ID',
             'datecreate' => 'Datecreate',
@@ -73,17 +73,17 @@ class Invoices extends \yii\db\ActiveRecord
     }*/
 
     public function getOrders()
-    {
+    { if (($__am_res = __amock_before($this, __CLASS__, __FUNCTION__, array(), false)) !== __AM_CONTINUE__) return $__am_res; 
         return $this->hasOne(Orders::className(), ['id' => 'orderId']);
     }
 
     public function getSubscriptionsActive()
-    {
+    { if (($__am_res = __amock_before($this, __CLASS__, __FUNCTION__, array(), false)) !== __AM_CONTINUE__) return $__am_res; 
         return $this->hasOne(SubscriptionsActive::className(), ['user_id' => 'userIdCreate']);
     }
 
     public function getUsers()
-    {
+    { if (($__am_res = __amock_before($this, __CLASS__, __FUNCTION__, array(), false)) !== __AM_CONTINUE__) return $__am_res; 
         return $this->hasOne(Users::className(), ['id' => 'userIdCreate']);
     }
 }

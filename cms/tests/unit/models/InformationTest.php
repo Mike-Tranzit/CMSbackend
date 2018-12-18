@@ -16,7 +16,7 @@ use Codeception\Specify;
 use Codeception\Exception\Fail;
 use Codeception\Util\HttpCode;
 use yii\helpers\ArrayHelper;
-use AspectMock\Test as test;
+use AspectMock\Test as Test;
 
 class InformationTest extends \Codeception\Test\Unit
 {
@@ -38,7 +38,6 @@ class InformationTest extends \Codeception\Test\Unit
 
     protected function _before()
     {
-        test::clean();
         $this->_fixture = new UsersFixture();
         $this->_fixture->load();
         $this->model = new Information('+7 (918) 48-68-904');
@@ -47,6 +46,7 @@ class InformationTest extends \Codeception\Test\Unit
     protected function _after()
     {
         $this->_fixture->unload();
+        Test::clean();
     }
 
     /**
@@ -183,31 +183,48 @@ class InformationTest extends \Codeception\Test\Unit
     /**
      * Тестирование присутствия платежей пользователя
      *
-     * @group mock
      * @return void
      */
     public function testInvoicesIsNotEmpty()
     {
-        $this->assertEquals(1, (new Invoices)->test());
-        $userModel = test::double('\cms\modules\v1\models\base\Invoices', ['test' => 2]);
-        $this->assertEquals(2, (new Invoices)->test());
-        $userModel->verifyInvoked('test');
+        $property = $this->getInformation();
+        $property = $this->setInformationValue(self::USER_ID_FROM_FIXTURE, $property);
 
-        // $invoicesMock = test::double(Invoices::className(), ['all' => function() { new Invoices(['id' => 2, 'userIdCreate' => 3]); }]);
+        $invoicesMock = Test::double('yii\db\ActiveQuery', [
+            'all' => ['id' => 2]
+        ]);
 
-        // $property = $this->getInformation();
+        $this->model->getInvoices();
 
-        // $property = $this->setInformationValue(self::USER_ID_FROM_FIXTURE, $property);
-
-        // $this->model->getInvoices();
-
-        // $information = $this->getValuePrivateProperty($property);
-
-        // expect('Invoices array is not empty', $information['invoices'])->notEmpty();
-
-        // $invoicesMock->verifyInvoked('all');
+        $information = $this->model->concatDataAndReturn();
+        expect('Invoices array is not empty', $information['invoices'])->notEmpty();
+        $invoicesMock->verifyInvoked('all');
     }
     
+
+    /**
+     * Проверка работоспособности отсылки кода авторизации
+     * 
+     * @return void
+     */
+    public function testMobileRegistration()
+    {
+        $property = $this->getInformation();
+        $property = $this->setInformationValue(self::USER_ID_FROM_FIXTURE, $property);
+
+        $invoicesMock = Test::double('yii\db\ActiveQuery', [
+            'one' => new MobileRegistration(['activation_code' => 1111, 'last_sms_date' => '2018-12-11 00:00:00'])
+        ]);
+
+        $this->model->mobileRegistration();
+        
+        $information = $this->model->concatDataAndReturn();
+        expect('Activation code = 1111', $information['user']['activation_code'])->equals(1111);
+        expect('Last sms date = 2018-12-11 00:00:00', $information['user']['last_sms_date'])->equals('2018-12-11 00:00:00');
+        $invoicesMock->verifyInvoked('one');
+
+    }
+
     //
     // ────────────────────────────────────────────────────────────────────── I ──────────
     //   :::::: A D V A N C E   M E T H O D S : :  :   :    :     :        :          :
@@ -283,3 +300,4 @@ class InformationTest extends \Codeception\Test\Unit
         return $property->getValue($this->model);
     }
 }
+

@@ -28,17 +28,17 @@ class Information implements ITInformation
      * @return void
      */
     public function __construct($login)
-    {
+    { if (($__am_res = __amock_before($this, __CLASS__, __FUNCTION__, array($login), false)) !== __AM_CONTINUE__) return $__am_res; 
         $this->login = "+" . StringHelp::clearPhoneNumber($login);
     }
 
     public function concatDataAndReturn()
-    {
+    { if (($__am_res = __amock_before($this, __CLASS__, __FUNCTION__, array(), false)) !== __AM_CONTINUE__) return $__am_res; 
         return $this->information;
     }
 
     public function getActiveRequest()
-    {
+    { if (($__am_res = __amock_before($this, __CLASS__, __FUNCTION__, array(), false)) !== __AM_CONTINUE__) return $__am_res; 
         $active = SubscriptionsActive::find()->where(['user_id' => $this->information['user']['id']])->one();
         if (!$active) {
             $new_subscription_active = new SubscriptionsActive(['user_id'=>$this->information['user']['id'], 'requests_left'=>0]);
@@ -53,7 +53,7 @@ class Information implements ITInformation
     }
 
     public function getUserInformation()
-    {
+    { if (($__am_res = __amock_before($this, __CLASS__, __FUNCTION__, array(), false)) !== __AM_CONTINUE__) return $__am_res; 
         $userRecord = \cms\modules\v1\models\base\Users::find()->where(['login'=> trim($this->login)])->one();
         if (!$userRecord) {
             throw new HttpException(404, 'Ошибка. Пользовать не найден');
@@ -71,7 +71,7 @@ class Information implements ITInformation
     }
 
     public function mobileRegistration()
-    {
+    { if (($__am_res = __amock_before($this, __CLASS__, __FUNCTION__, array(), false)) !== __AM_CONTINUE__) return $__am_res; 
         $mobileRegistration = MobileRegistration::find()->where(['user_id' => $this->information['user']['id']])->andWhere(['<', 'last_sms_date', 'now() - interval 1 day'])->orderBy(['id' => SORT_DESC])->one();
         if ($mobileRegistration) {
             $this->information['user']['activation_code'] = $mobileRegistration->activation_code;
@@ -80,7 +80,7 @@ class Information implements ITInformation
     }
 
     public function getInvoices()
-    {
+    { if (($__am_res = __amock_before($this, __CLASS__, __FUNCTION__, array(), false)) !== __AM_CONTINUE__) return $__am_res; 
         $invoices = Invoices::find()->where(['userIdCreate' => $this->information['user']['id']])->andWhere(['<', 'datecreate', 'now() - interval 10 day'])->orderBy(['id' => SORT_DESC])->limit(10)->all();
         if ($invoices) {
             $this->information['invoices'] = ArrayHelper::toArray($invoices);

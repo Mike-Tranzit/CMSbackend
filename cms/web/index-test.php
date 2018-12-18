@@ -14,4 +14,5 @@ require __DIR__ . '/../../common/config/bootstrap.php';
 
 $config = require __DIR__ . '/../config/test/test.php';
 
+
 (new yii\web\Application($config))->run();

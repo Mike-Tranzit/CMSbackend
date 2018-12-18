@@ -1,8 +1,12 @@
 <?php
 $coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
 $coverage->setData(array (
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\UserDocs.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\UserDocs.php' => 
   array (
+    13 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
     14 => 
     array (
       0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
@@ -19,32 +23,91 @@ $coverage->setData(array (
     array (
       0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
     ),
+    21 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+      1 => 'cms\\models\\tests\\DocsTest::testPipePhone',
+    ),
     22 => 
     array (
       0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
       1 => 'cms\\models\\tests\\DocsTest::testPipePhone',
     ),
     23 => NULL,
+    26 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::hasAttributeAndEmptyInitListModel',
+      1 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
     27 => 
     array (
       0 => 'cms\\models\\tests\\DocsTest::hasAttributeAndEmptyInitListModel',
       1 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
     ),
     28 => NULL,
+    31 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
     32 => 
     array (
       0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
     ),
     33 => NULL,
   ),
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Information.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Information.php' => 
   array (
-    47 => 
+    36 => 
     array (
       0 => 'cms\\tests\\models\\InformationTest::testHasPrivateDefaultPropertys',
+      1 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
+      2 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
     ),
-    48 => NULL,
-    52 => 
+    37 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testHasPrivateDefaultPropertys',
+      1 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
+      2 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
+    ),
+    38 => NULL,
+    41 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+    ),
+    42 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+    ),
+    43 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+    ),
+    44 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+    ),
+    45 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+    ),
+    46 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+    ),
+    49 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+    ),
+    50 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+    ),
+    51 => 
     array (
       0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
       1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
@@ -54,135 +117,135 @@ $coverage->setData(array (
       0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
       1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
-    54 => 
-    array (
-      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
-    ),
-    55 => 
-    array (
-      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
-    ),
     56 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
+      1 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    57 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
+      1 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    58 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
+      1 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     59 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
-      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
-    ),
-    60 => 
-    array (
-      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
-      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
     ),
     61 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
-      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    62 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     63 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
-      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    64 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    65 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    66 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     67 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
-      1 => 'cms\\tests\\models\\InformationTest::testUserExist',
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     68 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
-      1 => 'cms\\tests\\models\\InformationTest::testUserExist',
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     69 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
     71 => 
     array (
       0 => 'cms\\tests\\models\\InformationTest::testUserExist',
     ),
-    72 => 
-    array (
-      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
-    ),
-    73 => 
-    array (
-      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
-    ),
     74 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+      0 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
     ),
     75 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+      0 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
     ),
     76 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+      0 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
     ),
     77 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+      0 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
     ),
     78 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+      0 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
     ),
-    79 => 
+    80 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+      0 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
     ),
-    81 => 
+    83 => 
     array (
-      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
+      1 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
+    ),
+    84 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
+      1 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
     ),
     85 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
+      1 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
     ),
     86 => 
     array (
-    ),
-    87 => 
-    array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
     ),
     88 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
     ),
     90 => 
     array (
-    ),
-    94 => 
-    array (
       0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
-    ),
-    95 => 
-    array (
-      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
-    ),
-    96 => 
-    array (
-    ),
-    98 => 
-    array (
-      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
-    ),
-    100 => 
-    array (
-      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
+      1 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
     ),
   ),
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Profile.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Profile.php' => 
   array (
+    43 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+      1 => 'cms\\tests\\models\\ProfileTest::testCompareHash',
+    ),
     44 => 
     array (
       0 => 'cms\\tests\\models\\ProfileTest::testSave',
       1 => 'cms\\tests\\models\\ProfileTest::testCompareHash',
     ),
     45 => NULL,
+    48 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
     49 => 
     array (
       0 => 'cms\\tests\\models\\ProfileTest::testSave',
@@ -207,13 +270,17 @@ $coverage->setData(array (
     array (
       0 => 'cms\\tests\\models\\ProfileTest::testSave',
     ),
+    58 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testErrorAction',
+    ),
     59 => 
     array (
       0 => 'cms\\tests\\models\\ProfileTest::testErrorAction',
     ),
     60 => NULL,
   ),
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\InvoicePay.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\InvoicePay.php' => 
   array (
     18 => 
     array (
@@ -465,7 +532,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\Controller.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\Controller.php' => 
   array (
     53 => 
     array (
@@ -585,7 +652,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\LoginController.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\LoginController.php' => 
   array (
     6 => 
     array (
@@ -636,7 +703,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\ZernovozamController.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\ZernovozamController.php' => 
   array (
     20 => 
     array (
@@ -793,7 +860,12 @@ $coverage->setTests(array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'cms\\tests\\models\\InformationTest::testMockInformation' => 
+  'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testMobileRegistration' => 
   array (
     'size' => 'unknown',
     'status' => 0,
@@ -822,13 +894,13 @@ $coverage->setTests(array (
 
 $filter = $coverage->filter();
 $filter->setWhitelistedFiles(array (
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Information.php' => true,
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\InvoicePay.php' => true,
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Profile.php' => true,
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\UserDocs.php' => true,
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\Controller.php' => true,
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\LoginController.php' => true,
-  'C:\\Server\\data\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\ZernovozamController.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Information.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\InvoicePay.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Profile.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\UserDocs.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\Controller.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\LoginController.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\ZernovozamController.php' => true,
 ));
 
 return $coverage;
