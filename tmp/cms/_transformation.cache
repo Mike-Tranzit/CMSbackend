@@ -1,4 +1,84 @@
 <?php return array (
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\UnknownPropertyException.php' => 
+  array (
+    'filemtime' => 1545233636,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\UnknownPropertyException.php',
+  ),
+  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\base\\YearSubscription.php' => 
+  array (
+    'filemtime' => 1545233304,
+    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\base\\YearSubscription.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\Exception.php' => 
+  array (
+    'filemtime' => 1545232618,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\Exception.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\InvalidConfigException.php' => 
+  array (
+    'filemtime' => 1545232618,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\InvalidConfigException.php',
+  ),
+  AOP_ROOT_DIR . '\\common\\fixtures\\UsersFixture.php' => 
+  array (
+    'filemtime' => 1545227851,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\cms\\tests\\_data\\users_login_data.php' => 
+  array (
+    'filemtime' => 1545227851,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\UserDocs.php' => 
+  array (
+    'filemtime' => 1545227851,
+    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\UserDocs.php',
+  ),
+  AOP_ROOT_DIR . '\\common\\fixtures\\UserDocsFixture.php' => 
+  array (
+    'filemtime' => 1545227851,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\cms\\tests\\_data\\user_docs.php' => 
+  array (
+    'filemtime' => 1545227851,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\cms\\modules\\v1\\interfaces\\ITInformation.php' => 
+  array (
+    'filemtime' => 1545227851,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\Information.php' => 
+  array (
+    'filemtime' => 1545227851,
+    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\Information.php',
+  ),
+  AOP_ROOT_DIR . '\\cms\\modules\\v1\\helpers\\StringHelp.php' => 
+  array (
+    'filemtime' => 1545227851,
+    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\helpers\\StringHelp.php',
+  ),
+  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\Profile.php' => 
+  array (
+    'filemtime' => 1545227851,
+    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\Profile.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\validators\\StringValidator.php' => 
+  array (
+    'filemtime' => 1545227429,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\validators\\StringValidator.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ExpressionBuilder.php' => 
+  array (
+    'filemtime' => 1545227429,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\ExpressionBuilder.php',
+  ),
+  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\InvoicePay.php' => 
+  array (
+    'filemtime' => 1545225552,
+    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\InvoicePay.php',
+  ),
   AOP_ROOT_DIR . '\\cms\\tests\\_data\\invoices_data.php' => 
   array (
     'filemtime' => 1545136650,
@@ -34,11 +114,6 @@
     'filemtime' => 1545135922,
     'cacheUri' => NULL,
   ),
-  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\InvoicePay.php' => 
-  array (
-    'filemtime' => 1545135922,
-    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\InvoicePay.php',
-  ),
   AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\base\\MobileRegistration.php' => 
   array (
     'filemtime' => 1545120889,
@@ -58,21 +133,6 @@
   array (
     'filemtime' => 1545059652,
     'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\base\\UserDocs.php',
-  ),
-  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\UserDocs.php' => 
-  array (
-    'filemtime' => 1545059652,
-    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\UserDocs.php',
-  ),
-  AOP_ROOT_DIR . '\\common\\fixtures\\UserDocsFixture.php' => 
-  array (
-    'filemtime' => 1545059652,
-    'cacheUri' => NULL,
-  ),
-  AOP_ROOT_DIR . '\\cms\\tests\\_data\\user_docs.php' => 
-  array (
-    'filemtime' => 1545059652,
-    'cacheUri' => NULL,
   ),
   AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\conditions\\InCondition.php' => 
   array (
@@ -158,11 +218,6 @@
   array (
     'filemtime' => 1545059652,
     'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\web\\HttpException.php',
-  ),
-  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\Profile.php' => 
-  array (
-    'filemtime' => 1545059652,
-    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\Profile.php',
   ),
   AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\conditions\\ConditionInterface.php' => 
   array (
@@ -254,21 +309,6 @@
     'filemtime' => 1545058598,
     'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\ActiveQuery.php',
   ),
-  AOP_ROOT_DIR . '\\cms\\modules\\v1\\interfaces\\ITInformation.php' => 
-  array (
-    'filemtime' => 1545058529,
-    'cacheUri' => NULL,
-  ),
-  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\Information.php' => 
-  array (
-    'filemtime' => 1545058529,
-    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\Information.php',
-  ),
-  AOP_ROOT_DIR . '\\cms\\modules\\v1\\helpers\\StringHelp.php' => 
-  array (
-    'filemtime' => 1545058392,
-    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\helpers\\StringHelp.php',
-  ),
   AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\ArrayAccessTrait.php' => 
   array (
     'filemtime' => 1545058330,
@@ -298,11 +338,6 @@
   array (
     'filemtime' => 1545058330,
     'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\test\\ActiveFixture.php',
-  ),
-  AOP_ROOT_DIR . '\\common\\fixtures\\UsersFixture.php' => 
-  array (
-    'filemtime' => 1545058330,
-    'cacheUri' => NULL,
   ),
   AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\di\\Instance.php' => 
   array (
@@ -358,11 +393,6 @@
   array (
     'filemtime' => 1545058330,
     'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\mysql\\ColumnSchema.php',
-  ),
-  AOP_ROOT_DIR . '\\cms\\tests\\_data\\users_login_data.php' => 
-  array (
-    'filemtime' => 1545058330,
-    'cacheUri' => NULL,
   ),
   AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\QueryBuilder.php' => 
   array (

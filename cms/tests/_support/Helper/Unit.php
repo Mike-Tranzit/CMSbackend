@@ -4,6 +4,8 @@ namespace cms\tests\Helper;
 // here you can define custom actions
 // all public methods declared in helper class will be available in $I
 
+use yii\web\HttpException;
+
 class Unit extends \Codeception\Module
 {
     /**
@@ -26,19 +28,73 @@ class Unit extends \Codeception\Module
         return $property;
     }
 
+
+
     /**
      * Получение приватной функции
      *
-     * @param  mixed $className
-     * @param  mixed $methodName
+     * @param  object $object
+     * @param  string $methodName
+     * @param  array $parameters
+     *
+     * @return object|null
+     */
+    public function getPrivateMethod(object $classObject, string $methodName, array $parameters = [])
+    {
+        $reflector = new \ReflectionClass($classObject::className());
+        $method = $reflector->getMethod($methodName);
+        $method->setAccessible(true);
+        return $method->invokeArgs($classObject, $parameters);
+    }
+
+
+    /**
+     * Проверка
+     *
+     * @param  mixed $e
+     * @param  mixed $code
+     * @param  mixed $message
+     *
+     * @return void
+     */
+    public function checkExceptionData(HttpException $e, $code, $message)
+    {
+        expect('Check Exception code', $e->statusCode)->equals($code);
+        expect("Check Exception message", $e->getMessage())->equals($message);
+    }
+
+    /**
+     * Создаем рандомный класс
+     *
+     * @param  array $properties
      *
      * @return object
      */
-    public function getPrivateMethod($object, $methodName, $parameters = [])
+    public function createCustomClass($properties)
     {
-      $reflector = new \ReflectionClass($object::className());
-      $method = $reflector->getMethod($methodName);
-      $method->setAccessible(true);
-      return $method->invokeArgs($object, $parameters);
+        $class = new \stdClass();
+        foreach($properties as $key => $value) {
+            $class->$key = $value;
+        }
+        return $class;
+    }
+
+    /**
+     * Формирование списка полей для mock schema
+     *
+     * @param  string $modelName
+     *
+     * @return void
+     */
+    public function createColumnsListToMockModels($modelName)
+    {
+        $model = new $modelName();
+        $columns = array_keys($model->attributeLabels());
+
+        $columnsToSchema = [];
+        foreach($columns as $item) {
+            $columnsToSchema[$item] =  $this->createCustomClass(['defaultValue' => true, 'name' => $item]);
+        }
+        return $columnsToSchema;
     }
 }

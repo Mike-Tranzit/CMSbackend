@@ -21,7 +21,7 @@ class YearSubscription extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'year_subscription';
+        return 'zernovoz1.year_subscription';
     }
 
     /**

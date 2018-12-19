@@ -229,6 +229,317 @@ $coverage->setData(array (
       1 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
     ),
   ),
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\InvoicePay.php' => 
+  array (
+    18 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+    ),
+    19 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+    ),
+    20 => NULL,
+    38 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    39 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    40 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    41 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    42 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    43 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    44 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    45 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    46 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    47 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    50 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+    ),
+    51 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+    ),
+    52 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+    ),
+    53 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+    ),
+    54 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+    ),
+    55 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+    ),
+    56 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+    ),
+    59 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      1 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    60 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      1 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    61 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    62 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      1 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    65 => 
+    array (
+    ),
+    66 => 
+    array (
+    ),
+    67 => 
+    array (
+    ),
+    68 => 
+    array (
+    ),
+    69 => 
+    array (
+    ),
+    71 => 
+    array (
+    ),
+    72 => 
+    array (
+    ),
+    74 => 
+    array (
+    ),
+    75 => 
+    array (
+    ),
+    78 => 
+    array (
+    ),
+    79 => 
+    array (
+    ),
+    80 => 
+    array (
+    ),
+    81 => 
+    array (
+    ),
+    84 => 
+    array (
+    ),
+    85 => 
+    array (
+    ),
+    87 => 
+    array (
+    ),
+    88 => 
+    array (
+    ),
+    89 => 
+    array (
+    ),
+    91 => 
+    array (
+    ),
+    92 => 
+    array (
+    ),
+    93 => 
+    array (
+    ),
+    101 => 
+    array (
+    ),
+    102 => 
+    array (
+    ),
+    103 => 
+    array (
+    ),
+    104 => 
+    array (
+    ),
+    107 => 
+    array (
+    ),
+    108 => 
+    array (
+    ),
+    109 => 
+    array (
+    ),
+    120 => 
+    array (
+    ),
+    121 => 
+    array (
+    ),
+    122 => 
+    array (
+    ),
+    125 => 
+    array (
+    ),
+    126 => 
+    array (
+    ),
+    128 => 
+    array (
+    ),
+    129 => 
+    array (
+    ),
+    131 => 
+    array (
+    ),
+    132 => 
+    array (
+    ),
+    134 => 
+    array (
+    ),
+    135 => 
+    array (
+    ),
+    136 => 
+    array (
+    ),
+    138 => 
+    array (
+    ),
+    140 => 
+    array (
+    ),
+    141 => 
+    array (
+    ),
+    143 => 
+    array (
+    ),
+    144 => 
+    array (
+    ),
+    146 => 
+    array (
+    ),
+    148 => 
+    array (
+    ),
+    151 => 
+    array (
+    ),
+    152 => 
+    array (
+    ),
+    153 => 
+    array (
+    ),
+    154 => 
+    array (
+    ),
+    157 => 
+    array (
+    ),
+    158 => 
+    array (
+    ),
+    159 => NULL,
+  ),
   'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Profile.php' => 
   array (
     43 => 
@@ -279,258 +590,6 @@ $coverage->setData(array (
       0 => 'cms\\tests\\models\\ProfileTest::testErrorAction',
     ),
     60 => NULL,
-  ),
-  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\InvoicePay.php' => 
-  array (
-    18 => 
-    array (
-    ),
-    19 => 
-    array (
-    ),
-    20 => 
-    array (
-    ),
-    22 => 
-    array (
-    ),
-    23 => 
-    array (
-    ),
-    24 => 
-    array (
-    ),
-    25 => 
-    array (
-    ),
-    26 => 
-    array (
-    ),
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-    29 => 
-    array (
-    ),
-    52 => 
-    array (
-    ),
-    53 => 
-    array (
-    ),
-    54 => 
-    array (
-    ),
-    55 => 
-    array (
-    ),
-    56 => 
-    array (
-    ),
-    57 => 
-    array (
-    ),
-    58 => 
-    array (
-    ),
-    61 => 
-    array (
-    ),
-    62 => 
-    array (
-    ),
-    63 => 
-    array (
-    ),
-    64 => 
-    array (
-    ),
-    67 => 
-    array (
-    ),
-    68 => 
-    array (
-    ),
-    69 => 
-    array (
-    ),
-    70 => 
-    array (
-    ),
-    71 => 
-    array (
-    ),
-    72 => 
-    array (
-    ),
-    73 => 
-    array (
-    ),
-    74 => 
-    array (
-    ),
-    75 => 
-    array (
-    ),
-    76 => 
-    array (
-    ),
-    77 => 
-    array (
-    ),
-    80 => 
-    array (
-    ),
-    81 => 
-    array (
-    ),
-    82 => 
-    array (
-    ),
-    83 => 
-    array (
-    ),
-    86 => 
-    array (
-    ),
-    87 => 
-    array (
-    ),
-    89 => 
-    array (
-    ),
-    90 => 
-    array (
-    ),
-    91 => 
-    array (
-    ),
-    93 => 
-    array (
-    ),
-    94 => 
-    array (
-    ),
-    95 => 
-    array (
-    ),
-    103 => 
-    array (
-    ),
-    104 => 
-    array (
-    ),
-    105 => 
-    array (
-    ),
-    106 => 
-    array (
-    ),
-    109 => 
-    array (
-    ),
-    110 => 
-    array (
-    ),
-    111 => 
-    array (
-    ),
-    122 => 
-    array (
-    ),
-    123 => 
-    array (
-    ),
-    124 => 
-    array (
-    ),
-    127 => 
-    array (
-    ),
-    128 => 
-    array (
-    ),
-    130 => 
-    array (
-    ),
-    131 => 
-    array (
-    ),
-    133 => 
-    array (
-    ),
-    134 => 
-    array (
-    ),
-    135 => 
-    array (
-    ),
-    136 => 
-    array (
-    ),
-    137 => 
-    array (
-    ),
-    138 => 
-    array (
-    ),
-    139 => 
-    array (
-    ),
-    140 => 
-    array (
-    ),
-    141 => 
-    array (
-    ),
-    142 => 
-    array (
-    ),
-    143 => 
-    array (
-    ),
-    145 => 
-    array (
-    ),
-    146 => 
-    array (
-    ),
-    147 => 
-    array (
-    ),
-    148 => 
-    array (
-    ),
-    149 => 
-    array (
-    ),
-    150 => 
-    array (
-    ),
-    153 => 
-    array (
-    ),
-    154 => 
-    array (
-    ),
-    155 => 
-    array (
-    ),
-    156 => 
-    array (
-    ),
-    159 => 
-    array (
-    ),
-    160 => 
-    array (
-    ),
-    161 => 
-    array (
-    ),
   ),
   'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\Controller.php' => 
   array (
@@ -866,6 +925,36 @@ $coverage->setTests(array (
     'status' => 0,
   ),
   'cms\\tests\\models\\InformationTest::testMobileRegistration' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testExceptionInvoke' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testInitModel' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testInitModelFail' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testEnlistment' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail' => 
   array (
     'size' => 'unknown',
     'status' => 0,

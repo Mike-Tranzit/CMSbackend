@@ -31,9 +31,7 @@ class InvoicePay extends \cms\modules\v1\models\base\Invoices
     /**
      * __construct
      *
-     * @param  mixed $id
-     * @codeCoverageIgnore
-	 * @ignore Codeception specific
+     * @param int $id
      * @return void
      */
     public function __construct($id)
@@ -44,7 +42,7 @@ class InvoicePay extends \cms\modules\v1\models\base\Invoices
         $this->user = $this->invoice->users;
         $this->subscriptionsActive = $this->invoice->subscriptionsActive;
         $this->dateExpire = date('Y-m-d H:i:s');
-        if (!$this->invoice || !$this->order) $this->errorInvoice('Не верные данные');
+        if (!$this->order) $this->errorInvoice('Не верные данные');
         parent::__construct();
     }
 
