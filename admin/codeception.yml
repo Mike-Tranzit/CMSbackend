@@ -1,10 +1,10 @@
-namespace: potok\tests
+namespace: admin\tests\v1
 actor: Tester
 paths:
-    tests: tests
-    log: tests/_output
-    data: tests/_data
-    helpers: tests/_support
+    tests: tests/v1
+    log: tests/v1/_output
+    data: tests/v1/_data
+    helpers: tests/v1/_support
 settings:
     bootstrap: _bootstrap.php
     colors: true
@@ -12,4 +12,14 @@ settings:
 modules:
     config:
         Yii2:
-            configFile: 'config/test-local.php'
+            configFile: 'config/test/test.php'
+            entryScript: index-test.php
+            cleanup: false
+coverage:
+    c3_url: http://localhost/TerminalInformationSystemBackend/admin/web/index-test.php
+    enabled: true
+    include:
+            - modules/v1/models/*
+            - modules/v1/controllers/*
+    exclude:
+            - modules/v1/models/base/*

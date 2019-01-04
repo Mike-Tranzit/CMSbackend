@@ -23,7 +23,8 @@ class Autos
         $this->model = \common\models\cms\base\AutosArchive::find()->where('`num_auto`=:num_auto', [":num_auto" => $this->plate])->orderBy('id DESC')->one();
     }
 
-    public static function listTimeslots(){
+    public static function listTimeslots()
+    {
         $result = [];
         $model = \common\models\cms\base\Autos::find()->where('window_to > now()-interval 100 hour and window_to < now() + interval 2 day and confirm = 1')->orderBy('windows')->all();
         if(!$model) return $result;
@@ -55,7 +56,8 @@ class Autos
         }
     }
 
-    public function allowTransfer(){
+    public function allowTransfer()
+    {
         return ( (strtotime($this->model->window_to)) >  time() - 8*60*60 && $this->model->arrived == 0 )? 1: 0;
     }
 

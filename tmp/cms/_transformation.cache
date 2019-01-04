@@ -1,13 +1,18 @@
 <?php return array (
+  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\base\\InvoicesDetail.php' => 
+  array (
+    'filemtime' => 1545399533,
+    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\base\\InvoicesDetail.php',
+  ),
+  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\base\\YearSubscription.php' => 
+  array (
+    'filemtime' => 1545376931,
+    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\base\\YearSubscription.php',
+  ),
   AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\UnknownPropertyException.php' => 
   array (
     'filemtime' => 1545233636,
     'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\UnknownPropertyException.php',
-  ),
-  AOP_ROOT_DIR . '\\cms\\modules\\v1\\models\\base\\YearSubscription.php' => 
-  array (
-    'filemtime' => 1545233304,
-    'cacheUri' => AOP_CACHE_DIR . '\\cms\\modules\\v1\\models\\base\\YearSubscription.php',
   ),
   AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\Exception.php' => 
   array (

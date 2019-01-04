@@ -3,7 +3,11 @@
 namespace cms\tests\models;
 
 use Yii;
-use cms\modules\v1\models\base\{Invoices, Orders, SubscriptionsActive, YearSubscription};
+use cms\modules\v1\models\base\Invoices;
+use cms\modules\v1\models\base\Orders;
+use cms\modules\v1\models\base\SubscriptionsActive;
+use cms\modules\v1\models\base\YearSubscription;
+use cms\modules\v1\models\base\Users;
 use cms\modules\v1\models\InvoicePay;
 
 use yii\web\HttpException;
@@ -94,7 +98,6 @@ class InvoicesTest extends \Codeception\Test\Unit
     {
         $this->specify('Проверяем отработку констуктора при ошибке', function () {
             try {
-
                 $invoicesMock = $this->mockActiveRecord(
                     ['one' => null]
                 );
@@ -104,18 +107,15 @@ class InvoicesTest extends \Codeception\Test\Unit
                 $invoicesMock->verifyInvoked('one');
 
                 $this->fail('Exception is not invoke');
-
             } catch (HttpException $e) {
-
                 $this->tester->checkExceptionData($e, HttpCode::INTERNAL_SERVER_ERROR, 'Заявка уже оплачена');
-
             }
         });
     }
 
     /**
      * testEnlistment
-     * 
+     *
      * @return void
      */
     public function testEnlistment()
@@ -132,7 +132,7 @@ class InvoicesTest extends \Codeception\Test\Unit
 
     /**
      * Тестируем что тариф не premium
-     * 
+     *
      * @return void
      */
     public function testEnlistmentOfTimeSuccess()
@@ -140,7 +140,7 @@ class InvoicesTest extends \Codeception\Test\Unit
         $invoice = Stub::make(InvoicePay::className(), [
             'addSubscriptionsActive' => Expected::once(),
             'addPremiumActive' => Expected::never(),
-            'order' => new Orders(['tarif_id' => 1])
+            'order' => $this->tester->createCustomClass(['tarif_id' => 1])
         ], $this);
 
         $invoice->EnlistmentOfTime();
@@ -148,7 +148,7 @@ class InvoicesTest extends \Codeception\Test\Unit
 
     /**
      * Тестируем что тариф premium
-     * 
+     *
      * @return void
      */
     public function testEnlistmentOfTimeFail()
@@ -156,7 +156,7 @@ class InvoicesTest extends \Codeception\Test\Unit
         $invoice = Stub::make(InvoicePay::className(), [
             'addSubscriptionsActive' => Expected::never(),
             'addPremiumActive' => Expected::once(),
-            'order' => new Orders(['tarif_id' => 0])
+            'order' => $this->tester->createCustomClass(['tarif_id' => 0])
         ], $this);
 
         $invoice->EnlistmentOfTime();
@@ -164,7 +164,7 @@ class InvoicesTest extends \Codeception\Test\Unit
 
     /**
      * testSuccessPay
-     * 
+     *
      * @return void
      */
     public function testSuccessPay()
@@ -194,12 +194,13 @@ class InvoicesTest extends \Codeception\Test\Unit
                 'status_expiry' => '2018-12-12 00:00:00',
                 'id' => 1
             ])
-        ); 
+        );
 
         // Формируем список mock полей таблицы
         $columns = $this->tester->createColumnsListToMockModels(YearSubscription::className());
 
-        $subscribe = $this->mockActiveRecord([
+        $subscribe = $this->mockActiveRecord(
+            [
             'getTableSchema' => $this->tester->createCustomClass(
                 ['columns' => $columns]
             )],
@@ -219,5 +220,197 @@ class InvoicesTest extends \Codeception\Test\Unit
         );
 
         $subscribe->verifyInvoked('save');
+    }
+
+
+    /**
+     * Присвоение деталям платежа нужных значений
+     * @return void
+     */
+    public function testAddToInvoicesDetail()
+    {
+        $subscribe = $this->mockDefaultSaveAction(true);
+
+        $this->specify('Sub_active_old is defined', function () use ($subscribe) {
+            $this->setPrivatePropertyValue(
+                $this->model,
+                'subscriptionsActive',
+                $this->tester->createCustomClass(
+                    ['requests_left' => 5]
+                )
+            );
+            $this->model->addToInvoicesDetail();
+
+            $subscribe->verifyInvoked('save');
+        });
+    }
+
+    /**
+     * Сброс статуса пользователя в базовый тариф
+     *
+     * @return void
+     */
+    public function testRefreshUserStatus()
+    {
+        $subscribe = $this->mockDefaultSaveAction(true);
+
+        $this->model->refreshUserStatus();
+        $user = $this->getPrivatePropertyValue($this->model, 'user');
+        expect('Status id is not null', $user->status_id)->equals(1);
+
+        $subscribe->verifyInvoked('save');
+    }
+
+    /**
+     * Если не существует записи подписки, вызов исключения
+     * @throw \yii\web\HttpException
+     * @return void
+     */
+    public function testAddSubscriptionsActiveFail()
+    {
+        try {
+            $this->setPrivatePropertyValue($this->model, 'subscriptionsActive', null);
+            $this->model->addSubscriptionsActive();
+            $this->fail('Не было выброшено исключение');
+        } catch (HttpException $e) {
+            $this->tester->checkExceptionData($e, HttpCode::INTERNAL_SERVER_ERROR, 'Ошибка поиска SubscriptionsActive');
+        }
+    }
+
+    /**
+     * Ошибка сохранения
+     *
+     * @throw \yii\web\HttpException
+     * @return void
+     */
+    public function testAddSubscriptionsActivSaveFail()
+    {
+        $subscribe = $this->mockDefaultSaveAction(true);
+
+        $this->specify('subscriptionsActive save fail', function () use ($subscribe) {
+            try {
+                $this->setOrderAndSubscribsionsActive(4, 5);
+
+                $subscribe = $this->mockDefaultSaveAction(false);
+
+                $this->model->addSubscriptionsActive();
+
+                $subscriptions = $this->getPrivatePropertyValue($this->model, 'subscriptionsActive');
+
+                expect('Status id is not null', $subscriptions->requests_left)->equals(9);
+
+                $this->fail('Не было выброшено исключение');
+            } catch (HttpException $e) {
+                $this->tester->checkExceptionData($e, HttpCode::INTERNAL_SERVER_ERROR, 'Ошибка сохранения в SubscriptionsActive');
+            }
+
+            $subscribe->verifyInvoked('save');
+        });
+    }
+
+    /**
+     * testIsLastStatusExpiry
+     *
+     * @return void
+     */
+    public function testIsLastStatusExpiry()
+    {
+        $this->setPrivatePropertyValue(
+            $this->model,
+            'user',
+            $this->tester->createCustomClass([
+                'status_expiry' => false
+            ])
+        );
+
+        $this->invokePrivateMethod($this->model, 'isLastStatusExpiry');
+        $isLastStatusExpiry = $this->getPrivatePropertyValue($this->model, 'isLastStatusExpiry');
+        $this->assertTrue($isLastStatusExpiry);
+    }
+
+
+    /**
+     * testIsDriverTarif
+     *
+     * @return void
+     */
+    public function testIsDriverTarif()
+    {
+        $this->setPrivatePropertyValue(
+            $this->model,
+            'order',
+            $this->tester->createCustomClass([
+                'tarif_id' => 100
+            ])
+        );
+
+        $this->invokePrivateMethod($this->model, 'isDriverTarif');
+        $isDriverTarif = $this->getPrivatePropertyValue($this->model, 'isDriverTarif');
+        $this->assertTrue($isDriverTarif);
+    }
+
+
+    /**
+     * Сохранение подписки, если оплата год то доступ к поднятым заявкам
+     * @group test
+     * @return void
+     */
+    public function testAddPremiumActive()
+    {
+        $subscribe = $this->mockDefaultSaveAction(true);
+
+        $model = Stub::make(InvoicePay::className(), [
+            
+            'user' => $this->tester->createCustomClass([
+                'status_expiry' => date('Y-m-d H:i:s')
+            ], new Users()),
+
+            'invoice' => $this->tester->createCustomClass([
+                'userIdCreate' => 1,
+                'id' => 1
+            ]),
+
+            'order' => $this->tester->createCustomClass([
+                'count_weeks' => 1,
+                'tarif_id' => 4,
+                'count_month' => 1
+            ])
+        ]);
+
+        $model->addPremiumActive();
+    }
+
+    //
+    // ────────────────────────────────────────────────────────────────────── I ──────────
+    //   :::::: A D V A N C E   M E T H O D S : :  :   :    :     :        :          :
+    // ────────────────────────────────────────────────────────────────────────────────
+    //
+
+    /**
+     * Выставления значения заказа и активной заявки при оплате
+     *
+     * @param  int $requests_left
+     * @param  int $count_request
+     *
+     * @return void
+     */
+    public function setOrderAndSubscribsionsActive($requests_left, $count_request)
+    {
+        $this->setPrivatePropertyValue(
+            $this->model,
+            'subscriptionsActive',
+            $this->tester->createCustomClass(
+                ['requests_left' => $requests_left],
+                new SubscriptionsActive()
+            )
+        );
+
+        $this->setPrivatePropertyValue(
+            $this->model,
+            'order',
+            $this->tester->createCustomClass(
+                ['count_request' => $count_request]
+            )
+        );
     }
 }

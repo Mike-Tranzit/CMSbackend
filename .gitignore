@@ -33,3 +33,5 @@ phpunit.phar
 
 # vagrant runtime
 /.vagrant
+
+/cms/tests/_output
