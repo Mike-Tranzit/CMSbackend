@@ -1,0 +1,15 @@
+actor: ApiTester
+modules:
+    enabled:
+        - Asserts
+        - \admin\tests\v1\Helper\Api
+        - REST:
+            depends: PhpBrowser
+            url: http://admin.info/v1/
+        - Yii2:
+            part: [orm, fixtures]
+            entryScript: index-test.php
+            cleanup: true
+            populate: false
+    config:
+        - PhpBrowser

@@ -51,9 +51,9 @@ class Unit extends \Codeception\Module
     /**
      * Проверка
      *
-     * @param  mixed $e
-     * @param  mixed $code
-     * @param  mixed $message
+     * @param  HttpException $e
+     * @param  int $code
+     * @param  string $message
      *
      * @return void
      */
@@ -70,9 +70,9 @@ class Unit extends \Codeception\Module
      *
      * @return object
      */
-    public function createCustomClass($properties)
+    public function createCustomClass($properties, $class = null)
     {
-        $class = new \stdClass();
+        if(!$class) $class = new \stdClass();
         foreach($properties as $key => $value) {
             $class->$key = $value;
         }

@@ -1,3 +1,45 @@
 {
-    "git.ignoreLimitWarning": true
+    "deploy.reloaded": {
+        "language": "en",
+        "packages": [
+            {
+                "name": "Test",
+                "removeOnChange": true,
+                "deployOnSave": true,
+                "button": {
+					"text": "Deploy to localhost",
+					"tooltip": "Click here to deploy to localhost",
+				},
+                "description": "Test version",
+                "files": [
+                    "income/*"
+                ],
+                "targets": [
+                    "My local folder"
+                ]
+            }
+        ],
+        "targets": [
+            {
+                "type": "local",
+                "name": "My local folder",
+                "description": "A local folder",
+                "dir": "C:/Server/data/htdocs",
+                "beforeDeploy": [
+                    {
+                        "type": "cleanup",
+                        "dir": "income/",
+                        "include": [
+                            "main.*.js",
+                            "index.html"
+                        ]
+                    },
+                    {
+                        "type": "exec",
+                        "command": "ng build --prod --base-href"
+                    }
+                ]
+            }
+        ]
+    }
 }

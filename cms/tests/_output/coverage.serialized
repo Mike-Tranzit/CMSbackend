@@ -235,11 +235,15 @@ $coverage->setData(array (
     array (
       0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
       1 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      2 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
     ),
     19 => 
     array (
       0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
       1 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      2 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
     ),
     20 => NULL,
     38 => 
@@ -250,6 +254,15 @@ $coverage->setData(array (
       3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
       4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
       5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     39 => 
     array (
@@ -259,6 +272,15 @@ $coverage->setData(array (
       3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
       4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
       5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     40 => 
     array (
@@ -268,6 +290,15 @@ $coverage->setData(array (
       3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
       4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
       5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     41 => 
     array (
@@ -277,6 +308,15 @@ $coverage->setData(array (
       3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
       4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
       5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     42 => 
     array (
@@ -286,6 +326,15 @@ $coverage->setData(array (
       3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
       4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
       5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     43 => 
     array (
@@ -295,6 +344,15 @@ $coverage->setData(array (
       3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
       4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
       5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     44 => 
     array (
@@ -304,6 +362,15 @@ $coverage->setData(array (
       3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
       4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
       5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     45 => 
     array (
@@ -313,6 +380,15 @@ $coverage->setData(array (
       3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
       4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
       5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     46 => 
     array (
@@ -322,6 +398,15 @@ $coverage->setData(array (
       3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
       4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
       5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     47 => 
     array (
@@ -331,6 +416,15 @@ $coverage->setData(array (
       3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
       4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
       5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     50 => 
     array (
@@ -381,57 +475,82 @@ $coverage->setData(array (
     ),
     65 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     66 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     67 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     68 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
     ),
     69 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
     ),
     71 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     72 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     74 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     75 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     78 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
     ),
     79 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
     ),
     80 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
     ),
     81 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
     ),
     84 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
     ),
     85 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
     ),
     87 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
     ),
     88 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
     ),
     89 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
     ),
     91 => 
     array (
@@ -444,99 +563,141 @@ $coverage->setData(array (
     ),
     101 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     102 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     103 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     104 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     107 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     108 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     109 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     120 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     121 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     122 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     125 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     126 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     128 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     129 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     131 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     132 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     134 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     135 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     136 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     138 => 
     array (
     ),
     140 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     141 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     143 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     144 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     146 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     148 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     151 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     152 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     153 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     154 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
     ),
     157 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
     ),
     158 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
     ),
     159 => NULL,
   ),
@@ -955,6 +1116,51 @@ $coverage->setTests(array (
     'status' => 0,
   ),
   'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testSuccessPay' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testIsDriverTarif' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testAddPremiumActive' => 
   array (
     'size' => 'unknown',
     'status' => 0,
