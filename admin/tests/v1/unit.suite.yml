@@ -6,3 +6,4 @@ modules:
             part: [orm]
             cleanup: true
       - \admin\tests\v1\Helper\Unit
+      - \admin\tests\v1\Helper\Mock

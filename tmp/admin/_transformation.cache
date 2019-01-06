@@ -1,8 +1,18 @@
 <?php return array (
   AOP_ROOT_DIR . '\\admin\\modules\\v1\\models\\Autos.php' => 
   array (
-    'filemtime' => 1546780683,
+    'filemtime' => 1546787440,
     'cacheUri' => AOP_CACHE_DIR . '\\admin\\modules\\v1\\models\\Autos.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\QueryBuilder.php' => 
+  array (
+    'filemtime' => 1546784884,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\QueryBuilder.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\mysql\\QueryBuilder.php' => 
+  array (
+    'filemtime' => 1546784884,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\mysql\\QueryBuilder.php',
   ),
   AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ConstraintFinderTrait.php' => 
   array (

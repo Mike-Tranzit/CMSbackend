@@ -10,8 +10,7 @@ class FormationTest extends \Codeception\Test\Unit
      * @var \admin\tests\UnitTester
      */
     protected $tester;
-    
-    const PLATE = "A000AA00";
+    protected $mock;
 
     protected function _before()
     {
@@ -21,6 +20,10 @@ class FormationTest extends \Codeception\Test\Unit
     {
     }
 
+    protected function _inject(\admin\tests\v1\Helper\Mock $mock)
+    {
+        $this->mock = $mock;
+    }
     /**
      * @dataProvider deletedParamsProvider
      * 
@@ -31,7 +34,7 @@ class FormationTest extends \Codeception\Test\Unit
         $doubleAR = $this->tester->mockActiveRecord(
             ['one' => $this->tester->createCustomClass(['deleted' => $deleted], new AutosArchive())]
         );
-        $model = new Autos(self::PLATE);
+        $model = new Autos($this->mock::PLATE);
         expect('Check deleted params as string message for user', $model->formationDeleteText())->equals($expect);
         $doubleAR->verifyInvoked('one');
     }
