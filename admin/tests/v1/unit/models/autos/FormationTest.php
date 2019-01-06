@@ -1,13 +1,11 @@
 <?php namespace admin\tests\models\autos;
 
 use admin\modules\v1\models\Autos;
-use admin\tests\v1\Traits\{PrivateActions, AspectMockModels, CustomClassActions};
+use common\models\cms\base\AutosArchive;
 use Yii;
 use yii\web\HttpException;
 class FormationTest extends \Codeception\Test\Unit
 {
-    use CustomClassActions;
-    use AspectMockModels;
     /**
      * @var \admin\tests\UnitTester
      */
@@ -30,12 +28,11 @@ class FormationTest extends \Codeception\Test\Unit
      */
     public function testTextForDelete($deleted, $expect)
     {
-        $doubleAR = $this->mockActiveRecord(
-            ['one' => $this->createCustomClass(['deleted' => $deleted], new \common\models\cms\base\AutosArchive())]
+        $doubleAR = $this->tester->mockActiveRecord(
+            ['one' => $this->tester->createCustomClass(['deleted' => $deleted], new AutosArchive())]
         );
         $model = new Autos(self::PLATE);
         expect('Check deleted params as string message for user', $model->formationDeleteText())->equals($expect);
-
         $doubleAR->verifyInvoked('one');
     }
 

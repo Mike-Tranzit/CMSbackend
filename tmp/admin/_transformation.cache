@@ -1,4 +1,9 @@
 <?php return array (
+  AOP_ROOT_DIR . '\\admin\\modules\\v1\\models\\Autos.php' => 
+  array (
+    'filemtime' => 1546780683,
+    'cacheUri' => AOP_CACHE_DIR . '\\admin\\modules\\v1\\models\\Autos.php',
+  ),
   AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ConstraintFinderTrait.php' => 
   array (
     'filemtime' => 1546613636,
@@ -88,11 +93,6 @@
   array (
     'filemtime' => 1546613422,
     'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\ActiveQuery.php',
-  ),
-  AOP_ROOT_DIR . '\\admin\\modules\\v1\\models\\Autos.php' => 
-  array (
-    'filemtime' => 1546613422,
-    'cacheUri' => AOP_CACHE_DIR . '\\admin\\modules\\v1\\models\\Autos.php',
   ),
   AOP_ROOT_DIR . '\\common\\models\\cms\\base\\AutosArchive.php' => 
   array (
