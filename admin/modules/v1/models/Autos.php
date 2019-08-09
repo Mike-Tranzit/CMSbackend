@@ -28,7 +28,8 @@ class Autos
         $result = [];
         $model = \common\models\cms\base\Autos::find()->where('window_to > now()-interval 100 hour and window_to < now() + interval 2 day and confirm = 1')->orderBy('windows')->all();
         if(!$model) return $result;
-        foreach ($model as $item){
+        foreach ($model as $item)
+        {
             array_push($result,['plate'=>\common\helpers\Plates::fromBase($item->num_auto),'from'=>$item->window_from,'to'=>$item->window_to]);
         }
         return $result;

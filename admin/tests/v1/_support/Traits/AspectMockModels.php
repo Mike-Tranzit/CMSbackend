@@ -37,6 +37,20 @@ trait AspectMockModels
         );
     }
 
+    /**
+     * createDoubleAR
+     *
+     * @param  array $params
+     * @param  mixed $class
+     *
+     * @return void
+     */
+    public function mockOne(array $params, $class)
+    {
+        return $this->mockActiveRecord(
+            ['one' => $this->createCustomClass($params, $class)]
+        );
+    }
 
     /**
      * Метод используется при необходимости эмитировать метод save при создании новой записи

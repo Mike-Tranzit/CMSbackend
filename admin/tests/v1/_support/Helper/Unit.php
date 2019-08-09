@@ -5,11 +5,9 @@ namespace admin\tests\v1\Helper;
 // all public methods declared in helper class will be available in $I
 
 use yii\web\HttpException;
-
+use admin\tests\v1\Traits\{AspectMockModels, CustomClassActions};
 class Unit extends \Codeception\Module
 {
-    /**
-     * todo 'Перенести в treid вместе с методом из ProfileTest'
-     */
-    
+    use CustomClassActions;
+    use AspectMockModels;
 }

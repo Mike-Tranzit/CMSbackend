@@ -54,6 +54,12 @@ class AutosController extends Controller
         return $model->returnResult();
     }
 
+    public function actionRemove() {
+        $fabric = new FabricModule('remove', Yii::$app->getRequest()->getBodyParams());
+        $model = $fabric->getModel();
+        return $model->markAsRemoved();
+    }
+
     public function actionIndex($term)
     {
         $fabric = new FabricModule('search', $term);

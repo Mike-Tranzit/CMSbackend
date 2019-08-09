@@ -3,18 +3,18 @@ POST http://cms.info/v1/login/auth
 content-type: application/json
 
 {
-	"username": "+79181111111",
-	"password": 1111,
+	"username": "+79897741292",
+	"password": 1215,
 	"m_n": "K7sQjA8PE"
 }
 
 ###
 
-OPTIONS http://cms.info/v1/login/auth
+OPTIONS http://apicrm.port-tranzit.ru/v1/f/list
 content-type: application/json
 
 
 ###
-GET http://backqueue.info/v1/cultures/bystevedoreid/5
+GET http://cms.info/v1/failures/getlist
 content-type: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjbXMiLCJpYXQiOjE1NDIyMjU2NzcsImp0aSI6IlpQZTlDTVU4OE9hWCIsIm5iZiI6MTU0MjIyNTY4MiwiZXhwIjoxNTQyMjk3NjgyLCJkYXRhIjp7ImlkIjozMCwibV9uIjoiSzdzUWpBOFBFIiwic2FsdCI6IkV5Zlc0RUZTZE8iLCJyZWZyZXNoX3Rva2VuIjoiWHJZV2Z0V2plQ3dycnFFRkY0REFnbk1uIiwicm9sZSI6Mn19.y8oMk8hA-iM-Lui0_YvKTeAi4NlOq7IqZC9-h80jq5M
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjbXMiLCJpYXQiOjE1NDk1MzQ2ODcsImp0aSI6InhzM1lJTGQxeHBzUSIsIm5iZiI6MTU0OTUzNDY5MiwiZXhwIjoxNTQ5NjA2NjkyLCJkYXRhIjp7ImlkIjoyMDQ3LCJtX24iOiJLN3NRakE4UEUiLCJzYWx0IjoielVwLW50dmxqcSIsInJlZnJlc2hfdG9rZW4iOiJMWGxLbE02Zm8xSmFycENkVEFsYjdxUmEiLCJyb2xlIjoyfX0.cPohbppkBJ7s61hmZ4VZSVQRDstJecydrfRXii17qT8
