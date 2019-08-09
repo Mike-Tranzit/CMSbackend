@@ -16,6 +16,7 @@ return [
                 'v1/d'=>'v1/debtor',
                 'v1/a'=>'v1/autos',
                 'v1/l'=>'v1/login',
+                'v1/s'=>'v1/settings',
             ],
             'tokens' => [
                 '{id}' => '<id:\d+>'
@@ -25,6 +26,7 @@ return [
                 'GET terminal' => 'terminal',
                 'GET list' => 'list',
                 'POST change' => 'change',
+                'POST remove' => 'remove',
                 'POST transfer' => 'transfer',
                 'POST auth' => 'auth',
                 'PUT edit/{id}' => 'edit',

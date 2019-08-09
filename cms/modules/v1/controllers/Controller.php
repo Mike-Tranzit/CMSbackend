@@ -10,144 +10,100 @@ use yii\web\Response;
 
 class Controller extends \yii\rest\ActiveController
 {
-	public
-		$public = false,
-		$publicActions = ['options'],
-		$rateLimiter = true,
-		$filters = [],
-		$searchClass;
+    public $public = false;
+    public $publicActions = ['options'];
+    public $rateLimiter = true;
+    public $filters = [];
+    public $searchClass;
 
-	public $serializer = '\app\components\Serializer';
+    public $serializer = '\app\components\Serializer';
 
-	public $forbiddenMessage = 'You do not have the privileges to perform that action.';
+    public $forbiddenMessage = 'You do not have the privileges to perform that action.';
 
-	public function behaviors()
-	{
-		$behaviors = parent::behaviors();
+    /**
+     * behaviors.
+     *
+     * @codeCoverageIgnore
+     * @ignore Codeception specific
+     */
+    public function behaviors()
+    {
+        $behaviors = parent::behaviors();
         $auth = in_array(Yii::$app->controller->action->id, $this->publicActions);
         Yii::$app->response->headers->set('Access-Control-Allow-Origin', '*');
-		if (!$auth)
-		{
-			$behaviors['authenticator'] = [
-				'class' => CompositeAuth::className(),
-                'except' => ['options'],
-				'authMethods' => [
-				 	HttpBearerAuth::className(),
-				],
-			];
-		}
+        if (!$auth) {
+            $behaviors['authenticator'] = [
+                                'class' => CompositeAuth::className(),
+                                'except' => ['options'],
+                                'authMethods' => [
+                                    HttpBearerAuth::className(),
+                                ],
+                            ];
+        }
 
-		$behaviors['contentNegotiator']['formats'] = [
-			'application/json' => Response::FORMAT_JSON,
-			'application/javascript' => Response::FORMAT_JSONP,
-		];
+        $behaviors['contentNegotiator']['formats'] = [
+                        'application/json' => Response::FORMAT_JSON,
+                            'application/javascript' => Response::FORMAT_JSONP,
+                        ];
 
-		/*if ($this->rateLimiter)
-		{
-			$behaviors['rateLimiter'] = [
-				'class' => \ethercreative\ratelimiter\RateLimiter::className(),
-				'rateLimit' => Yii::$app->params['rateLimiter']['limit'],
-				'timePeriod' => Yii::$app->params['rateLimiter']['period'],
-				'separateRates' => Yii::$app->params['rateLimiter']['separate'],
-				'enableRateLimitHeaders' => YII_ENV_DEV,
-			];
-		}*/
-
-       /* if (!empty($this->collectionOptions)){
-            $behaviors['corsFilter'] = [
-                'class' => \yii\filters\Cors::className(),
-                'cors' => [
-                    'Access-Control-Request-Method' => $this->collectionOptions,
-                    'Access-Control-Request-Headers' => ['*']
-                ],
-            ];
-        }*/
-		return $behaviors;
-	}
+        return $behaviors;
+    }
 
     public function actions()
     {
         $actions = parent::actions();
         $actions['verbs'] = $this->verbs();
+
         return $actions;
     }
 
-	public function prepareDataProvider()
-	{
-		$modelClass = $this->modelClass;
 
-		$query = $modelClass::find();
+    public function prepareDataProvider()
+    {
+        $modelClass = $this->modelClass;
 
-		foreach ($this->getFilters() as $column => $value)
-		{
-			if ($value)
-				$query->andWhere([$column => $value]);
-		}
+        $query = $modelClass::find();
+
+        foreach ($this->getFilters() as $column => $value) {
+            if ($value) {
+                $query->andWhere([$column => $value]);
+            }
+        }
 
         return new ActiveDataProvider([
             'query' => $query,
         ]);
-	}
+    }
 
-	public function getFilters()
-	{
-		$filters = [];
+    public function getFilters()
+    {
+        $filters = [];
 
-		foreach ($this->filters as $key => $value)
-		{
-			if (is_int($key))
-				$key = $value;
+        foreach ($this->filters as $key => $value) {
+            if (is_int($key)) {
+                $key = $value;
+            }
 
-			$filters[$key] = Yii::$app->request->get($key);
-		}
-		return $filters;
-	}
+            $filters[$key] = Yii::$app->request->get($key);
+        }
 
-	public function afterAction($action, $result)
-	{
-	//	Yii::$app->response->headers->set('Access-Control-Allow-Origin', '*');
-		Yii::$app->response->headers->set('Access-Control-Allow-Headers', join(', ', ['Content-Type', 'Authorization','Authorization_access']));
-		Yii::$app->response->headers->set('Access-Control-Allow-Methods', Yii::$app->response->headers->get('Allow'));
-		Yii::$app->response->headers->set('Access-Control-Expose-Headers', join(', ', ['Authorization_access','Link', 'X-Pagination-Current-Page', 'X-Pagination-Page-Count', 'X-Pagination-Per-Page', 'X-Pagination-Total-Count', 'User-Flash']));
+        return $filters;
+    }
 
-		if (!Yii::$app->request->isOptions)
-		{
-			$flashes = Yii::$app->session->getAllFlashes();
+    public function afterAction($action, $result)
+    {
+        Yii::$app->response->headers->set('Access-Control-Allow-Headers', join(', ', ['Content-Type', 'Authorization', 'Authorization_access']));
+        Yii::$app->response->headers->set('Access-Control-Allow-Methods', Yii::$app->response->headers->get('Allow'));
+        Yii::$app->response->headers->set('Access-Control-Expose-Headers', join(', ', ['Authorization_access', 'Link', 'X-Pagination-Current-Page', 'X-Pagination-Page-Count', 'X-Pagination-Per-Page', 'X-Pagination-Total-Count', 'User-Flash']));
 
-			foreach ($flashes as $key => $flash)
-			{
+        if (!Yii::$app->request->isOptions) {
+            $flashes = Yii::$app->session->getAllFlashes();
+
+            foreach ($flashes as $key => $flash) {
                 Yii::$app->response->headers->set($key, $flash);
-				/*switch($key)
-				{
-					case 'success':
-						$title = 'Success';
-					break;
+            }
+        }
 
-					case 'danger':
-						$title = 'Error';
-					break;
-
-					default:
-						$title = 'Info';
-					break;
-				}
-
-				if (is_array($flash))
-				{
-					if (!$flash['title'])
-						$flash['title'] = $title;
-				}
-				else
-				{
-
-					$flash = ['title' => $title, 'message' => $flash];
-				}*/
-			}
-
-		/*	if ($flashes)
-				Yii::$app->response->headers->set('User-Flash', json_encode($flashes));*/
-		}
-
-		return parent::afterAction($action, $result);
-	}
+        return parent::afterAction($action, $result);
+    }
 }

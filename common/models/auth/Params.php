@@ -20,7 +20,7 @@ class Params
                 'login_field' => 'login',
                 'table_name' => '\admin\modules\v1\models\base\Usersmodule',
                 'table_path' => 'nztmodule3.usersmodule',
-                'extra_sql' => '`role` in (7)'
+                'extra_sql' => '`role` in (7, 1)'
             ]
         ];
 

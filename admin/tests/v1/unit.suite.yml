@@ -1,0 +1,9 @@
+class_name: UnitTester
+modules:
+      enabled:
+      - Asserts
+      - Yii2:
+            part: [orm]
+            cleanup: true
+      - \admin\tests\v1\Helper\Unit
+      - \admin\tests\v1\Helper\Mock

@@ -22,6 +22,8 @@ class FabricModule
             case 'debtor': $this->setModule('\admin\modules\v1\models\DebtorActions'); break;
             case 'priority': $this->setModule('\admin\modules\v1\models\ObjectsActions'); break;
             case 'transfer': $this->setModule('\admin\modules\v1\models\AutosActions'); break;
+            case 'remove': $this->setModule('\admin\modules\v1\models\ObjectsActions'); break;
+            case 'settings': $this->setModule('\admin\modules\v1\models\SettingsActions'); break;
         }
     }
 

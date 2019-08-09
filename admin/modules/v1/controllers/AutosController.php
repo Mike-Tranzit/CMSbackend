@@ -7,10 +7,9 @@ use admin\modules\v1\models\FabricModule;
 
 class AutosController extends Controller
 {
-    public
-        $publicActions = ['options'],
-        $collectionOptions = ['GET', 'OPTIONS'],
-        $modelClass = '';
+    public $publicActions = ['options'];
+    public $collectionOptions = ['GET', 'OPTIONS'];
+    public $modelClass = '';
 
     public function actions()
     {
@@ -28,27 +27,37 @@ class AutosController extends Controller
         return $verbs;
     }
 
-    public function actionList(){
+    public function actionList()
+    {
         return \admin\modules\v1\models\Autos::listTimeslots();
     }
 
-    public function actionTransfer(){
+    public function actionTransfer()
+    {
         $fabric = new FabricModule('transfer', Yii::$app->getRequest()->getBodyParams());
         $model = $fabric->getModel();
         return $model->Transfer();
     }
 
-    public function actionChange(){
+    public function actionChange()
+    {
         $fabric = new FabricModule('priority', Yii::$app->getRequest()->getBodyParams());
         $model = $fabric->getModel();
         return $model->changePriority();
     }
 
-    public function actionTerminal($term){
+    public function actionTerminal($term)
+    {
         $fabric = new FabricModule('search', $term);
         $model = $fabric->getModel();
         $model->checkInObjectsTerminal();
         return $model->returnResult();
+    }
+
+    public function actionRemove() {
+        $fabric = new FabricModule('remove', Yii::$app->getRequest()->getBodyParams());
+        $model = $fabric->getModel();
+        return $model->markAsRemoved();
     }
 
     public function actionIndex($term)

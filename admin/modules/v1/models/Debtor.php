@@ -10,7 +10,7 @@ namespace admin\modules\v1\models;
 
 require_once __DIR__ . '/../../../../common/models/nztmodule3/base/Debtor.php';
 require_once __DIR__ . '/../../../../common/helpers/Plates.php';
-require_once __DIR__ . '/../../../../common/helpers/String.php';
+require_once __DIR__ . '/../../../../common/helpers/StringHelp.php';
 use yii\web\HttpException;
 use Yii;
 class Debtor
@@ -37,7 +37,7 @@ class Debtor
     /*      Edit        */
     public function editOne($data){
         if(!$this->model) throw new HttpException(400,'Запись не найдена');
-        $this->model->description = \common\helpers\String::filterJSON($data['description']);
+        $this->model->description = \common\helpers\StringHelp::filterJSON($data['description']);
         $this->model->status = (int)$data['status'];
         if(!$this->model->save()) throw new HttpException(500,'Ошибка редактирования');
         return $this->model->status == 1? [] : $this->recordExist();
@@ -49,7 +49,7 @@ class Debtor
         $this->model->plate = trim($this->plate);
         $this->model->paid_sum = 0;
         $this->model->sum = $data['sum'];
-        $this->model->description = \common\helpers\String::filterJSON($data['description']);
+        $this->model->description = \common\helpers\StringHelp::filterJSON($data['description']);
         $this->model->date_last_pay = NULL;
         $this->model->status = 0;
         $this->model->date_create = date("Y-m-d H:i:s");

@@ -7,19 +7,9 @@ use cms\modules\v1\models\base\Invoices;
 use cms\modules\v1\models\base\MobileRegistration;
 use cms\modules\v1\models\base\SubscriptionsActive;
 use cms\modules\v1\helpers\StringHelp;
+use cms\modules\v1\interfaces\ITInformation;
 use Yii;
 use yii\web\HttpException;
-
-interface ITInformation
-{
-    function getUserInformation();
-
-    function getInvoices();
-
-    function concatDataAndReturn();
-
-    function getActiveRequest();
-}
 
 class Information implements ITInformation
 {
@@ -28,6 +18,15 @@ class Information implements ITInformation
     private $information = [];
     private $confirm = ['не подтвержден','подтвержден'];
 
+    
+    /**
+     * __construct
+     *
+     * @param  mixed $login
+     * @codeCoverageIgnore
+     * @ignore Codeception specific
+     * @return void
+     */
     public function __construct($login)
     {
         $this->login = "+" . StringHelp::clearPhoneNumber($login);
@@ -38,14 +37,16 @@ class Information implements ITInformation
         return $this->information;
     }
 
-    function getActiveRequest()
+    public function getActiveRequest()
     {
         $active = SubscriptionsActive::find()->where(['user_id' => $this->information['user']['id']])->one();
-        if(!$active){
+        if (!$active) {
             $new_subscription_active = new SubscriptionsActive(['user_id'=>$this->information['user']['id'], 'requests_left'=>0]);
-            if($new_subscription_active->save()) $active = $new_subscription_active;
+            if ($new_subscription_active->save()) {
+                $active = $new_subscription_active;
+            }
         }
-        if($active){
+        if ($active) {
             $active = ArrayHelper::toArray($active);
             $this->information['user']['subscriptions_active'] = ['requests_left' => $active['requests_left'], 'id' => $active['id']];
         }
@@ -54,14 +55,25 @@ class Information implements ITInformation
     public function getUserInformation()
     {
         $userRecord = \cms\modules\v1\models\base\Users::find()->where(['login'=> trim($this->login)])->one();
-        if (!$userRecord) throw new HttpException(404, 'Ошибка. Пользовать не найден');
+        if (!$userRecord) {
+            throw new HttpException(404, 'Ошибка. Пользовать не найден');
+        }
         $userRecord = ArrayHelper::toArray($userRecord);
-        $this->information['user'] = ['id' => $userRecord['id'], 'company'=>$userRecord['company'], 'password'=>'', 'name' => $userRecord['name'], 'status_id' => $this->statusExpiry[(int)$userRecord['status_id']], 'status_expiry' => $userRecord['status_expiry'], 'confirm' => $this->confirm[$userRecord['confirm']]];
+        $this->information['user'] = [
+            'id' => $userRecord['id'], 
+            'company'=>$userRecord['company'], 
+            'password'=>'', 
+            'name' => $userRecord['name'], 
+            'status_id' => $this->statusExpiry[(int)$userRecord['status_id']], 
+            'status_expiry' => $userRecord['status_expiry'], 
+            'confirm' => $this->confirm[$userRecord['confirm']]
+        ];
     }
 
-    public function mobileRegistration(){
+    public function mobileRegistration()
+    {
         $mobileRegistration = MobileRegistration::find()->where(['user_id' => $this->information['user']['id']])->andWhere(['<', 'last_sms_date', 'now() - interval 1 day'])->orderBy(['id' => SORT_DESC])->one();
-        if($mobileRegistration){
+        if ($mobileRegistration) {
             $this->information['user']['activation_code'] = $mobileRegistration->activation_code;
             $this->information['user']['last_sms_date'] = $mobileRegistration->last_sms_date;
         }
@@ -72,6 +84,8 @@ class Information implements ITInformation
         $invoices = Invoices::find()->where(['userIdCreate' => $this->information['user']['id']])->andWhere(['<', 'datecreate', 'now() - interval 10 day'])->orderBy(['id' => SORT_DESC])->limit(10)->all();
         if ($invoices) {
             $this->information['invoices'] = ArrayHelper::toArray($invoices);
-        }else $this->information['invoices'] = [];
+        } else {
+            $this->information['invoices'] = [];
+        }
     }
 }

@@ -28,6 +28,12 @@ class InvoicePay extends \cms\modules\v1\models\base\Invoices
     private $subscriptionsActive = null;
     private $dateExpire;
 
+    /**
+     * __construct
+     *
+     * @param int $id
+     * @return void
+     */
     public function __construct($id)
     {
         $this->invoice = \cms\modules\v1\models\base\Invoices::find()->where(['id' => $id])->andWhere(['status' => 0])->one();
@@ -36,7 +42,8 @@ class InvoicePay extends \cms\modules\v1\models\base\Invoices
         $this->user = $this->invoice->users;
         $this->subscriptionsActive = $this->invoice->subscriptionsActive;
         $this->dateExpire = date('Y-m-d H:i:s');
-        if (!$this->invoice || !$this->order) $this->errorInvoice('Не верные данные');
+        if (!$this->order) $this->errorInvoice('Не верные данные');
+        parent::__construct();
     }
 
     public function Enlistment()
@@ -85,6 +92,11 @@ class InvoicePay extends \cms\modules\v1\models\base\Invoices
         if ($this->user->status_id == 2 && strtotime($this->user->status_expiry) < time()) $this->refreshUserStatus();
     }
 
+    /**
+     * isLastStatusExpiry
+     *
+     * @return void
+     */
     private function isLastStatusExpiry()
     {
         $this->isLastStatusExpiry = (strtotime($this->user->status_expiry) < time() OR !$this->user->status_expiry OR substr($this->user->status_expiry, 4) == '1970')
@@ -96,6 +108,14 @@ class InvoicePay extends \cms\modules\v1\models\base\Invoices
         $this->isDriverTarif = in_array($this->order->tarif_id, array(8, 9, 10, 100, 11)) ? true : false;
     }
 
+    /**
+     * addPeriodToStatusExpire
+     *
+     * @param  mixed $value
+     * @param  mixed $period
+     *
+     * @return void
+     */
     public function addPeriodToStatusExpire($value, $period)
     {
         $this->user->status_expiry = date('Y-m-d H:i:s', strtotime("{$this->dateExpire} +" . $value . " " . $period) + (60 * 60 * 3));
@@ -136,5 +156,10 @@ class InvoicePay extends \cms\modules\v1\models\base\Invoices
     public function successPay()
     {
         return ['id' => $this->invoice->id, 'dateresult' => date('Y-m-d H:i:s', time() + (60 * 60 * 3)), 'status_id' => $this->statusExpiry[$this->user->status_id], 'status_expiry' => $this->user->status_expiry, 'requests_left' => $this->subscriptionsActive->requests_left];
+    }
+
+    public function groupByDateProblem()
+    {
+        
     }
 }

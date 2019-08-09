@@ -1,63 +1,766 @@
 <?php
 $coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
 $coverage->setData(array (
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\Information.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\UserDocs.php' => 
   array (
+    13 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
+    14 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
+    16 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
+    17 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
+    18 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
+    21 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+      1 => 'cms\\models\\tests\\DocsTest::testPipePhone',
+    ),
+    22 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+      1 => 'cms\\models\\tests\\DocsTest::testPipePhone',
+    ),
+    23 => NULL,
+    26 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::hasAttributeAndEmptyInitListModel',
+      1 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
+    27 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::hasAttributeAndEmptyInitListModel',
+      1 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
+    28 => NULL,
+    31 => 
+    array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
+    ),
     32 => 
     array (
+      0 => 'cms\\models\\tests\\DocsTest::loadListWillReturnArray',
     ),
-    33 => 
+    33 => NULL,
+  ),
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Information.php' => 
+  array (
+    36 => 
     array (
-    ),
-    34 => 
-    array (
+      0 => 'cms\\tests\\models\\InformationTest::testHasPrivateDefaultPropertys',
+      1 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
+      2 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
     ),
     37 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testHasPrivateDefaultPropertys',
+      1 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
+      2 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
     ),
-    38 => 
+    38 => NULL,
+    41 => 
     array (
-    ),
-    39 => 
-    array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     42 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     43 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     44 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     45 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     46 => 
     array (
-    ),
-    47 => 
-    array (
-    ),
-    48 => 
-    array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     49 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     50 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
     ),
     51 => 
     array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+    ),
+    53 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestExist',
+      1 => 'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist',
+    ),
+    56 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
+      1 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    57 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
+      1 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    58 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
+      1 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    59 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserNotFound',
+    ),
+    61 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    62 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    63 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    64 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    65 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    66 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    67 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    68 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    69 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    71 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testUserExist',
+    ),
+    74 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
+    ),
+    75 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
+    ),
+    76 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
+    ),
+    77 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
+    ),
+    78 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
+    ),
+    80 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testMobileRegistration',
+    ),
+    83 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
+      1 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
+    ),
+    84 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
+      1 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
+    ),
+    85 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
+      1 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
+    ),
+    86 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
+    ),
+    88 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
+    ),
+    90 => 
+    array (
+      0 => 'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty',
+      1 => 'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty',
+    ),
+  ),
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\InvoicePay.php' => 
+  array (
+    18 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      2 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+    ),
+    19 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      2 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+    ),
+    20 => NULL,
+    38 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    39 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    40 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    41 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    42 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    43 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    44 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    45 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    46 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    47 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testExceptionInvoke',
+      1 => 'cms\\tests\\models\\InvoicesTest::testInitModel',
+      2 => 'cms\\tests\\models\\InvoicesTest::testInitModelFail',
+      3 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+      4 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      5 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+      6 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+      7 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      8 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      9 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+      10 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      11 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+      12 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      13 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      14 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    50 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+    ),
+    51 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
     ),
     52 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+    ),
+    53 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+    ),
+    54 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
     ),
     55 => 
     array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
     ),
     56 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistment',
+    ),
+    59 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      1 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    60 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      1 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    61 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    62 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess',
+      1 => 'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail',
+    ),
+    65 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    66 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    67 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    68 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+    ),
+    69 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+    ),
+    71 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    72 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    74 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    75 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    78 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+    ),
+    79 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+    ),
+    80 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+    ),
+    81 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus',
+    ),
+    84 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+    ),
+    85 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+    ),
+    87 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+    ),
+    88 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+    ),
+    89 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail',
+    ),
+    91 => 
+    array (
+    ),
+    92 => 
+    array (
+    ),
+    93 => 
+    array (
+    ),
+    101 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    102 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    103 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    104 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    107 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    108 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    109 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testIsDriverTarif',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    120 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    121 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    122 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    125 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    126 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    128 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    129 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    131 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    132 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    134 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    135 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    136 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    138 => 
+    array (
+    ),
+    140 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    141 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    143 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    144 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    146 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    148 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    151 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    152 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    153 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    154 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear',
+      1 => 'cms\\tests\\models\\InvoicesTest::testAddPremiumActive',
+    ),
+    157 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+    ),
+    158 => 
+    array (
+      0 => 'cms\\tests\\models\\InvoicesTest::testSuccessPay',
+    ),
+    159 => NULL,
+  ),
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Profile.php' => 
+  array (
+    43 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+      1 => 'cms\\tests\\models\\ProfileTest::testCompareHash',
+    ),
+    44 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+      1 => 'cms\\tests\\models\\ProfileTest::testCompareHash',
+    ),
+    45 => NULL,
+    48 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
+    49 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
+    50 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
+    51 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
+    52 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
+    54 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
+    55 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testSave',
+    ),
+    58 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testErrorAction',
+    ),
+    59 => 
+    array (
+      0 => 'cms\\tests\\models\\ProfileTest::testErrorAction',
+    ),
+    60 => NULL,
+  ),
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\Controller.php' => 
+  array (
+    53 => 
+    array (
+    ),
+    54 => 
+    array (
+    ),
+    55 => 
     array (
     ),
     57 => 
@@ -66,22 +769,13 @@ $coverage->setData(array (
     58 => 
     array (
     ),
-    59 => 
-    array (
-    ),
-    60 => 
+    62 => 
     array (
     ),
     63 => 
     array (
     ),
-    64 => 
-    array (
-    ),
     65 => 
-    array (
-    ),
-    66 => 
     array (
     ),
     67 => 
@@ -90,10 +784,13 @@ $coverage->setData(array (
     68 => 
     array (
     ),
-    71 => 
+    69 => 
     array (
     ),
-    72 => 
+    70 => 
+    array (
+    ),
+    71 => 
     array (
     ),
     73 => 
@@ -108,463 +805,10 @@ $coverage->setData(array (
     76 => 
     array (
     ),
-  ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\InvoicePay.php' => 
-  array (
-    18 => 
-    array (
-    ),
-    19 => 
-    array (
-    ),
-    20 => 
-    array (
-    ),
-    22 => 
-    array (
-    ),
-    23 => 
-    array (
-    ),
-    24 => 
-    array (
-    ),
-    25 => 
-    array (
-    ),
-    26 => 
-    array (
-    ),
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-    29 => 
-    array (
-    ),
-    32 => 
-    array (
-    ),
-    33 => 
-    array (
-    ),
-    34 => 
-    array (
-    ),
-    35 => 
-    array (
-    ),
-    36 => 
-    array (
-    ),
-    37 => 
-    array (
-    ),
-    38 => 
-    array (
-    ),
-    39 => 
-    array (
-    ),
-    40 => 
-    array (
-    ),
-    43 => 
-    array (
-    ),
-    44 => 
-    array (
-    ),
-    45 => 
-    array (
-    ),
-    46 => 
-    array (
-    ),
-    47 => 
-    array (
-    ),
-    48 => 
-    array (
-    ),
-    49 => 
-    array (
-    ),
-    52 => 
-    array (
-    ),
-    53 => 
-    array (
-    ),
-    54 => 
-    array (
-    ),
-    55 => 
-    array (
-    ),
-    58 => 
-    array (
-    ),
-    59 => 
-    array (
-    ),
-    60 => 
-    array (
-    ),
-    61 => 
-    array (
-    ),
-    62 => 
-    array (
-    ),
-    63 => 
-    array (
-    ),
-    64 => 
-    array (
-    ),
-    65 => 
-    array (
-    ),
-    66 => 
-    array (
-    ),
-    67 => 
-    array (
-    ),
-    68 => 
-    array (
-    ),
-    71 => 
-    array (
-    ),
-    72 => 
-    array (
-    ),
-    73 => 
-    array (
-    ),
-    74 => 
-    array (
-    ),
-    77 => 
-    array (
-    ),
-    78 => 
-    array (
-    ),
-    80 => 
-    array (
-    ),
-    81 => 
-    array (
-    ),
-    82 => 
-    array (
-    ),
-    84 => 
-    array (
-    ),
-    85 => 
-    array (
-    ),
-    86 => 
-    array (
-    ),
-    89 => 
-    array (
-    ),
-    90 => 
-    array (
-    ),
-    91 => 
-    array (
-    ),
-    92 => 
-    array (
-    ),
-    95 => 
-    array (
-    ),
-    96 => 
-    array (
-    ),
-    97 => 
-    array (
-    ),
-    100 => 
-    array (
-    ),
-    101 => 
-    array (
-    ),
-    102 => 
-    array (
-    ),
-    105 => 
-    array (
-    ),
-    106 => 
-    array (
-    ),
-    108 => 
-    array (
-    ),
-    109 => 
-    array (
-    ),
-    111 => 
-    array (
-    ),
-    112 => 
-    array (
-    ),
-    113 => 
-    array (
-    ),
-    114 => 
-    array (
-    ),
-    115 => 
-    array (
-    ),
-    116 => 
-    array (
-    ),
-    117 => 
-    array (
-    ),
-    118 => 
-    array (
-    ),
-    119 => 
-    array (
-    ),
-    120 => 
-    array (
-    ),
-    121 => 
-    array (
-    ),
-    123 => 
-    array (
-    ),
-    124 => 
-    array (
-    ),
-    125 => 
-    array (
-    ),
-    126 => 
-    array (
-    ),
-    127 => 
-    array (
-    ),
-    128 => 
-    array (
-    ),
-    131 => 
-    array (
-    ),
-    132 => 
-    array (
-    ),
-    133 => 
-    array (
-    ),
-    134 => 
-    array (
-    ),
-    137 => 
-    array (
-    ),
-    138 => 
-    array (
-    ),
-    139 => 
-    array (
-    ),
-  ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\Profile.php' => 
-  array (
-    20 => 
-    array (
-    ),
-    21 => 
-    array (
-    ),
-    22 => 
-    array (
-    ),
-    23 => 
-    array (
-    ),
-    24 => 
-    array (
-    ),
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-    31 => 
-    array (
-    ),
-    32 => 
-    array (
-    ),
-    33 => 
-    array (
-    ),
-    34 => 
-    array (
-    ),
-    35 => 
-    array (
-    ),
-    36 => 
-    array (
-    ),
-    37 => 
-    array (
-    ),
-    40 => 
-    array (
-    ),
-    41 => 
-    array (
-    ),
-  ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\UserDocs.php' => 
-  array (
-    11 => 
-    array (
-    ),
-    12 => 
-    array (
-    ),
-    14 => 
-    array (
-    ),
-    15 => 
-    array (
-    ),
-    16 => 
-    array (
-    ),
-    18 => 
-    array (
-    ),
-    19 => 
-    array (
-    ),
-    22 => 
-    array (
-    ),
-    23 => 
-    array (
-    ),
-    26 => 
-    array (
-    ),
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-  ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\Controller.php' => 
-  array (
-    25 => 
-    array (
-    ),
-    26 => 
-    array (
-    ),
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-    29 => 
-    array (
-    ),
-    30 => 
-    array (
-    ),
-    31 => 
-    array (
-    ),
-    32 => 
-    array (
-    ),
-    33 => 
-    array (
-    ),
-    34 => 
-    array (
-    ),
-    35 => 
-    array (
-    ),
-    36 => 
-    array (
-    ),
-    37 => 
-    array (
-    ),
-    38 => 
-    array (
-    ),
-    40 => 
-    array (
-    ),
-    41 => 
-    array (
-    ),
-    42 => 
-    array (
-    ),
-    43 => 
-    array (
-    ),
-    65 => 
-    array (
-    ),
-    66 => 
-    array (
-    ),
-    69 => 
-    array (
-    ),
-    70 => 
-    array (
-    ),
-    71 => 
-    array (
-    ),
-    72 => 
-    array (
-    ),
-    73 => 
-    array (
-    ),
-    76 => 
-    array (
-    ),
-    77 => 
-    array (
-    ),
     79 => 
     array (
     ),
-    81 => 
+    80 => 
     array (
     ),
     82 => 
@@ -585,16 +829,16 @@ $coverage->setData(array (
     88 => 
     array (
     ),
-    89 => 
-    array (
-    ),
     90 => 
     array (
     ),
-    93 => 
+    91 => 
     array (
     ),
     94 => 
+    array (
+    ),
+    95 => 
     array (
     ),
     96 => 
@@ -603,13 +847,10 @@ $coverage->setData(array (
     97 => 
     array (
     ),
-    98 => 
-    array (
-    ),
     99 => 
     array (
     ),
-    101 => 
+    100 => 
     array (
     ),
     102 => 
@@ -621,50 +862,17 @@ $coverage->setData(array (
     104 => 
     array (
     ),
+    105 => 
+    array (
+    ),
     107 => 
     array (
     ),
-    109 => 
-    array (
-    ),
-    110 => 
-    array (
-    ),
-    111 => 
-    array (
-    ),
-    113 => 
-    array (
-    ),
-    114 => 
-    array (
-    ),
-    115 => 
-    array (
-    ),
-    117 => 
-    array (
-    ),
-    118 => 
-    array (
-    ),
-    119 => 
-    array (
-    ),
-    145 => 
-    array (
-    ),
-    149 => 
-    array (
-    ),
-    151 => 
-    array (
-    ),
-    152 => 
+    108 => 
     array (
     ),
   ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\LoginController.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\LoginController.php' => 
   array (
     6 => 
     array (
@@ -715,7 +923,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\ZernovozamController.php' => 
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\ZernovozamController.php' => 
   array (
     20 => 
     array (
@@ -807,6 +1015,171 @@ $coverage->setData(array (
   ),
 ));
 $coverage->setTests(array (
+  'cms\\models\\tests\\DocsTest::checkModelInstanceOf' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\models\\tests\\DocsTest::hasAttributeAndEmptyInitListModel' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\models\\tests\\DocsTest::loadListWillReturnArray' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\models\\tests\\DocsTest::testPipePhone' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testHasPublicDefaultPropertys' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testCountDefaultStatuses' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testHasPrivateDefaultPropertys' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testGetActiveRequestExist' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testGetActiveRequestNotExist' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testLoginFilter' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testUserNotFound' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testUserExist' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testInvoicesIsEmpty' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testInvoicesIsNotEmpty' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InformationTest::testMobileRegistration' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testExceptionInvoke' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testInitModel' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testInitModelFail' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testEnlistment' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeSuccess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testEnlistmentOfTimeFail' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testSuccessPay' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testAddSubscribeToYear' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testAddToInvoicesDetail' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testRefreshUserStatus' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActiveFail' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testAddSubscriptionsActivSaveFail' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testIsLastStatusExpiry' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testIsDriverTarif' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\InvoicesTest::testAddPremiumActive' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\ProfileTest::testErrorAction' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\ProfileTest::testSave' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'cms\\tests\\models\\ProfileTest::testCompareHash' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
   'UNCOVERED_FILES_FROM_WHITELIST' => 
   array (
     'size' => 'unknown',
@@ -816,13 +1189,13 @@ $coverage->setTests(array (
 
 $filter = $coverage->filter();
 $filter->setWhitelistedFiles(array (
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\Information.php' => true,
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\InvoicePay.php' => true,
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\Profile.php' => true,
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\models\\UserDocs.php' => true,
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\Controller.php' => true,
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\LoginController.php' => true,
-  'C:\\Server\\data\\htdocs\\CMSbackend\\cms\\modules\\v1\\controllers\\ZernovozamController.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Information.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\InvoicePay.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\Profile.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\models\\UserDocs.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\Controller.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\LoginController.php' => true,
+  'C:\\Program Files (x86)\\Apache24\\htdocs\\TerminalInformationSystemBackend\\cms\\modules\\v1\\controllers\\ZernovozamController.php' => true,
 ));
 
 return $coverage;

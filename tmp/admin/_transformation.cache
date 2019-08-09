@@ -1,0 +1,297 @@
+<?php return array (
+  AOP_ROOT_DIR . '\\admin\\modules\\v1\\models\\Autos.php' => 
+  array (
+    'filemtime' => 1546787440,
+    'cacheUri' => AOP_CACHE_DIR . '\\admin\\modules\\v1\\models\\Autos.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\QueryBuilder.php' => 
+  array (
+    'filemtime' => 1546784884,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\QueryBuilder.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\mysql\\QueryBuilder.php' => 
+  array (
+    'filemtime' => 1546784884,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\mysql\\QueryBuilder.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ConstraintFinderTrait.php' => 
+  array (
+    'filemtime' => 1546613636,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\ConstraintFinderTrait.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\Schema.php' => 
+  array (
+    'filemtime' => 1546613636,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\Schema.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ConstraintFinderInterface.php' => 
+  array (
+    'filemtime' => 1546613636,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\mysql\\Schema.php' => 
+  array (
+    'filemtime' => 1546613636,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\mysql\\Schema.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\TableSchema.php' => 
+  array (
+    'filemtime' => 1546613636,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\TableSchema.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\Command.php' => 
+  array (
+    'filemtime' => 1546613636,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\Command.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\helpers\\BaseVarDumper.php' => 
+  array (
+    'filemtime' => 1546613636,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\helpers\\BaseVarDumper.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\helpers\\VarDumper.php' => 
+  array (
+    'filemtime' => 1546613636,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ColumnSchema.php' => 
+  array (
+    'filemtime' => 1546613636,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\ColumnSchema.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\mysql\\ColumnSchema.php' => 
+  array (
+    'filemtime' => 1546613636,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\mysql\\ColumnSchema.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ActiveQueryTrait.php' => 
+  array (
+    'filemtime' => 1546613422,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\ActiveQueryTrait.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ActiveRelationTrait.php' => 
+  array (
+    'filemtime' => 1546613422,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\ActiveRelationTrait.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\QueryTrait.php' => 
+  array (
+    'filemtime' => 1546613422,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\QueryTrait.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\QueryInterface.php' => 
+  array (
+    'filemtime' => 1546613422,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ExpressionInterface.php' => 
+  array (
+    'filemtime' => 1546613422,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\Query.php' => 
+  array (
+    'filemtime' => 1546613422,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\Query.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ActiveQueryInterface.php' => 
+  array (
+    'filemtime' => 1546613422,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ActiveQuery.php' => 
+  array (
+    'filemtime' => 1546613422,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\ActiveQuery.php',
+  ),
+  AOP_ROOT_DIR . '\\common\\models\\cms\\base\\AutosArchive.php' => 
+  array (
+    'filemtime' => 1546613422,
+    'cacheUri' => AOP_CACHE_DIR . '\\common\\models\\cms\\base\\AutosArchive.php',
+  ),
+  AOP_ROOT_DIR . '\\common\\models\\cms\\base\\Autos.php' => 
+  array (
+    'filemtime' => 1546613422,
+    'cacheUri' => AOP_CACHE_DIR . '\\common\\models\\cms\\base\\Autos.php',
+  ),
+  AOP_ROOT_DIR . '\\common\\helpers\\Plates.php' => 
+  array (
+    'filemtime' => 1546613422,
+    'cacheUri' => AOP_CACHE_DIR . '\\common\\helpers\\Plates.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\di\\Instance.php' => 
+  array (
+    'filemtime' => 1546613422,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\di\\Instance.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\web\\UploadedFile.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\web\\UploadedFile.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\Event.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\Event.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\ArrayableTrait.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\ArrayableTrait.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\StaticInstanceTrait.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\StaticInstanceTrait.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\StaticInstanceInterface.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\Arrayable.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\Model.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\Model.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ActiveRecordInterface.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\BaseActiveRecord.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\BaseActiveRecord.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\ActiveRecord.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\ActiveRecord.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\web\\IdentityInterface.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\di\\ServiceLocator.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\di\\ServiceLocator.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\Module.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\Module.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\Application.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\Application.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\web\\Application.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\web\\Application.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\ErrorHandler.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\ErrorHandler.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\web\\ErrorHandler.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\web\\ErrorHandler.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\Request.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\Request.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\web\\Request.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\web\\Request.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\log\\Dispatcher.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\log\\Dispatcher.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\log\\Logger.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\log\\Logger.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\log\\Target.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\log\\Target.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\log\\FileTarget.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\log\\FileTarget.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\db\\Connection.php' => 
+  array (
+    'filemtime' => 1546608994,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\db\\Connection.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\Yii.php' => 
+  array (
+    'filemtime' => 1546607018,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\Yii.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\BaseYii.php' => 
+  array (
+    'filemtime' => 1546607018,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\BaseYii.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\classes.php' => 
+  array (
+    'filemtime' => 1546607018,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\di\\Container.php' => 
+  array (
+    'filemtime' => 1546607018,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\di\\Container.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\Component.php' => 
+  array (
+    'filemtime' => 1546607018,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\Component.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\BaseObject.php' => 
+  array (
+    'filemtime' => 1546607018,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\BaseObject.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\Configurable.php' => 
+  array (
+    'filemtime' => 1546607018,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\UnknownClassException.php' => 
+  array (
+    'filemtime' => 1546607018,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\UnknownClassException.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\Exception.php' => 
+  array (
+    'filemtime' => 1546607018,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\Exception.php',
+  ),
+  AOP_ROOT_DIR . '\\vendor\\yiisoft\\yii2\\base\\ErrorException.php' => 
+  array (
+    'filemtime' => 1546607018,
+    'cacheUri' => AOP_CACHE_DIR . '\\vendor\\yiisoft\\yii2\\base\\ErrorException.php',
+  ),
+);
