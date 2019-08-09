@@ -157,4 +157,9 @@ class InvoicePay extends \cms\modules\v1\models\base\Invoices
     {
         return ['id' => $this->invoice->id, 'dateresult' => date('Y-m-d H:i:s', time() + (60 * 60 * 3)), 'status_id' => $this->statusExpiry[$this->user->status_id], 'status_expiry' => $this->user->status_expiry, 'requests_left' => $this->subscriptionsActive->requests_left];
     }
+
+    public function groupByDateProblem()
+    {
+        
+    }
 }

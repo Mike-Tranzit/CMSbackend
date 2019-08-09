@@ -46,6 +46,7 @@ return [
                 'GET userdocslist' => 'userdocslist',
                 'OPTIONS userdocslist' => 'options'
             ]
-        ]
+        ],
+        require(__DIR__ . '/routes/failure.php')
     ],
 ];

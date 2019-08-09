@@ -23,4 +23,8 @@ class ObjectsActions
         return Objects::changePriority($this->params);
     }
 
+    public function markAsRemoved() {
+        return Objects::markAsRemoved($this->params);
+    }
+
 }
