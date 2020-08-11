@@ -1,5 +1,5 @@
 <?
-$urlRule = '\yii\rest\UrlRule';
+$urlRule = '\app\components\UrlRule';
 return [
     'class' => $urlRule,
     'pluralize' => false,

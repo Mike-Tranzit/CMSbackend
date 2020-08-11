@@ -1,14 +1,14 @@
 <?php
 
-$urlRule = '\yii\rest\UrlRule';
+$urlRule = '\app\components\UrlRule';
 $pluralize = false;
 
 return [
     'enablePrettyUrl' => true,
-    'enableStrictParsing' => true,
+    'enableStrictParsing' => false,
     'showScriptName' => false,
     'rules' => [
-     /*   [
+        [
             'class' => $urlRule,
             'pluralize' => false,
             'controller' => [
@@ -47,6 +47,6 @@ return [
                 'OPTIONS userdocslist' => 'options'
             ]
         ],
-        require(__DIR__ . '/routes/failure.php')*/
+        require(__DIR__ . '/routes/failure.php')
     ],
 ];
