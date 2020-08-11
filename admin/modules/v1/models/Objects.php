@@ -44,7 +44,20 @@ class Objects
 
     public function formatoinReceiver()
     {
-        return ($this->model->is_nkhp == 1) ? 'НКХП' : 'НЗТ';
+		switch($this->model->is_nkhp) {
+			case 0: {
+				return 'НЗТ';
+				break
+			}
+			case 1: {
+				return 'НКХП';
+				break
+			}
+			case 2: {
+				return 'КСК';
+				break
+			}
+		}
     }
 
     public function formatoinorderFromStividor()
@@ -103,7 +116,7 @@ class Objects
     public static function markAsRemoved($data)
     {
         $model = self::getObjectById($data['id']);
-        $model->del = 1;
+        $model->del = 2;
         $model->del_date = date("Y-m-d");
         $model->del_time = date("H:i:s");
         if ($model->save()) {
