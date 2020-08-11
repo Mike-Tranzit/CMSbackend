@@ -9,7 +9,7 @@ return [
     'showScriptName' => false,
     'rules' => [
         [
-            'class' => 'yii\rest\UrlRule',
+           // 'class' => 'yii\rest\UrlRule',
             'pluralize' => false,
             'controller' => [
                 'v1/login',
