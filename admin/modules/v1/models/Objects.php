@@ -47,15 +47,15 @@ class Objects
 		switch($this->model->is_nkhp) {
 			case 0: {
 				return 'НЗТ';
-				break
+				break;
 			}
 			case 1: {
 				return 'НКХП';
-				break
+				break;
 			}
 			case 2: {
 				return 'КСК';
-				break
+				break;
 			}
 		}
     }
@@ -76,7 +76,7 @@ class Objects
             'date_to' => $this->formatingDate(3, $this->model->date_to_nzt . " " . $this->model->time_to_nzt), 'date_from' => $this->formatingDate(3, $this->model->date_from_nzt . " " . $this->model->time_from_nzt),'date_return'=> $this->formatoinDateReturn(),'is_return' => $this->model->isReturn, 'place' => $this->formatoinPlace(), 'receiver' => $this->formatoinReceiver(),'del'=>$this->model->del,'orderFromStividor' => $this->formatoinorderFromStividor()];
 
         if ($this->model) {
-            if ($this->model->is_nkhp == 1 && $ex = \common\models\nztmodule3\base\NkhpExt::find()->where('`pid`=:pid', [":pid"=>$this->model->id])->one()) {
+            if ($ex = \common\models\nztmodule3\base\NkhpExt::find()->where('`pid`=:pid', [":pid"=>$this->model->id])->one()) {
                 $m['trailer'] = \common\helpers\Plates::toBase($ex->trailer);
             }
 
