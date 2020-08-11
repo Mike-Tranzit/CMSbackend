@@ -8,7 +8,7 @@ return [
     'enableStrictParsing' => true,
     'showScriptName' => false,
     'rules' => [
-        [
+     /*   [
             'class' => $urlRule,
             'pluralize' => false,
             'controller' => [
@@ -47,6 +47,6 @@ return [
                 'OPTIONS userdocslist' => 'options'
             ]
         ],
-        require(__DIR__ . '/routes/failure.php')
+        require(__DIR__ . '/routes/failure.php')*/
     ],
 ];
