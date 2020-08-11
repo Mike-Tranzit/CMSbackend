@@ -5,11 +5,11 @@ $pluralize = false;
 
 return [
     'enablePrettyUrl' => true,
-    'enableStrictParsing' => false,
+    'enableStrictParsing' => true,
     'showScriptName' => false,
     'rules' => [
         [
-            'class' => $urlRule,
+            'class' => 'yii\rest\UrlRule',
             'pluralize' => false,
             'controller' => [
                 'v1/login',
@@ -24,7 +24,7 @@ return [
             ]
         ],
         [
-            'class' => $urlRule,
+            'class' => 'yii\rest\UrlRule',
             'pluralize' => false,
             'controller' => [
                 'v1/zernovozam',
