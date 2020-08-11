@@ -1,6 +1,6 @@
 <?php
 
-$urlRule = '\app\components\UrlRule';
+$urlRule = '\yii\rest\UrlRule';
 $pluralize = false;
 
 return [
