@@ -9,7 +9,7 @@ return [
     'showScriptName' => false,
     'rules' => [
         [
-            'class' => 'yii\rest\UrlRule',
+            'class' => $urlRule,
             'pluralize' => false,
             'controller' => [
                 'v1/login',
@@ -24,7 +24,7 @@ return [
             ]
         ],
         [
-            'class' => 'yii\rest\UrlRule',
+            'class' => $urlRule,
             'pluralize' => false,
             'controller' => [
                 'v1/zernovozam',

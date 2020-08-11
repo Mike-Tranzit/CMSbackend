@@ -1,7 +1,7 @@
 <?
 $urlRule = 'app\components\UrlRule';
 return [
-    'class' => 'yii\rest\UrlRule',
+    'class' => $urlRule,
     'pluralize' => false,
     'controller' => [
         'v1/f' => 'v1/failures',
