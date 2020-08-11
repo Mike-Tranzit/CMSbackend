@@ -14,12 +14,12 @@ class LoginController extends Controller
         $modelClass = '';
 
 
-    public function verbs()
+  /*  public function verbs()
     {
         $verbs = parent::verbs();
         $verbs['auth'] = ['POST', 'OPTIONS'];
         return $verbs;
-    }
+    }*/
 
     public function actionAuth()
     {
