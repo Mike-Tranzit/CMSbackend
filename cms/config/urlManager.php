@@ -1,6 +1,6 @@
 <?php
 
-$urlRule = '\app\components\UrlRule';
+$urlRule = 'app\components\UrlRule';
 $pluralize = false;
 
 return [
